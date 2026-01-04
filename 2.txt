@@ -1,0 +1,4004 @@
+
+
+DO NOT EVER ADD “WORKSPACE IN FILE PATH, start with src folder!” DO NOT ADD EM DASH! MUST CITE 5 real files in each section especially ideal answer!
+
+Make sure to obey these 100% “. 
+
+-  All answers should have  5+ meaningful sentences and clear as well 
+- All sections must reference at least 5 files with file’s absolute path but without the “WORKSPACE” in the directory url
+- MODEL A and MODEL B RESPONSES ARE PROVIDED. IN 2. And 3. 
+- DO NOt ADD ANY EM DASH!!!
+- Adding a few file references in the feedback section could strength the answer.
+- The ideal response could benefit from a dedicated file-list section summarizing all referenced files together.
+- Adding separate strength and weakness points inside summaries would enhance readability and make the evaluation feel more complete.
+- Model A response is in bullet point 2 after “2.here is model A's response:”. Do a grep if u don’t find it because it exists
+- Model B response is in bullet point 3 after “3.here is model B’s response:” do a grep if u don’t find it because it exists
+
+
+1.new task, question is:How is input sanitization handled before rendering to users?
+
+
+
+
+———MODEL A RESPONES IS BELOW!!!!——————
+2.here is model A's response: 
+bash
+command
+find /tmp/inputs/nextjs-subscription-payments -type f \( -name "*.ts" -o -name "*.tsx" -o -name "*.js" -o -name "*.jsx" \) | head -50
+output
+/tmp/inputs/nextjs-subscription-payments/types_db.ts
+/tmp/inputs/nextjs-subscription-payments/middleware.ts
+/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+/tmp/inputs/nextjs-subscription-payments/components/icons/GitHub.tsx
+/tmp/inputs/nextjs-subscription-payments/components/icons/Logo.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/LogoCloud.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/LoadingDots.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/CustomerPortalForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/use-toast.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/OauthSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Separator.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/EmailSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/ForgotPassword.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Footer/Footer.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Footer/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navbar.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navlinks.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/index.ts
+/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+/tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/client.ts
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/config.ts
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/settings.ts
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/middleware.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/admin.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/client.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/server.ts
+/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments, excluding hidden items and node_modules:
+2.3M	/tmp/inputs/nextjs-subscription-payments
+1.5K	/tmp/inputs/nextjs-subscription-payments/LICENSE
+16K	/tmp/inputs/nextjs-subscription-payments/README.md
+81K	/tmp/inputs/nextjs-subscription-payments/app
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/account
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api
+3.0K	/tmp/inputs/nextjs-subscription-payments/app/auth
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+66K	/tmp/inputs/nextjs-subscription-payments/app/opengraph-image.png
+1.0K	/tmp/inputs/nextjs-subscription-payments/app/page.tsx
+4.5K	/tmp/inputs/nextjs-subscription-payments/app/signin
+62K	/tmp/inputs/nextjs-subscription-payments/components
+512	/tmp/inputs/nextjs-subscription-payments/components.json
+2.5K	/tmp/inputs/nextjs-subscription-payments/components/icons
+60K	/tmp/inputs/nextjs-subscription-payments/components/ui
+2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures
+2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures/stripe-fixtures.json
+1.0K	/tmp/inputs/nextjs-subscription-payments/middleware.ts
+512	/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+2.5K	/tmp/inputs/nextjs-subscription-payments/package.json
+129K	/tmp/inputs/nextjs-subscription-payments/pnpm-lock.yaml
+512	/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+532K	/tmp/inputs/nextjs-subscription-payments/public
+136K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.png
+7.5K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.svg
+255K	/tmp/inputs/nextjs-subscription-payments/public/demo.png
+1.0K	/tmp/inputs/nextjs-subscription-payments/public/favicon.ico
+3.0K	/tmp/inputs/nextjs-subscription-payments/public/github.svg
+4.0K	/tmp/inputs/nextjs-subscription-payments/public/nextjs.svg
+2.0K	/tmp/inputs/nextjs-subscription-payments/public/stripe.svg
+5.5K	/tmp/inputs/nextjs-subscription-payments/public/supabase.svg
+115K	/tmp/inputs/nextjs-subscription-payments/public/vercel-deploy.png
+2.5K	/tmp/inputs/nextjs-subscription-payments/public/vercel.svg
+7.5K	/tmp/inputs/nextjs-subscription-payments/schema.sql
+1.0K	/tmp/inputs/nextjs-subscription-payments/styles
+1.0K	/tmp/inputs/nextjs-subscription-payments/styles/main.css
+14K	/tmp/inputs/nextjs-subscription-payments/supabase
+6.0K	/tmp/inputs/nextjs-subscription-payments/supabase/config.toml
+7.5K	/tmp/inputs/nextjs-subscription-payments/supabase/migrations
+0	/tmp/inputs/nextjs-subscription-payments/supabase/seed.sql
+1.0K	/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+1.0K	/tmp/inputs/nextjs-subscription-payments/tsconfig.json
+20K	/tmp/inputs/nextjs-subscription-payments/types_db.ts
+38K	/tmp/inputs/nextjs-subscription-payments/utils
+12K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+512	/tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+3.5K	/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+6.0K	/tmp/inputs/nextjs-subscription-payments/utils/stripe
+17K	/tmp/inputs/nextjs-subscription-payments/utils/supabase
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import LogoCloud from '@/components/ui/LogoCloud';
+5	import type { Tables } from '@/types_db';
+6	import { getStripe } from '@/utils/stripe/client';
+7	import { checkoutWithStripe } from '@/utils/stripe/server';
+8	import { getErrorRedirect } from '@/utils/helpers';
+9	import { User } from '@supabase/supabase-js';
+10	import cn from 'classnames';
+11	import { useRouter, usePathname } from 'next/navigation';
+12	import { useState } from 'react';
+13
+14	type Subscription = Tables<'subscriptions'>;
+15	type Product = Tables<'products'>;
+16	type Price = Tables<'prices'>;
+17	interface ProductWithPrices extends Product {
+18	  prices: Price[];
+19	}
+20	interface PriceWithProduct extends Price {
+21	  products: Product | null;
+22	}
+23	interface SubscriptionWithProduct extends Subscription {
+24	  prices: PriceWithProduct | null;
+25	}
+26
+27	interface Props {
+28	  user: User | null | undefined;
+29	  products: ProductWithPrices[];
+30	  subscription: SubscriptionWithProduct | null;
+31	}
+32
+33	type BillingInterval = 'lifetime' | 'year' | 'month';
+34
+35	export default function Pricing({ user, products, subscription }: Props) {
+36	  const intervals = Array.from(
+37	    new Set(
+38	      products.flatMap((product) =>
+39	        product?.prices?.map((price) => price?.interval)
+40	      )
+41	    )
+42	  );
+43	  const router = useRouter();
+44	  const [billingInterval, setBillingInterval] =
+45	    useState<BillingInterval>('month');
+46	  const [priceIdLoading, setPriceIdLoading] = useState<string>();
+47	  const currentPath = usePathname();
+48
+49	  const handleStripeCheckout = async (price: Price) => {
+50	    setPriceIdLoading(price.id);
+51
+52	    if (!user) {
+53	      setPriceIdLoading(undefined);
+54	      return router.push('/signin/signup');
+55	    }
+56
+57	    const { errorRedirect, sessionId } = await checkoutWithStripe(
+58	      price,
+59	      currentPath
+60	    );
+61
+62	    if (errorRedirect) {
+63	      setPriceIdLoading(undefined);
+64	      return router.push(errorRedirect);
+65	    }
+66
+67	    if (!sessionId) {
+68	      setPriceIdLoading(undefined);
+69	      return router.push(
+70	        getErrorRedirect(
+71	          currentPath,
+72	          'An unknown error occurred.',
+73	          'Please try again later or contact a system administrator.'
+74	        )
+75	      );
+76	    }
+77
+78	    const stripe = await getStripe();
+79	    stripe?.redirectToCheckout({ sessionId });
+80
+81	    setPriceIdLoading(undefined);
+82	  };
+83
+84	  if (!products.length) {
+85	    return (
+86	      <section className="bg-black">
+87	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+88	          <div className="sm:flex sm:flex-col sm:align-center"></div>
+89	          <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+90	            No subscription pricing plans found. Create them in your{' '}
+91	            <a
+92	              className="text-pink-500 underline"
+93	              href="https://dashboard.stripe.com/products"
+94	              rel="noopener noreferrer"
+95	              target="_blank"
+96	            >
+97	              Stripe Dashboard
+98	            </a>
+99	            .
+100	          </p>
+101	        </div>
+102	        <LogoCloud />
+103	      </section>
+104	    );
+105	  } else {
+106	    return (
+107	      <section className="bg-black">
+108	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+109	          <div className="sm:flex sm:flex-col sm:align-center">
+110	            <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+111	              Pricing Plans
+112	            </h1>
+113	            <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+114	              Start building for free, then add a site plan to go live. Account
+115	              plans unlock additional features.
+116	            </p>
+117	            <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
+118	              {intervals.includes('month') && (
+119	                <button
+120	                  onClick={() => setBillingInterval('month')}
+121	                  type="button"
+122	                  className={`${
+123	                    billingInterval === 'month'
+124	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+125	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+126	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+127	                >
+128	                  Monthly billing
+129	                </button>
+130	              )}
+131	              {intervals.includes('year') && (
+132	                <button
+133	                  onClick={() => setBillingInterval('year')}
+134	                  type="button"
+135	                  className={`${
+136	                    billingInterval === 'year'
+137	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+138	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+139	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+140	                >
+141	                  Yearly billing
+142	                </button>
+143	              )}
+144	            </div>
+145	          </div>
+146	          <div className="mt-12 space-y-0 sm:mt-16 flex flex-wrap justify-center gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0">
+147	            {products.map((product) => {
+148	              const price = product?.prices?.find(
+149	                (price) => price.interval === billingInterval
+150	              );
+151	              if (!price) return null;
+152	              const priceString = new Intl.NumberFormat('en-US', {
+153	                style: 'currency',
+154	                currency: price.currency!,
+155	                minimumFractionDigits: 0
+156	              }).format((price?.unit_amount || 0) / 100);
+157	              return (
+158	                <div
+159	                  key={product.id}
+160	                  className={cn(
+161	                    'flex flex-col rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
+162	                    {
+163	                      'border border-pink-500': subscription
+164	                        ? product.name === subscription?.prices?.products?.name
+165	                        : product.name === 'Freelancer'
+166	                    },
+167	                    'flex-1', // This makes the flex item grow to fill the space
+168	                    'basis-1/3', // Assuming you want each card to take up roughly a third of the container's width
+169	                    'max-w-xs' // Sets a maximum width to the cards to prevent them from getting too large
+170	                  )}
+171	                >
+172	                  <div className="p-6">
+173	                    <h2 className="text-2xl font-semibold leading-6 text-white">
+174	                      {product.name}
+175	                    </h2>
+176	                    <p className="mt-4 text-zinc-300">{product.description}</p>
+177	                    <p className="mt-8">
+178	                      <span className="text-5xl font-extrabold white">
+179	                        {priceString}
+180	                      </span>
+181	                      <span className="text-base font-medium text-zinc-100">
+182	                        /{billingInterval}
+183	                      </span>
+184	                    </p>
+185	                    <Button
+186	                      variant="slim"
+187	                      type="button"
+188	                      loading={priceIdLoading === price.id}
+189	                      onClick={() => handleStripeCheckout(price)}
+190	                      className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"
+191	                    >
+192	                      {subscription ? 'Manage' : 'Subscribe'}
+193	                    </Button>
+194	                  </div>
+195	                </div>
+196	              );
+197	            })}
+198	          </div>
+199	          <LogoCloud />
+200	        </div>
+201	      </section>
+202	    );
+203	  }
+204	}
+205	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Card from '@/components/ui/Card';
+5	import { updateName } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import { useState } from 'react';
+9
+10	export default function NameForm({ userName }: { userName: string }) {
+11	  const router = useRouter();
+12	  const [isSubmitting, setIsSubmitting] = useState(false);
+13
+14	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+15	    setIsSubmitting(true);
+16	    // Check if the new name is the same as the old name
+17	    if (e.currentTarget.fullName.value === userName) {
+18	      e.preventDefault();
+19	      setIsSubmitting(false);
+20	      return;
+21	    }
+22	    handleRequest(e, updateName, router);
+23	    setIsSubmitting(false);
+24	  };
+25
+26	  return (
+27	    <Card
+28	      title="Your Name"
+29	      description="Please enter your full name, or a display name you are comfortable with."
+30	      footer={
+31	        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+32	          <p className="pb-4 sm:pb-0">64 characters maximum</p>
+33	          <Button
+34	            variant="slim"
+35	            type="submit"
+36	            form="nameForm"
+37	            loading={isSubmitting}
+38	          >
+39	            Update Name
+40	          </Button>
+41	        </div>
+42	      }
+43	    >
+44	      <div className="mt-8 mb-4 text-xl font-semibold">
+45	        <form id="nameForm" onSubmit={(e) => handleSubmit(e)}>
+46	          <input
+47	            type="text"
+48	            name="fullName"
+49	            className="w-1/2 p-3 rounded-md bg-zinc-800"
+50	            defaultValue={userName}
+51	            placeholder="Your name"
+52	            maxLength={64}
+53	          />
+54	        </form>
+55	      </div>
+56	    </Card>
+57	  );
+58	}
+59	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Card from '@/components/ui/Card';
+5	import { updateEmail } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import { useState } from 'react';
+9
+10	export default function EmailForm({
+11	  userEmail
+12	}: {
+13	  userEmail: string | undefined;
+14	}) {
+15	  const router = useRouter();
+16	  const [isSubmitting, setIsSubmitting] = useState(false);
+17
+18	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+19	    setIsSubmitting(true);
+20	    // Check if the new email is the same as the old email
+21	    if (e.currentTarget.newEmail.value === userEmail) {
+22	      e.preventDefault();
+23	      setIsSubmitting(false);
+24	      return;
+25	    }
+26	    handleRequest(e, updateEmail, router);
+27	    setIsSubmitting(false);
+28	  };
+29
+30	  return (
+31	    <Card
+32	      title="Your Email"
+33	      description="Please enter the email address you want to use to login."
+34	      footer={
+35	        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+36	          <p className="pb-4 sm:pb-0">
+37	            We will email you to verify the change.
+38	          </p>
+39	          <Button
+40	            variant="slim"
+41	            type="submit"
+42	            form="emailForm"
+43	            loading={isSubmitting}
+44	          >
+45	            Update Email
+46	          </Button>
+47	        </div>
+48	      }
+49	    >
+50	      <div className="mt-8 mb-4 text-xl font-semibold">
+51	        <form id="emailForm" onSubmit={(e) => handleSubmit(e)}>
+52	          <input
+53	            type="text"
+54	            name="newEmail"
+55	            className="w-1/2 p-3 rounded-md bg-zinc-800"
+56	            defaultValue={userEmail ?? ''}
+57	            placeholder="Your email"
+58	            maxLength={64}
+59	          />
+60	        </form>
+61	      </div>
+62	    </Card>
+63	  );
+64	}
+65	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts with line numbers:
+1	'use server';
+2
+3	import { createClient } from '@/utils/supabase/server';
+4	import { cookies } from 'next/headers';
+5	import { redirect } from 'next/navigation';
+6	import { getURL, getErrorRedirect, getStatusRedirect } from 'utils/helpers';
+7	import { getAuthTypes } from 'utils/auth-helpers/settings';
+8
+9	function isValidEmail(email: string) {
+10	  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+11	  return regex.test(email);
+12	}
+13
+14	export async function redirectToPath(path: string) {
+15	  return redirect(path);
+16	}
+17
+18	export async function SignOut(formData: FormData) {
+19	  const pathName = String(formData.get('pathName')).trim();
+20
+21	  const supabase = createClient();
+22	  const { error } = await supabase.auth.signOut();
+23
+24	  if (error) {
+25	    return getErrorRedirect(
+26	      pathName,
+27	      'Hmm... Something went wrong.',
+28	      'You could not be signed out.'
+29	    );
+30	  }
+31
+32	  return '/signin';
+33	}
+34
+35	export async function signInWithEmail(formData: FormData) {
+36	  const cookieStore = cookies();
+37	  const callbackURL = getURL('/auth/callback');
+38
+39	  const email = String(formData.get('email')).trim();
+40	  let redirectPath: string;
+41
+42	  if (!isValidEmail(email)) {
+43	    redirectPath = getErrorRedirect(
+44	      '/signin/email_signin',
+45	      'Invalid email address.',
+46	      'Please try again.'
+47	    );
+48	  }
+49
+50	  const supabase = createClient();
+51	  let options = {
+52	    emailRedirectTo: callbackURL,
+53	    shouldCreateUser: true
+54	  };
+55
+56	  // If allowPassword is false, do not create a new user
+57	  const { allowPassword } = getAuthTypes();
+58	  if (allowPassword) options.shouldCreateUser = false;
+59	  const { data, error } = await supabase.auth.signInWithOtp({
+60	    email,
+61	    options: options
+62	  });
+63
+64	  if (error) {
+65	    redirectPath = getErrorRedirect(
+66	      '/signin/email_signin',
+67	      'You could not be signed in.',
+68	      error.message
+69	    );
+70	  } else if (data) {
+71	    cookieStore.set('preferredSignInView', 'email_signin', { path: '/' });
+72	    redirectPath = getStatusRedirect(
+73	      '/signin/email_signin',
+74	      'Success!',
+75	      'Please check your email for a magic link. You may now close this tab.',
+76	      true
+77	    );
+78	  } else {
+79	    redirectPath = getErrorRedirect(
+80	      '/signin/email_signin',
+81	      'Hmm... Something went wrong.',
+82	      'You could not be signed in.'
+83	    );
+84	  }
+85
+86	  return redirectPath;
+87	}
+88
+89	export async function requestPasswordUpdate(formData: FormData) {
+90	  const callbackURL = getURL('/auth/reset_password');
+91
+92	  // Get form data
+93	  const email = String(formData.get('email')).trim();
+94	  let redirectPath: string;
+95
+96	  if (!isValidEmail(email)) {
+97	    redirectPath = getErrorRedirect(
+98	      '/signin/forgot_password',
+99	      'Invalid email address.',
+100	      'Please try again.'
+101	    );
+102	  }
+103
+104	  const supabase = createClient();
+105
+106	  const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+107	    redirectTo: callbackURL
+108	  });
+109
+110	  if (error) {
+111	    redirectPath = getErrorRedirect(
+112	      '/signin/forgot_password',
+113	      error.message,
+114	      'Please try again.'
+115	    );
+116	  } else if (data) {
+117	    redirectPath = getStatusRedirect(
+118	      '/signin/forgot_password',
+119	      'Success!',
+120	      'Please check your email for a password reset link. You may now close this tab.',
+121	      true
+122	    );
+123	  } else {
+124	    redirectPath = getErrorRedirect(
+125	      '/signin/forgot_password',
+126	      'Hmm... Something went wrong.',
+127	      'Password reset email could not be sent.'
+128	    );
+129	  }
+130
+131	  return redirectPath;
+132	}
+133
+134	export async function signInWithPassword(formData: FormData) {
+135	  const cookieStore = cookies();
+136	  const email = String(formData.get('email')).trim();
+137	  const password = String(formData.get('password')).trim();
+138	  let redirectPath: string;
+139
+140	  const supabase = createClient();
+141	  const { error, data } = await supabase.auth.signInWithPassword({
+142	    email,
+143	    password
+144	  });
+145
+146	  if (error) {
+147	    redirectPath = getErrorRedirect(
+148	      '/signin/password_signin',
+149	      'Sign in failed.',
+150	      error.message
+151	    );
+152	  } else if (data.user) {
+153	    cookieStore.set('preferredSignInView', 'password_signin', { path: '/' });
+154	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+155	  } else {
+156	    redirectPath = getErrorRedirect(
+157	      '/signin/password_signin',
+158	      'Hmm... Something went wrong.',
+159	      'You could not be signed in.'
+160	    );
+161	  }
+162
+163	  return redirectPath;
+164	}
+165
+166	export async function signUp(formData: FormData) {
+167	  const callbackURL = getURL('/auth/callback');
+168
+169	  const email = String(formData.get('email')).trim();
+170	  const password = String(formData.get('password')).trim();
+171	  let redirectPath: string;
+172
+173	  if (!isValidEmail(email)) {
+174	    redirectPath = getErrorRedirect(
+175	      '/signin/signup',
+176	      'Invalid email address.',
+177	      'Please try again.'
+178	    );
+179	  }
+180
+181	  const supabase = createClient();
+182	  const { error, data } = await supabase.auth.signUp({
+183	    email,
+184	    password,
+185	    options: {
+186	      emailRedirectTo: callbackURL
+187	    }
+188	  });
+189
+190	  if (error) {
+191	    redirectPath = getErrorRedirect(
+192	      '/signin/signup',
+193	      'Sign up failed.',
+194	      error.message
+195	    );
+196	  } else if (data.session) {
+197	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+198	  } else if (
+199	    data.user &&
+200	    data.user.identities &&
+201	    data.user.identities.length == 0
+202	  ) {
+203	    redirectPath = getErrorRedirect(
+204	      '/signin/signup',
+205	      'Sign up failed.',
+206	      'There is already an account associated with this email address. Try resetting your password.'
+207	    );
+208	  } else if (data.user) {
+209	    redirectPath = getStatusRedirect(
+210	      '/',
+211	      'Success!',
+212	      'Please check your email for a confirmation link. You may now close this tab.'
+213	    );
+214	  } else {
+215	    redirectPath = getErrorRedirect(
+216	      '/signin/signup',
+217	      'Hmm... Something went wrong.',
+218	      'You could not be signed up.'
+219	    );
+220	  }
+221
+222	  return redirectPath;
+223	}
+224
+225	export async function updatePassword(formData: FormData) {
+226	  const password = String(formData.get('password')).trim();
+227	  const passwordConfirm = String(formData.get('passwordConfirm')).trim();
+228	  let redirectPath: string;
+229
+230	  // Check that the password and confirmation match
+231	  if (password !== passwordConfirm) {
+232	    redirectPath = getErrorRedirect(
+233	      '/signin/update_password',
+234	      'Your password could not be updated.',
+235	      'Passwords do not match.'
+236	    );
+237	  }
+238
+239	  const supabase = createClient();
+240	  const { error, data } = await supabase.auth.updateUser({
+241	    password
+242	  });
+243
+244	  if (error) {
+245	    redirectPath = getErrorRedirect(
+246	      '/signin/update_password',
+247	      'Your password could not be updated.',
+248	      error.message
+249	    );
+250	  } else if (data.user) {
+251	    redirectPath = getStatusRedirect(
+252	      '/',
+253	      'Success!',
+254	      'Your password has been updated.'
+255	    );
+256	  } else {
+257	    redirectPath = getErrorRedirect(
+258	      '/signin/update_password',
+259	      'Hmm... Something went wrong.',
+260	      'Your password could not be updated.'
+261	    );
+262	  }
+263
+264	  return redirectPath;
+265	}
+266
+267	export async function updateEmail(formData: FormData) {
+268	  // Get form data
+269	  const newEmail = String(formData.get('newEmail')).trim();
+270
+271	  // Check that the email is valid
+272	  if (!isValidEmail(newEmail)) {
+273	    return getErrorRedirect(
+274	      '/account',
+275	      'Your email could not be updated.',
+276	      'Invalid email address.'
+277	    );
+278	  }
+279
+280	  const supabase = createClient();
+281
+282	  const callbackUrl = getURL(
+283	    getStatusRedirect('/account', 'Success!', `Your email has been updated.`)
+284	  );
+285
+286	  const { error } = await supabase.auth.updateUser(
+287	    { email: newEmail },
+288	    {
+289	      emailRedirectTo: callbackUrl
+290	    }
+291	  );
+292
+293	  if (error) {
+294	    return getErrorRedirect(
+295	      '/account',
+296	      'Your email could not be updated.',
+297	      error.message
+298	    );
+299	  } else {
+300	    return getStatusRedirect(
+301	      '/account',
+302	      'Confirmation emails sent.',
+303	      `You will need to confirm the update by clicking the links sent to both the old and new email addresses.`
+304	    );
+305	  }
+306	}
+307
+308	export async function updateName(formData: FormData) {
+309	  // Get form data
+310	  const fullName = String(formData.get('fullName')).trim();
+311
+312	  const supabase = createClient();
+313	  const { error, data } = await supabase.auth.updateUser({
+314	    data: { full_name: fullName }
+315	  });
+316
+317	  if (error) {
+318	    return getErrorRedirect(
+319	      '/account',
+320	      'Your name could not be updated.',
+321	      error.message
+322	    );
+323	  } else if (data.user) {
+324	    return getStatusRedirect(
+325	      '/account',
+326	      'Success!',
+327	      'Your name has been updated.'
+328	    );
+329	  } else {
+330	    return getErrorRedirect(
+331	      '/account',
+332	      'Hmm... Something went wrong.',
+333	      'Your name could not be updated.'
+334	    );
+335	  }
+336	}
+337	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/helpers.ts with line numbers:
+1	import type { Tables } from '@/types_db';
+2
+3	type Price = Tables<'prices'>;
+4
+5	export const getURL = (path: string = '') => {
+6	  // Check if NEXT_PUBLIC_SITE_URL is set and non-empty. Set this to your site URL in production env.
+7	  let url =
+8	    process?.env?.NEXT_PUBLIC_SITE_URL &&
+9	    process.env.NEXT_PUBLIC_SITE_URL.trim() !== ''
+10	      ? process.env.NEXT_PUBLIC_SITE_URL
+11	      : // If not set, check for NEXT_PUBLIC_VERCEL_URL, which is automatically set by Vercel.
+12	        process?.env?.NEXT_PUBLIC_VERCEL_URL &&
+13	          process.env.NEXT_PUBLIC_VERCEL_URL.trim() !== ''
+14	        ? process.env.NEXT_PUBLIC_VERCEL_URL
+15	        : // If neither is set, default to localhost for local development.
+16	          'http://localhost:3000/';
+17
+18	  // Trim the URL and remove trailing slash if exists.
+19	  url = url.replace(/\/+$/, '');
+20	  // Make sure to include `https://` when not localhost.
+21	  url = url.includes('http') ? url : `https://${url}`;
+22	  // Ensure path starts without a slash to avoid double slashes in the final URL.
+23	  path = path.replace(/^\/+/, '');
+24
+25	  // Concatenate the URL and the path.
+26	  return path ? `${url}/${path}` : url;
+27	};
+28
+29	export const postData = async ({
+30	  url,
+31	  data
+32	}: {
+33	  url: string;
+34	  data?: { price: Price };
+35	}) => {
+36	  const res = await fetch(url, {
+37	    method: 'POST',
+38	    headers: new Headers({ 'Content-Type': 'application/json' }),
+39	    credentials: 'same-origin',
+40	    body: JSON.stringify(data)
+41	  });
+42
+43	  return res.json();
+44	};
+45
+46	export const toDateTime = (secs: number) => {
+47	  var t = new Date(+0); // Unix epoch start.
+48	  t.setSeconds(secs);
+49	  return t;
+50	};
+51
+52	export const calculateTrialEndUnixTimestamp = (
+53	  trialPeriodDays: number | null | undefined
+54	) => {
+55	  // Check if trialPeriodDays is null, undefined, or less than 2 days
+56	  if (
+57	    trialPeriodDays === null ||
+58	    trialPeriodDays === undefined ||
+59	    trialPeriodDays < 2
+60	  ) {
+61	    return undefined;
+62	  }
+63
+64	  const currentDate = new Date(); // Current date and time
+65	  const trialEnd = new Date(
+66	    currentDate.getTime() + (trialPeriodDays + 1) * 24 * 60 * 60 * 1000
+67	  ); // Add trial days
+68	  return Math.floor(trialEnd.getTime() / 1000); // Convert to Unix timestamp in seconds
+69	};
+70
+71	const toastKeyMap: { [key: string]: string[] } = {
+72	  status: ['status', 'status_description'],
+73	  error: ['error', 'error_description']
+74	};
+75
+76	const getToastRedirect = (
+77	  path: string,
+78	  toastType: string,
+79	  toastName: string,
+80	  toastDescription: string = '',
+81	  disableButton: boolean = false,
+82	  arbitraryParams: string = ''
+83	): string => {
+84	  const [nameKey, descriptionKey] = toastKeyMap[toastType];
+85
+86	  let redirectPath = `${path}?${nameKey}=${encodeURIComponent(toastName)}`;
+87
+88	  if (toastDescription) {
+89	    redirectPath += `&${descriptionKey}=${encodeURIComponent(toastDescription)}`;
+90	  }
+91
+92	  if (disableButton) {
+93	    redirectPath += `&disable_button=true`;
+94	  }
+95
+96	  if (arbitraryParams) {
+97	    redirectPath += `&${arbitraryParams}`;
+98	  }
+99
+100	  return redirectPath;
+101	};
+102
+103	export const getStatusRedirect = (
+104	  path: string,
+105	  statusName: string,
+106	  statusDescription: string = '',
+107	  disableButton: boolean = false,
+108	  arbitraryParams: string = ''
+109	) =>
+110	  getToastRedirect(
+111	    path,
+112	    'status',
+113	    statusName,
+114	    statusDescription,
+115	    disableButton,
+116	    arbitraryParams
+117	  );
+118
+119	export const getErrorRedirect = (
+120	  path: string,
+121	  errorName: string,
+122	  errorDescription: string = '',
+123	  disableButton: boolean = false,
+124	  arbitraryParams: string = ''
+125	) =>
+126	  getToastRedirect(
+127	    path,
+128	    'error',
+129	    errorName,
+130	    errorDescription,
+131	    disableButton,
+132	    arbitraryParams
+133	  );
+134	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx with line numbers:
+1	import * as React from 'react';
+2	import * as ToastPrimitives from '@radix-ui/react-toast';
+3	import { cva, type VariantProps } from 'class-variance-authority';
+4	import { X } from 'lucide-react';
+5
+6	import { cn } from '@/utils/cn';
+7
+8	const ToastProvider = ToastPrimitives.Provider;
+9
+10	const ToastViewport = React.forwardRef<
+11	  React.ElementRef<typeof ToastPrimitives.Viewport>,
+12	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Viewport>
+13	>(({ className, ...props }, ref) => (
+14	  <ToastPrimitives.Viewport
+15	    ref={ref}
+16	    className={cn(
+17	      'fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]',
+18	      className
+19	    )}
+20	    {...props}
+21	  />
+22	));
+23	ToastViewport.displayName = ToastPrimitives.Viewport.displayName;
+24
+25	const toastVariants = cva(
+26	  'group pointer-events-auto relative flex w-full items-center justify-between space-x-4 overflow-hidden rounded-md border border-zinc-200 p-6 pr-8 shadow-lg transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-top-full data-[state=open]:sm:slide-in-from-bottom-full dark:border-zinc-800',
+27	  {
+28	    variants: {
+29	      variant: {
+30	        default:
+31	          'border bg-white text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50',
+32	        destructive:
+33	          'destructive group border-red-500 bg-red-500 text-zinc-50 dark:border-red-900 dark:bg-red-900 dark:text-zinc-50'
+34	      }
+35	    },
+36	    defaultVariants: {
+37	      variant: 'default'
+38	    }
+39	  }
+40	);
+41
+42	const Toast = React.forwardRef<
+43	  React.ElementRef<typeof ToastPrimitives.Root>,
+44	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Root> &
+45	    VariantProps<typeof toastVariants>
+46	>(({ className, variant, ...props }, ref) => {
+47	  return (
+48	    <ToastPrimitives.Root
+49	      ref={ref}
+50	      className={cn(toastVariants({ variant }), className)}
+51	      {...props}
+52	    />
+53	  );
+54	});
+55	Toast.displayName = ToastPrimitives.Root.displayName;
+56
+57	const ToastAction = React.forwardRef<
+58	  React.ElementRef<typeof ToastPrimitives.Action>,
+59	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Action>
+60	>(({ className, ...props }, ref) => (
+61	  <ToastPrimitives.Action
+62	    ref={ref}
+63	    className={cn(
+64	      'inline-flex h-8 shrink-0 items-center justify-center rounded-md border border-zinc-200 bg-transparent px-3 text-sm font-medium ring-offset-white transition-colors hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group-[.destructive]:border-zinc-100/40 group-[.destructive]:hover:border-red-500/30 group-[.destructive]:hover:bg-red-500 group-[.destructive]:hover:text-zinc-50 group-[.destructive]:focus:ring-red-500 dark:border-zinc-800 dark:ring-offset-zinc-950 dark:hover:bg-zinc-800 dark:focus:ring-zinc-300 dark:group-[.destructive]:border-zinc-800/40 dark:group-[.destructive]:hover:border-red-900/30 dark:group-[.destructive]:hover:bg-red-900 dark:group-[.destructive]:hover:text-zinc-50 dark:group-[.destructive]:focus:ring-red-900',
+65	      className
+66	    )}
+67	    {...props}
+68	  />
+69	));
+70	ToastAction.displayName = ToastPrimitives.Action.displayName;
+71
+72	const ToastClose = React.forwardRef<
+73	  React.ElementRef<typeof ToastPrimitives.Close>,
+74	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Close>
+75	>(({ className, ...props }, ref) => (
+76	  <ToastPrimitives.Close
+77	    ref={ref}
+78	    className={cn(
+79	      'absolute right-2 top-2 rounded-md p-1 text-zinc-950/50 opacity-0 transition-opacity hover:text-zinc-950 focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600 dark:text-zinc-50/50 dark:hover:text-zinc-50',
+80	      className
+81	    )}
+82	    toast-close=""
+83	    {...props}
+84	  >
+85	    <X className="h-4 w-4" />
+86	  </ToastPrimitives.Close>
+87	));
+88	ToastClose.displayName = ToastPrimitives.Close.displayName;
+89
+90	const ToastTitle = React.forwardRef<
+91	  React.ElementRef<typeof ToastPrimitives.Title>,
+92	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Title>
+93	>(({ className, ...props }, ref) => (
+94	  <ToastPrimitives.Title
+95	    ref={ref}
+96	    className={cn('text-sm font-semibold', className)}
+97	    {...props}
+98	  />
+99	));
+100	ToastTitle.displayName = ToastPrimitives.Title.displayName;
+101
+102	const ToastDescription = React.forwardRef<
+103	  React.ElementRef<typeof ToastPrimitives.Description>,
+104	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Description>
+105	>(({ className, ...props }, ref) => (
+106	  <ToastPrimitives.Description
+107	    ref={ref}
+108	    className={cn('text-sm opacity-90', className)}
+109	    {...props}
+110	  />
+111	));
+112	ToastDescription.displayName = ToastPrimitives.Description.displayName;
+113
+114	type ToastProps = React.ComponentPropsWithoutRef<typeof Toast>;
+115
+116	type ToastActionElement = React.ReactElement<typeof ToastAction>;
+117
+118	export {
+119	  type ToastProps,
+120	  type ToastActionElement,
+121	  ToastProvider,
+122	  ToastViewport,
+123	  Toast,
+124	  ToastTitle,
+125	  ToastDescription,
+126	  ToastClose,
+127	  ToastAction
+128	};
+129	
+
+
+bash
+command
+grep -r "dangerouslySetInnerHTML" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" --include="*.jsx" --include="*.js"
+system
+Tool ran without output or errors
+
+
+bash
+command
+grep -r "innerHTML" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" --include="*.jsx" --include="*.js"
+system
+Tool ran without output or errors
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx with line numbers:
+1	import CustomerPortalForm from '@/components/ui/AccountForms/CustomerPortalForm';
+2	import EmailForm from '@/components/ui/AccountForms/EmailForm';
+3	import NameForm from '@/components/ui/AccountForms/NameForm';
+4	import { redirect } from 'next/navigation';
+5	import { createClient } from '@/utils/supabase/server';
+6	import {
+7	  getUserDetails,
+8	  getSubscription,
+9	  getUser
+10	} from '@/utils/supabase/queries';
+11
+12	export default async function Account() {
+13	  const supabase = createClient();
+14	  const [user, userDetails, subscription] = await Promise.all([
+15	    getUser(supabase),
+16	    getUserDetails(supabase),
+17	    getSubscription(supabase)
+18	  ]);
+19
+20	  if (!user) {
+21	    return redirect('/signin');
+22	  }
+23
+24	  return (
+25	    <section className="mb-32 bg-black">
+26	      <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
+27	        <div className="sm:align-center sm:flex sm:flex-col">
+28	          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+29	            Account
+30	          </h1>
+31	          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+32	            We partnered with Stripe for a simplified billing.
+33	          </p>
+34	        </div>
+35	      </div>
+36	      <div className="p-4">
+37	        <CustomerPortalForm subscription={subscription} />
+38	        <NameForm userName={userDetails?.full_name ?? ''} />
+39	        <EmailForm userEmail={user.email} />
+40	      </div>
+41	    </section>
+42	  );
+43	}
+44	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts with line numbers:
+1	import { SupabaseClient } from '@supabase/supabase-js';
+2	import { cache } from 'react';
+3
+4	export const getUser = cache(async (supabase: SupabaseClient) => {
+5	  const {
+6	    data: { user }
+7	  } = await supabase.auth.getUser();
+8	  return user;
+9	});
+10
+11	export const getSubscription = cache(async (supabase: SupabaseClient) => {
+12	  const { data: subscription, error } = await supabase
+13	    .from('subscriptions')
+14	    .select('*, prices(*, products(*))')
+15	    .in('status', ['trialing', 'active'])
+16	    .maybeSingle();
+17
+18	  return subscription;
+19	});
+20
+21	export const getProducts = cache(async (supabase: SupabaseClient) => {
+22	  const { data: products, error } = await supabase
+23	    .from('products')
+24	    .select('*, prices(*)')
+25	    .eq('active', true)
+26	    .eq('prices.active', true)
+27	    .order('metadata->index')
+28	    .order('unit_amount', { referencedTable: 'prices' });
+29
+30	  return products;
+31	});
+32
+33	export const getUserDetails = cache(async (supabase: SupabaseClient) => {
+34	  const { data: userDetails } = await supabase
+35	    .from('users')
+36	    .select('*')
+37	    .single();
+38	  return userDetails;
+39	});
+40	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Link from 'next/link';
+5	import { signInWithPassword } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import React, { useState } from 'react';
+9
+10	// Define prop type with allowEmail boolean
+11	interface PasswordSignInProps {
+12	  allowEmail: boolean;
+13	  redirectMethod: string;
+14	}
+15
+16	export default function PasswordSignIn({
+17	  allowEmail,
+18	  redirectMethod
+19	}: PasswordSignInProps) {
+20	  const router = redirectMethod === 'client' ? useRouter() : null;
+21	  const [isSubmitting, setIsSubmitting] = useState(false);
+22
+23	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+24	    setIsSubmitting(true); // Disable the button while the request is being handled
+25	    await handleRequest(e, signInWithPassword, router);
+26	    setIsSubmitting(false);
+27	  };
+28
+29	  return (
+30	    <div className="my-8">
+31	      <form
+32	        noValidate={true}
+33	        className="mb-4"
+34	        onSubmit={(e) => handleSubmit(e)}
+35	      >
+36	        <div className="grid gap-2">
+37	          <div className="grid gap-1">
+38	            <label htmlFor="email">Email</label>
+39	            <input
+40	              id="email"
+41	              placeholder="name@example.com"
+42	              type="email"
+43	              name="email"
+44	              autoCapitalize="none"
+45	              autoComplete="email"
+46	              autoCorrect="off"
+47	              className="w-full p-3 rounded-md bg-zinc-800"
+48	            />
+49	            <label htmlFor="password">Password</label>
+50	            <input
+51	              id="password"
+52	              placeholder="Password"
+53	              type="password"
+54	              name="password"
+55	              autoComplete="current-password"
+56	              className="w-full p-3 rounded-md bg-zinc-800"
+57	            />
+58	          </div>
+59	          <Button
+60	            variant="slim"
+61	            type="submit"
+62	            className="mt-1"
+63	            loading={isSubmitting}
+64	          >
+65	            Sign in
+66	          </Button>
+67	        </div>
+68	      </form>
+69	      <p>
+70	        <Link href="/signin/forgot_password" className="font-light text-sm">
+71	          Forgot your password?
+72	        </Link>
+73	      </p>
+74	      {allowEmail && (
+75	        <p>
+76	          <Link href="/signin/email_signin" className="font-light text-sm">
+77	            Sign in via magic link
+78	          </Link>
+79	        </p>
+80	      )}
+81	      <p>
+82	        <Link href="/signin/signup" className="font-light text-sm">
+83	          Don't have an account? Sign up
+84	        </Link>
+85	      </p>
+86	    </div>
+87	  );
+88	}
+89	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/signin
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/app/signin, excluding hidden items and node_modules:
+4.5K	/tmp/inputs/nextjs-subscription-payments/app/signin
+4.0K	/tmp/inputs/nextjs-subscription-payments/app/signin/[id]
+4.0K	/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+512	/tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx with line numbers:
+1	import Logo from '@/components/icons/Logo';
+2	import { createClient } from '@/utils/supabase/server';
+3	import { cookies } from 'next/headers';
+4	import { redirect } from 'next/navigation';
+5	import {
+6	  getAuthTypes,
+7	  getViewTypes,
+8	  getDefaultSignInView,
+9	  getRedirectMethod
+10	} from '@/utils/auth-helpers/settings';
+11	import Card from '@/components/ui/Card';
+12	import PasswordSignIn from '@/components/ui/AuthForms/PasswordSignIn';
+13	import EmailSignIn from '@/components/ui/AuthForms/EmailSignIn';
+14	import Separator from '@/components/ui/AuthForms/Separator';
+15	import OauthSignIn from '@/components/ui/AuthForms/OauthSignIn';
+16	import ForgotPassword from '@/components/ui/AuthForms/ForgotPassword';
+17	import UpdatePassword from '@/components/ui/AuthForms/UpdatePassword';
+18	import SignUp from '@/components/ui/AuthForms/Signup';
+19
+20	export default async function SignIn({
+21	  params,
+22	  searchParams
+23	}: {
+24	  params: { id: string };
+25	  searchParams: { disable_button: boolean };
+26	}) {
+27	  const { allowOauth, allowEmail, allowPassword } = getAuthTypes();
+28	  const viewTypes = getViewTypes();
+29	  const redirectMethod = getRedirectMethod();
+30
+31	  // Declare 'viewProp' and initialize with the default value
+32	  let viewProp: string;
+33
+34	  // Assign url id to 'viewProp' if it's a valid string and ViewTypes includes it
+35	  if (typeof params.id === 'string' && viewTypes.includes(params.id)) {
+36	    viewProp = params.id;
+37	  } else {
+38	    const preferredSignInView =
+39	      cookies().get('preferredSignInView')?.value || null;
+40	    viewProp = getDefaultSignInView(preferredSignInView);
+41	    return redirect(`/signin/${viewProp}`);
+42	  }
+43
+44	  // Check if the user is already logged in and redirect to the account page if so
+45	  const supabase = createClient();
+46
+47	  const {
+48	    data: { user }
+49	  } = await supabase.auth.getUser();
+50
+51	  if (user && viewProp !== 'update_password') {
+52	    return redirect('/');
+53	  } else if (!user && viewProp === 'update_password') {
+54	    return redirect('/signin');
+55	  }
+56
+57	  return (
+58	    <div className="flex justify-center height-screen-helper">
+59	      <div className="flex flex-col justify-between max-w-lg p-3 m-auto w-80 ">
+60	        <div className="flex justify-center pb-12 ">
+61	          <Logo width="64px" height="64px" />
+62	        </div>
+63	        <Card
+64	          title={
+65	            viewProp === 'forgot_password'
+66	              ? 'Reset Password'
+67	              : viewProp === 'update_password'
+68	                ? 'Update Password'
+69	                : viewProp === 'signup'
+70	                  ? 'Sign Up'
+71	                  : 'Sign In'
+72	          }
+73	        >
+74	          {viewProp === 'password_signin' && (
+75	            <PasswordSignIn
+76	              allowEmail={allowEmail}
+77	              redirectMethod={redirectMethod}
+78	            />
+79	          )}
+80	          {viewProp === 'email_signin' && (
+81	            <EmailSignIn
+82	              allowPassword={allowPassword}
+83	              redirectMethod={redirectMethod}
+84	              disableButton={searchParams.disable_button}
+85	            />
+86	          )}
+87	          {viewProp === 'forgot_password' && (
+88	            <ForgotPassword
+89	              allowEmail={allowEmail}
+90	              redirectMethod={redirectMethod}
+91	              disableButton={searchParams.disable_button}
+92	            />
+93	          )}
+94	          {viewProp === 'update_password' && (
+95	            <UpdatePassword redirectMethod={redirectMethod} />
+96	          )}
+97	          {viewProp === 'signup' && (
+98	            <SignUp allowEmail={allowEmail} redirectMethod={redirectMethod} />
+99	          )}
+100	          {viewProp !== 'update_password' &&
+101	            viewProp !== 'signup' &&
+102	            allowOauth && (
+103	              <>
+104	                <Separator text="Third-party sign-in" />
+105	                <OauthSignIn />
+106	              </>
+107	            )}
+108	        </Card>
+109	      </div>
+110	    </div>
+111	  );
+112	}
+113	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx with line numbers:
+1	import { ReactNode } from 'react';
+2
+3	interface Props {
+4	  title: string;
+5	  description?: string;
+6	  footer?: ReactNode;
+7	  children: ReactNode;
+8	}
+9
+10	export default function Card({ title, description, footer, children }: Props) {
+11	  return (
+12	    <div className="w-full max-w-3xl m-auto my-8 border rounded-md p border-zinc-700">
+13	      <div className="px-5 py-4">
+14	        <h3 className="mb-1 text-2xl font-medium">{title}</h3>
+15	        <p className="text-zinc-300">{description}</p>
+16	        {children}
+17	      </div>
+18	      {footer && (
+19	        <div className="p-4 border-t rounded-b-md border-zinc-700 bg-zinc-900 text-zinc-500">
+20	          {footer}
+21	        </div>
+22	      )}
+23	    </div>
+24	  );
+25	}
+26	
+
+
+bash
+command
+grep -rn "searchParams" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" | head -30
+output
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:17:  const searchParams = useSearchParams();
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:22:    const status = searchParams.get('status');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:23:    const status_description = searchParams.get('status_description');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:24:    const error = searchParams.get('error');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:25:    const error_description = searchParams.get('error_description');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:37:      const newSearchParams = new URLSearchParams(searchParams.toString());
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:48:  }, [searchParams]);
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:22:  searchParams
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:25:  searchParams: { disable_button: boolean };
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:84:              disableButton={searchParams.disable_button}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:91:              disableButton={searchParams.disable_button}
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts:10:  const code = requestUrl.searchParams.get('code');
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts:10:  const code = requestUrl.searchParams.get('code');
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx with line numbers:
+1	'use client';
+2
+3	import {
+4	  Toast,
+5	  ToastClose,
+6	  ToastDescription,
+7	  ToastProvider,
+8	  ToastTitle,
+9	  ToastViewport
+10	} from '@/components/ui/Toasts/toast';
+11	import { useToast } from '@/components/ui/Toasts/use-toast';
+12	import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+13	import { useEffect } from 'react';
+14
+15	export function Toaster() {
+16	  const { toast, toasts } = useToast();
+17	  const searchParams = useSearchParams();
+18	  const pathname = usePathname();
+19	  const router = useRouter();
+20
+21	  useEffect(() => {
+22	    const status = searchParams.get('status');
+23	    const status_description = searchParams.get('status_description');
+24	    const error = searchParams.get('error');
+25	    const error_description = searchParams.get('error_description');
+26	    if (error || status) {
+27	      toast({
+28	        title: error
+29	          ? error ?? 'Hmm... Something went wrong.'
+30	          : status ?? 'Alright!',
+31	        description: error ? error_description : status_description,
+32	        variant: error ? 'destructive' : undefined
+33	      });
+34	      // Clear any 'error', 'status', 'status_description', and 'error_description' search params
+35	      // so that the toast doesn't show up again on refresh, but leave any other search params
+36	      // intact.
+37	      const newSearchParams = new URLSearchParams(searchParams.toString());
+38	      const paramsToRemove = [
+39	        'error',
+40	        'status',
+41	        'status_description',
+42	        'error_description'
+43	      ];
+44	      paramsToRemove.forEach((param) => newSearchParams.delete(param));
+45	      const redirectPath = `${pathname}?${newSearchParams.toString()}`;
+46	      router.replace(redirectPath, { scroll: false });
+47	    }
+48	  }, [searchParams]);
+49
+50	  return (
+51	    <ToastProvider>
+52	      {toasts.map(function ({ id, title, description, action, ...props }) {
+53	        return (
+54	          <Toast key={id} {...props}>
+55	            <div className="grid gap-1">
+56	              {title && <ToastTitle>{title}</ToastTitle>}
+57	              {description && (
+58	                <ToastDescription>{description}</ToastDescription>
+59	              )}
+60	            </div>
+61	            {action}
+62	            <ToastClose />
+63	          </Toast>
+64	        );
+65	      })}
+66	      <ToastViewport />
+67	    </ToastProvider>
+68	  );
+69	}
+70	
+
+
+bash
+command
+grep -rn "encodeURIComponent\|decodeURIComponent\|escape\|sanitize\|xss\|html" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" -i | head -30
+output
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx:4:import React, { forwardRef, useRef, ButtonHTMLAttributes } from 'react';
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx:11:interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx:19:const Button = forwardRef<HTMLButtonElement, Props>((props, buttonRef) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx:18:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx:14:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx:1:import React, { InputHTMLAttributes, ChangeEvent } from 'react';
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx:6:interface Props extends Omit<InputHTMLAttributes<any>, 'onChange'> {
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx:15:  const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx:23:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx:38:            <label htmlFor="email">Email</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx:49:            <label htmlFor="password">Password</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/OauthSignIn.tsx:26:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx:21:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx:36:            <label htmlFor="email">Email</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx:47:            <label htmlFor="password">Password</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx:19:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx:34:            <label htmlFor="password">New Password</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx:43:            <label htmlFor="passwordConfirm">Confirm New Password</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/EmailSignIn.tsx:25:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/EmailSignIn.tsx:40:            <label htmlFor="email">Email</label>
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/ForgotPassword.tsx:25:  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/ForgotPassword.tsx:40:            <label htmlFor="email">Email</label>
+/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts:86:  let redirectPath = `${path}?${nameKey}=${encodeURIComponent(toastName)}`;
+/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts:89:    redirectPath += `&${descriptionKey}=${encodeURIComponent(toastDescription)}`;
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts:10:  e: React.FormEvent<HTMLFormElement>,
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts:29:export async function signInWithOAuth(e: React.FormEvent<HTMLFormElement>) {
+/tmp/inputs/nextjs-subscription-payments/app/layout.tsx:24:    <html lang="en">
+/tmp/inputs/nextjs-subscription-payments/app/layout.tsx:38:    </html>
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts with line numbers:
+1	'use client';
+2
+3	import { createClient } from '@/utils/supabase/client';
+4	import { type Provider } from '@supabase/supabase-js';
+5	import { getURL } from '@/utils/helpers';
+6	import { redirectToPath } from './server';
+7	import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+8
+9	export async function handleRequest(
+10	  e: React.FormEvent<HTMLFormElement>,
+11	  requestFunc: (formData: FormData) => Promise<string>,
+12	  router: AppRouterInstance | null = null
+13	): Promise<boolean | void> {
+14	  // Prevent default form submission refresh
+15	  e.preventDefault();
+16
+17	  const formData = new FormData(e.currentTarget);
+18	  const redirectUrl: string = await requestFunc(formData);
+19
+20	  if (router) {
+21	    // If client-side router is provided, use it to redirect
+22	    return router.push(redirectUrl);
+23	  } else {
+24	    // Otherwise, redirect server-side
+25	    return await redirectToPath(redirectUrl);
+26	  }
+27	}
+28
+29	export async function signInWithOAuth(e: React.FormEvent<HTMLFormElement>) {
+30	  // Prevent default form submission refresh
+31	  e.preventDefault();
+32	  const formData = new FormData(e.currentTarget);
+33	  const provider = String(formData.get('provider')).trim() as Provider;
+34
+35	  // Create client-side supabase client and call signInWithOAuth
+36	  const supabase = createClient();
+37	  const redirectURL = getURL('/auth/callback');
+38	  await supabase.auth.signInWithOAuth({
+39	    provider: provider,
+40	    options: {
+41	      redirectTo: redirectURL
+42	    }
+43	  });
+44	}
+45	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/api
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/app/api, excluding hidden items and node_modules:
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api/webhooks
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts with line numbers:
+1	import Stripe from 'stripe';
+2	import { stripe } from '@/utils/stripe/config';
+3	import {
+4	  upsertProductRecord,
+5	  upsertPriceRecord,
+6	  manageSubscriptionStatusChange,
+7	  deleteProductRecord,
+8	  deletePriceRecord
+9	} from '@/utils/supabase/admin';
+10
+11	const relevantEvents = new Set([
+12	  'product.created',
+13	  'product.updated',
+14	  'product.deleted',
+15	  'price.created',
+16	  'price.updated',
+17	  'price.deleted',
+18	  'checkout.session.completed',
+19	  'customer.subscription.created',
+20	  'customer.subscription.updated',
+21	  'customer.subscription.deleted'
+22	]);
+23
+24	export async function POST(req: Request) {
+25	  const body = await req.text();
+26	  const sig = req.headers.get('stripe-signature') as string;
+27	  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+28	  let event: Stripe.Event;
+29
+30	  try {
+31	    if (!sig || !webhookSecret)
+32	      return new Response('Webhook secret not found.', { status: 400 });
+33	    event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
+34	    console.log(`🔔  Webhook received: ${event.type}`);
+35	  } catch (err: any) {
+36	    console.log(`❌ Error message: ${err.message}`);
+37	    return new Response(`Webhook Error: ${err.message}`, { status: 400 });
+38	  }
+39
+40	  if (relevantEvents.has(event.type)) {
+41	    try {
+42	      switch (event.type) {
+43	        case 'product.created':
+44	        case 'product.updated':
+45	          await upsertProductRecord(event.data.object as Stripe.Product);
+46	          break;
+47	        case 'price.created':
+48	        case 'price.updated':
+49	          await upsertPriceRecord(event.data.object as Stripe.Price);
+50	          break;
+51	        case 'price.deleted':
+52	          await deletePriceRecord(event.data.object as Stripe.Price);
+53	          break;
+54	        case 'product.deleted':
+55	          await deleteProductRecord(event.data.object as Stripe.Product);
+56	          break;
+57	        case 'customer.subscription.created':
+58	        case 'customer.subscription.updated':
+59	        case 'customer.subscription.deleted':
+60	          const subscription = event.data.object as Stripe.Subscription;
+61	          await manageSubscriptionStatusChange(
+62	            subscription.id,
+63	            subscription.customer as string,
+64	            event.type === 'customer.subscription.created'
+65	          );
+66	          break;
+67	        case 'checkout.session.completed':
+68	          const checkoutSession = event.data.object as Stripe.Checkout.Session;
+69	          if (checkoutSession.mode === 'subscription') {
+70	            const subscriptionId = checkoutSession.subscription;
+71	            await manageSubscriptionStatusChange(
+72	              subscriptionId as string,
+73	              checkoutSession.customer as string,
+74	              true
+75	            );
+76	          }
+77	          break;
+78	        default:
+79	          throw new Error('Unhandled relevant event!');
+80	      }
+81	    } catch (error) {
+82	      console.log(error);
+83	      return new Response(
+84	        'Webhook handler failed. View your Next.js function logs.',
+85	        {
+86	          status: 400
+87	        }
+88	      );
+89	    }
+90	  } else {
+91	    return new Response(`Unsupported event type: ${event.type}`, {
+92	      status: 400
+93	    });
+94	  }
+95	  return new Response(JSON.stringify({ received: true }));
+96	}
+97	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/admin.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/supabase/admin.ts with line numbers:
+1	import { toDateTime } from '@/utils/helpers';
+2	import { stripe } from '@/utils/stripe/config';
+3	import { createClient } from '@supabase/supabase-js';
+4	import Stripe from 'stripe';
+5	import type { Database, Tables, TablesInsert } from 'types_db';
+6
+7	type Product = Tables<'products'>;
+8	type Price = Tables<'prices'>;
+9
+10	// Change to control trial period length
+11	const TRIAL_PERIOD_DAYS = 0;
+12
+13	// Note: supabaseAdmin uses the SERVICE_ROLE_KEY which you must only use in a secure server-side context
+14	// as it has admin privileges and overwrites RLS policies!
+15	const supabaseAdmin = createClient<Database>(
+16	  process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+17	  process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+18	);
+19
+20	const upsertProductRecord = async (product: Stripe.Product) => {
+21	  const productData: Product = {
+22	    id: product.id,
+23	    active: product.active,
+24	    name: product.name,
+25	    description: product.description ?? null,
+26	    image: product.images?.[0] ?? null,
+27	    metadata: product.metadata
+28	  };
+29
+30	  const { error: upsertError } = await supabaseAdmin
+31	    .from('products')
+32	    .upsert([productData]);
+33	  if (upsertError)
+34	    throw new Error(`Product insert/update failed: ${upsertError.message}`);
+35	  console.log(`Product inserted/updated: ${product.id}`);
+36	};
+37
+38	const upsertPriceRecord = async (
+39	  price: Stripe.Price,
+40	  retryCount = 0,
+41	  maxRetries = 3
+42	) => {
+43	  const priceData: Price = {
+44	    id: price.id,
+45	    product_id: typeof price.product === 'string' ? price.product : '',
+46	    active: price.active,
+47	    currency: price.currency,
+48	    type: price.type,
+49	    unit_amount: price.unit_amount ?? null,
+50	    interval: price.recurring?.interval ?? null,
+51	    interval_count: price.recurring?.interval_count ?? null,
+52	    trial_period_days: price.recurring?.trial_period_days ?? TRIAL_PERIOD_DAYS
+53	  };
+54
+55	  const { error: upsertError } = await supabaseAdmin
+56	    .from('prices')
+57	    .upsert([priceData]);
+58
+59	  if (upsertError?.message.includes('foreign key constraint')) {
+60	    if (retryCount < maxRetries) {
+61	      console.log(`Retry attempt ${retryCount + 1} for price ID: ${price.id}`);
+62	      await new Promise((resolve) => setTimeout(resolve, 2000));
+63	      await upsertPriceRecord(price, retryCount + 1, maxRetries);
+64	    } else {
+65	      throw new Error(
+66	        `Price insert/update failed after ${maxRetries} retries: ${upsertError.message}`
+67	      );
+68	    }
+69	  } else if (upsertError) {
+70	    throw new Error(`Price insert/update failed: ${upsertError.message}`);
+71	  } else {
+72	    console.log(`Price inserted/updated: ${price.id}`);
+73	  }
+74	};
+75
+76	const deleteProductRecord = async (product: Stripe.Product) => {
+77	  const { error: deletionError } = await supabaseAdmin
+78	    .from('products')
+79	    .delete()
+80	    .eq('id', product.id);
+81	  if (deletionError)
+82	    throw new Error(`Product deletion failed: ${deletionError.message}`);
+83	  console.log(`Product deleted: ${product.id}`);
+84	};
+85
+86	const deletePriceRecord = async (price: Stripe.Price) => {
+87	  const { error: deletionError } = await supabaseAdmin
+88	    .from('prices')
+89	    .delete()
+90	    .eq('id', price.id);
+91	  if (deletionError) throw new Error(`Price deletion failed: ${deletionError.message}`);
+92	  console.log(`Price deleted: ${price.id}`);
+93	};
+94
+95	const upsertCustomerToSupabase = async (uuid: string, customerId: string) => {
+96	  const { error: upsertError } = await supabaseAdmin
+97	    .from('customers')
+98	    .upsert([{ id: uuid, stripe_customer_id: customerId }]);
+99
+100	  if (upsertError)
+101	    throw new Error(`Supabase customer record creation failed: ${upsertError.message}`);
+102
+103	  return customerId;
+104	};
+105
+106	const createCustomerInStripe = async (uuid: string, email: string) => {
+107	  const customerData = { metadata: { supabaseUUID: uuid }, email: email };
+108	  const newCustomer = await stripe.customers.create(customerData);
+109	  if (!newCustomer) throw new Error('Stripe customer creation failed.');
+110
+111	  return newCustomer.id;
+112	};
+113
+114	const createOrRetrieveCustomer = async ({
+115	  email,
+116	  uuid
+117	}: {
+118	  email: string;
+119	  uuid: string;
+120	}) => {
+121	  // Check if the customer already exists in Supabase
+122	  const { data: existingSupabaseCustomer, error: queryError } =
+123	    await supabaseAdmin
+124	      .from('customers')
+125	      .select('*')
+126	      .eq('id', uuid)
+127	      .maybeSingle();
+128
+129	  if (queryError) {
+130	    throw new Error(`Supabase customer lookup failed: ${queryError.message}`);
+131	  }
+132
+133	  // Retrieve the Stripe customer ID using the Supabase customer ID, with email fallback
+134	  let stripeCustomerId: string | undefined;
+135	  if (existingSupabaseCustomer?.stripe_customer_id) {
+136	    const existingStripeCustomer = await stripe.customers.retrieve(
+137	      existingSupabaseCustomer.stripe_customer_id
+138	    );
+139	    stripeCustomerId = existingStripeCustomer.id;
+140	  } else {
+141	    // If Stripe ID is missing from Supabase, try to retrieve Stripe customer ID by email
+142	    const stripeCustomers = await stripe.customers.list({ email: email });
+143	    stripeCustomerId =
+144	      stripeCustomers.data.length > 0 ? stripeCustomers.data[0].id : undefined;
+145	  }
+146
+147	  // If still no stripeCustomerId, create a new customer in Stripe
+148	  const stripeIdToInsert = stripeCustomerId
+149	    ? stripeCustomerId
+150	    : await createCustomerInStripe(uuid, email);
+151	  if (!stripeIdToInsert) throw new Error('Stripe customer creation failed.');
+152
+153	  if (existingSupabaseCustomer && stripeCustomerId) {
+154	    // If Supabase has a record but doesn't match Stripe, update Supabase record
+155	    if (existingSupabaseCustomer.stripe_customer_id !== stripeCustomerId) {
+156	      const { error: updateError } = await supabaseAdmin
+157	        .from('customers')
+158	        .update({ stripe_customer_id: stripeCustomerId })
+159	        .eq('id', uuid);
+160
+161	      if (updateError)
+162	        throw new Error(
+163	          `Supabase customer record update failed: ${updateError.message}`
+164	        );
+165	      console.warn(
+166	        `Supabase customer record mismatched Stripe ID. Supabase record updated.`
+167	      );
+168	    }
+169	    // If Supabase has a record and matches Stripe, return Stripe customer ID
+170	    return stripeCustomerId;
+171	  } else {
+172	    console.warn(
+173	      `Supabase customer record was missing. A new record was created.`
+174	    );
+175
+176	    // If Supabase has no record, create a new record and return Stripe customer ID
+177	    const upsertedStripeCustomer = await upsertCustomerToSupabase(
+178	      uuid,
+179	      stripeIdToInsert
+180	    );
+181	    if (!upsertedStripeCustomer)
+182	      throw new Error('Supabase customer record creation failed.');
+183
+184	    return upsertedStripeCustomer;
+185	  }
+186	};
+187
+188	/**
+189	 * Copies the billing details from the payment method to the customer object.
+190	 */
+191	const copyBillingDetailsToCustomer = async (
+192	  uuid: string,
+193	  payment_method: Stripe.PaymentMethod
+194	) => {
+195	  //Todo: check this assertion
+196	  const customer = payment_method.customer as string;
+197	  const { name, phone, address } = payment_method.billing_details;
+198	  if (!name || !phone || !address) return;
+199	  //@ts-ignore
+200	  await stripe.customers.update(customer, { name, phone, address });
+201	  const { error: updateError } = await supabaseAdmin
+202	    .from('users')
+203	    .update({
+204	      billing_address: { ...address },
+205	      payment_method: { ...payment_method[payment_method.type] }
+206	    })
+207	    .eq('id', uuid);
+208	  if (updateError) throw new Error(`Customer update failed: ${updateError.message}`);
+209	};
+210
+211	const manageSubscriptionStatusChange = async (
+212	  subscriptionId: string,
+213	  customerId: string,
+214	  createAction = false
+215	) => {
+216	  // Get customer's UUID from mapping table.
+217	  const { data: customerData, error: noCustomerError } = await supabaseAdmin
+218	    .from('customers')
+219	    .select('id')
+220	    .eq('stripe_customer_id', customerId)
+221	    .single();
+222
+223	  if (noCustomerError)
+224	    throw new Error(`Customer lookup failed: ${noCustomerError.message}`);
+225
+226	  const { id: uuid } = customerData!;
+227
+228	  const subscription = await stripe.subscriptions.retrieve(subscriptionId, {
+229	    expand: ['default_payment_method']
+230	  });
+231	  // Upsert the latest status of the subscription object.
+232	  const subscriptionData: TablesInsert<'subscriptions'> = {
+233	    id: subscription.id,
+234	    user_id: uuid,
+235	    metadata: subscription.metadata,
+236	    status: subscription.status,
+237	    price_id: subscription.items.data[0].price.id,
+238	    //TODO check quantity on subscription
+239	    // @ts-ignore
+240	    quantity: subscription.quantity,
+241	    cancel_at_period_end: subscription.cancel_at_period_end,
+242	    cancel_at: subscription.cancel_at
+243	      ? toDateTime(subscription.cancel_at).toISOString()
+244	      : null,
+245	    canceled_at: subscription.canceled_at
+246	      ? toDateTime(subscription.canceled_at).toISOString()
+247	      : null,
+248	    current_period_start: toDateTime(
+249	      subscription.current_period_start
+250	    ).toISOString(),
+251	    current_period_end: toDateTime(
+252	      subscription.current_period_end
+253	    ).toISOString(),
+254	    created: toDateTime(subscription.created).toISOString(),
+255	    ended_at: subscription.ended_at
+256	      ? toDateTime(subscription.ended_at).toISOString()
+257	      : null,
+258	    trial_start: subscription.trial_start
+259	      ? toDateTime(subscription.trial_start).toISOString()
+260	      : null,
+261	    trial_end: subscription.trial_end
+262	      ? toDateTime(subscription.trial_end).toISOString()
+263	      : null
+264	  };
+265
+266	  const { error: upsertError } = await supabaseAdmin
+267	    .from('subscriptions')
+268	    .upsert([subscriptionData]);
+269	  if (upsertError)
+270	    throw new Error(`Subscription insert/update failed: ${upsertError.message}`);
+271	  console.log(
+272	    `Inserted/updated subscription [${subscription.id}] for user [${uuid}]`
+273	  );
+274
+275	  // For a new subscription copy the billing details to the customer object.
+276	  // NOTE: This is a costly operation and should happen at the very end.
+277	  if (createAction && subscription.default_payment_method && uuid)
+278	    //@ts-ignore
+279	    await copyBillingDetailsToCustomer(
+280	      uuid,
+281	      subscription.default_payment_method as Stripe.PaymentMethod
+282	    );
+283	};
+284
+285	export {
+286	  upsertProductRecord,
+287	  upsertPriceRecord,
+288	  deleteProductRecord,
+289	  deletePriceRecord,
+290	  createOrRetrieveCustomer,
+291	  manageSubscriptionStatusChange
+292	};
+293	
+
+Now I have a clear picture of how this codebase handles input sanitization. Let me summarize what I found:
+
+This codebase relies primarily on **React's built-in XSS protection** rather than implementing explicit custom sanitization routines. Here's how it works:
+
+**React's Automatic Escaping**: All user-provided data rendered in the components goes through JSX expressions (like `{product.name}`, `{product.description}`, `{userName}`, `{title}`, etc.). React automatically escapes any special HTML characters in these values before rendering them to the DOM. This prevents XSS attacks because malicious scripts embedded in user input get converted to harmless text. For example, if someone entered `<script>alert('xss')</script>` as their name, React would render it as literal text rather than executing it.
+
+**No dangerouslySetInnerHTML**: I checked and confirmed the codebase doesn't use `dangerouslySetInnerHTML` anywhere, which is the React escape hatch that would bypass automatic sanitization.
+
+**URL Parameter Handling**: When status and error messages are passed via URL query parameters (like in the toast notification system), they use `encodeURIComponent()` when building the URLs in `helpers.ts`. The toaster component then reads these from `searchParams` and renders them through JSX, which handles the display safely.
+
+**Server-Side Input Validation**: The auth-helpers do some basic validation before processing—for example, `isValidEmail()` in `server.ts` validates email format using a regex before passing it to Supabase. However, this is more for data integrity than XSS prevention.
+
+**Database Content**: Data fetched from Supabase (like product names, descriptions, and user details) is rendered through JSX expressions, so even if somehow malicious content got into the database, it would still be escaped on render.
+
+**Form Inputs**: Form inputs use `String(formData.get('field')).trim()` to ensure they're treated as strings and whitespace is removed, but no HTML sanitization is applied—the assumption is that React handles the output side.
+
+The approach is typical for modern React/Next.js applications: trust React's output encoding and focus validation efforts on data integrity rather than sanitization. This is generally considered secure as long as you avoid `dangerouslySetInnerHTML` and don't construct raw HTML strings. 
+
+
+———MODEL A RESPONES ended!!!!——————
+
+———MODEL B RESPONES IS BELOW!!!!——————
+3.here is model B’s response: 
+bash
+command
+find /tmp/inputs/nextjs-subscription-payments -type f \( -name "*.ts" -o -name "*.tsx" -o -name "*.js" -o -name "*.jsx" \) | head -50
+output
+/tmp/inputs/nextjs-subscription-payments/types_db.ts
+/tmp/inputs/nextjs-subscription-payments/middleware.ts
+/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+/tmp/inputs/nextjs-subscription-payments/components/icons/GitHub.tsx
+/tmp/inputs/nextjs-subscription-payments/components/icons/Logo.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/LogoCloud.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/LoadingDots.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/CustomerPortalForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/use-toast.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/OauthSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Separator.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/EmailSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/ForgotPassword.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Footer/Footer.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Footer/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navbar.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navlinks.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/index.ts
+/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+/tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/client.ts
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/config.ts
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/settings.ts
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/middleware.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/admin.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/client.ts
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/server.ts
+/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments, excluding hidden items and node_modules:
+2.3M	/tmp/inputs/nextjs-subscription-payments
+1.5K	/tmp/inputs/nextjs-subscription-payments/LICENSE
+16K	/tmp/inputs/nextjs-subscription-payments/README.md
+81K	/tmp/inputs/nextjs-subscription-payments/app
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/account
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api
+3.0K	/tmp/inputs/nextjs-subscription-payments/app/auth
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+66K	/tmp/inputs/nextjs-subscription-payments/app/opengraph-image.png
+1.0K	/tmp/inputs/nextjs-subscription-payments/app/page.tsx
+4.5K	/tmp/inputs/nextjs-subscription-payments/app/signin
+62K	/tmp/inputs/nextjs-subscription-payments/components
+512	/tmp/inputs/nextjs-subscription-payments/components.json
+2.5K	/tmp/inputs/nextjs-subscription-payments/components/icons
+60K	/tmp/inputs/nextjs-subscription-payments/components/ui
+2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures
+2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures/stripe-fixtures.json
+1.0K	/tmp/inputs/nextjs-subscription-payments/middleware.ts
+512	/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+2.5K	/tmp/inputs/nextjs-subscription-payments/package.json
+129K	/tmp/inputs/nextjs-subscription-payments/pnpm-lock.yaml
+512	/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+532K	/tmp/inputs/nextjs-subscription-payments/public
+136K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.png
+7.5K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.svg
+255K	/tmp/inputs/nextjs-subscription-payments/public/demo.png
+1.0K	/tmp/inputs/nextjs-subscription-payments/public/favicon.ico
+3.0K	/tmp/inputs/nextjs-subscription-payments/public/github.svg
+4.0K	/tmp/inputs/nextjs-subscription-payments/public/nextjs.svg
+2.0K	/tmp/inputs/nextjs-subscription-payments/public/stripe.svg
+5.5K	/tmp/inputs/nextjs-subscription-payments/public/supabase.svg
+115K	/tmp/inputs/nextjs-subscription-payments/public/vercel-deploy.png
+2.5K	/tmp/inputs/nextjs-subscription-payments/public/vercel.svg
+7.5K	/tmp/inputs/nextjs-subscription-payments/schema.sql
+1.0K	/tmp/inputs/nextjs-subscription-payments/styles
+1.0K	/tmp/inputs/nextjs-subscription-payments/styles/main.css
+14K	/tmp/inputs/nextjs-subscription-payments/supabase
+6.0K	/tmp/inputs/nextjs-subscription-payments/supabase/config.toml
+7.5K	/tmp/inputs/nextjs-subscription-payments/supabase/migrations
+0	/tmp/inputs/nextjs-subscription-payments/supabase/seed.sql
+1.0K	/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+1.0K	/tmp/inputs/nextjs-subscription-payments/tsconfig.json
+20K	/tmp/inputs/nextjs-subscription-payments/types_db.ts
+38K	/tmp/inputs/nextjs-subscription-payments/utils
+12K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+512	/tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+3.5K	/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+6.0K	/tmp/inputs/nextjs-subscription-payments/utils/stripe
+17K	/tmp/inputs/nextjs-subscription-payments/utils/supabase
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import LogoCloud from '@/components/ui/LogoCloud';
+5	import type { Tables } from '@/types_db';
+6	import { getStripe } from '@/utils/stripe/client';
+7	import { checkoutWithStripe } from '@/utils/stripe/server';
+8	import { getErrorRedirect } from '@/utils/helpers';
+9	import { User } from '@supabase/supabase-js';
+10	import cn from 'classnames';
+11	import { useRouter, usePathname } from 'next/navigation';
+12	import { useState } from 'react';
+13
+14	type Subscription = Tables<'subscriptions'>;
+15	type Product = Tables<'products'>;
+16	type Price = Tables<'prices'>;
+17	interface ProductWithPrices extends Product {
+18	  prices: Price[];
+19	}
+20	interface PriceWithProduct extends Price {
+21	  products: Product | null;
+22	}
+23	interface SubscriptionWithProduct extends Subscription {
+24	  prices: PriceWithProduct | null;
+25	}
+26
+27	interface Props {
+28	  user: User | null | undefined;
+29	  products: ProductWithPrices[];
+30	  subscription: SubscriptionWithProduct | null;
+31	}
+32
+33	type BillingInterval = 'lifetime' | 'year' | 'month';
+34
+35	export default function Pricing({ user, products, subscription }: Props) {
+36	  const intervals = Array.from(
+37	    new Set(
+38	      products.flatMap((product) =>
+39	        product?.prices?.map((price) => price?.interval)
+40	      )
+41	    )
+42	  );
+43	  const router = useRouter();
+44	  const [billingInterval, setBillingInterval] =
+45	    useState<BillingInterval>('month');
+46	  const [priceIdLoading, setPriceIdLoading] = useState<string>();
+47	  const currentPath = usePathname();
+48
+49	  const handleStripeCheckout = async (price: Price) => {
+50	    setPriceIdLoading(price.id);
+51
+52	    if (!user) {
+53	      setPriceIdLoading(undefined);
+54	      return router.push('/signin/signup');
+55	    }
+56
+57	    const { errorRedirect, sessionId } = await checkoutWithStripe(
+58	      price,
+59	      currentPath
+60	    );
+61
+62	    if (errorRedirect) {
+63	      setPriceIdLoading(undefined);
+64	      return router.push(errorRedirect);
+65	    }
+66
+67	    if (!sessionId) {
+68	      setPriceIdLoading(undefined);
+69	      return router.push(
+70	        getErrorRedirect(
+71	          currentPath,
+72	          'An unknown error occurred.',
+73	          'Please try again later or contact a system administrator.'
+74	        )
+75	      );
+76	    }
+77
+78	    const stripe = await getStripe();
+79	    stripe?.redirectToCheckout({ sessionId });
+80
+81	    setPriceIdLoading(undefined);
+82	  };
+83
+84	  if (!products.length) {
+85	    return (
+86	      <section className="bg-black">
+87	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+88	          <div className="sm:flex sm:flex-col sm:align-center"></div>
+89	          <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+90	            No subscription pricing plans found. Create them in your{' '}
+91	            <a
+92	              className="text-pink-500 underline"
+93	              href="https://dashboard.stripe.com/products"
+94	              rel="noopener noreferrer"
+95	              target="_blank"
+96	            >
+97	              Stripe Dashboard
+98	            </a>
+99	            .
+100	          </p>
+101	        </div>
+102	        <LogoCloud />
+103	      </section>
+104	    );
+105	  } else {
+106	    return (
+107	      <section className="bg-black">
+108	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+109	          <div className="sm:flex sm:flex-col sm:align-center">
+110	            <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+111	              Pricing Plans
+112	            </h1>
+113	            <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+114	              Start building for free, then add a site plan to go live. Account
+115	              plans unlock additional features.
+116	            </p>
+117	            <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
+118	              {intervals.includes('month') && (
+119	                <button
+120	                  onClick={() => setBillingInterval('month')}
+121	                  type="button"
+122	                  className={`${
+123	                    billingInterval === 'month'
+124	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+125	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+126	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+127	                >
+128	                  Monthly billing
+129	                </button>
+130	              )}
+131	              {intervals.includes('year') && (
+132	                <button
+133	                  onClick={() => setBillingInterval('year')}
+134	                  type="button"
+135	                  className={`${
+136	                    billingInterval === 'year'
+137	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+138	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+139	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+140	                >
+141	                  Yearly billing
+142	                </button>
+143	              )}
+144	            </div>
+145	          </div>
+146	          <div className="mt-12 space-y-0 sm:mt-16 flex flex-wrap justify-center gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0">
+147	            {products.map((product) => {
+148	              const price = product?.prices?.find(
+149	                (price) => price.interval === billingInterval
+150	              );
+151	              if (!price) return null;
+152	              const priceString = new Intl.NumberFormat('en-US', {
+153	                style: 'currency',
+154	                currency: price.currency!,
+155	                minimumFractionDigits: 0
+156	              }).format((price?.unit_amount || 0) / 100);
+157	              return (
+158	                <div
+159	                  key={product.id}
+160	                  className={cn(
+161	                    'flex flex-col rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
+162	                    {
+163	                      'border border-pink-500': subscription
+164	                        ? product.name === subscription?.prices?.products?.name
+165	                        : product.name === 'Freelancer'
+166	                    },
+167	                    'flex-1', // This makes the flex item grow to fill the space
+168	                    'basis-1/3', // Assuming you want each card to take up roughly a third of the container's width
+169	                    'max-w-xs' // Sets a maximum width to the cards to prevent them from getting too large
+170	                  )}
+171	                >
+172	                  <div className="p-6">
+173	                    <h2 className="text-2xl font-semibold leading-6 text-white">
+174	                      {product.name}
+175	                    </h2>
+176	                    <p className="mt-4 text-zinc-300">{product.description}</p>
+177	                    <p className="mt-8">
+178	                      <span className="text-5xl font-extrabold white">
+179	                        {priceString}
+180	                      </span>
+181	                      <span className="text-base font-medium text-zinc-100">
+182	                        /{billingInterval}
+183	                      </span>
+184	                    </p>
+185	                    <Button
+186	                      variant="slim"
+187	                      type="button"
+188	                      loading={priceIdLoading === price.id}
+189	                      onClick={() => handleStripeCheckout(price)}
+190	                      className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"
+191	                    >
+192	                      {subscription ? 'Manage' : 'Subscribe'}
+193	                    </Button>
+194	                  </div>
+195	                </div>
+196	              );
+197	            })}
+198	          </div>
+199	          <LogoCloud />
+200	        </div>
+201	      </section>
+202	    );
+203	  }
+204	}
+205	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Card from '@/components/ui/Card';
+5	import { updateName } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import { useState } from 'react';
+9
+10	export default function NameForm({ userName }: { userName: string }) {
+11	  const router = useRouter();
+12	  const [isSubmitting, setIsSubmitting] = useState(false);
+13
+14	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+15	    setIsSubmitting(true);
+16	    // Check if the new name is the same as the old name
+17	    if (e.currentTarget.fullName.value === userName) {
+18	      e.preventDefault();
+19	      setIsSubmitting(false);
+20	      return;
+21	    }
+22	    handleRequest(e, updateName, router);
+23	    setIsSubmitting(false);
+24	  };
+25
+26	  return (
+27	    <Card
+28	      title="Your Name"
+29	      description="Please enter your full name, or a display name you are comfortable with."
+30	      footer={
+31	        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+32	          <p className="pb-4 sm:pb-0">64 characters maximum</p>
+33	          <Button
+34	            variant="slim"
+35	            type="submit"
+36	            form="nameForm"
+37	            loading={isSubmitting}
+38	          >
+39	            Update Name
+40	          </Button>
+41	        </div>
+42	      }
+43	    >
+44	      <div className="mt-8 mb-4 text-xl font-semibold">
+45	        <form id="nameForm" onSubmit={(e) => handleSubmit(e)}>
+46	          <input
+47	            type="text"
+48	            name="fullName"
+49	            className="w-1/2 p-3 rounded-md bg-zinc-800"
+50	            defaultValue={userName}
+51	            placeholder="Your name"
+52	            maxLength={64}
+53	          />
+54	        </form>
+55	      </div>
+56	    </Card>
+57	  );
+58	}
+59	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts with line numbers:
+1	'use server';
+2
+3	import { createClient } from '@/utils/supabase/server';
+4	import { cookies } from 'next/headers';
+5	import { redirect } from 'next/navigation';
+6	import { getURL, getErrorRedirect, getStatusRedirect } from 'utils/helpers';
+7	import { getAuthTypes } from 'utils/auth-helpers/settings';
+8
+9	function isValidEmail(email: string) {
+10	  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+11	  return regex.test(email);
+12	}
+13
+14	export async function redirectToPath(path: string) {
+15	  return redirect(path);
+16	}
+17
+18	export async function SignOut(formData: FormData) {
+19	  const pathName = String(formData.get('pathName')).trim();
+20
+21	  const supabase = createClient();
+22	  const { error } = await supabase.auth.signOut();
+23
+24	  if (error) {
+25	    return getErrorRedirect(
+26	      pathName,
+27	      'Hmm... Something went wrong.',
+28	      'You could not be signed out.'
+29	    );
+30	  }
+31
+32	  return '/signin';
+33	}
+34
+35	export async function signInWithEmail(formData: FormData) {
+36	  const cookieStore = cookies();
+37	  const callbackURL = getURL('/auth/callback');
+38
+39	  const email = String(formData.get('email')).trim();
+40	  let redirectPath: string;
+41
+42	  if (!isValidEmail(email)) {
+43	    redirectPath = getErrorRedirect(
+44	      '/signin/email_signin',
+45	      'Invalid email address.',
+46	      'Please try again.'
+47	    );
+48	  }
+49
+50	  const supabase = createClient();
+51	  let options = {
+52	    emailRedirectTo: callbackURL,
+53	    shouldCreateUser: true
+54	  };
+55
+56	  // If allowPassword is false, do not create a new user
+57	  const { allowPassword } = getAuthTypes();
+58	  if (allowPassword) options.shouldCreateUser = false;
+59	  const { data, error } = await supabase.auth.signInWithOtp({
+60	    email,
+61	    options: options
+62	  });
+63
+64	  if (error) {
+65	    redirectPath = getErrorRedirect(
+66	      '/signin/email_signin',
+67	      'You could not be signed in.',
+68	      error.message
+69	    );
+70	  } else if (data) {
+71	    cookieStore.set('preferredSignInView', 'email_signin', { path: '/' });
+72	    redirectPath = getStatusRedirect(
+73	      '/signin/email_signin',
+74	      'Success!',
+75	      'Please check your email for a magic link. You may now close this tab.',
+76	      true
+77	    );
+78	  } else {
+79	    redirectPath = getErrorRedirect(
+80	      '/signin/email_signin',
+81	      'Hmm... Something went wrong.',
+82	      'You could not be signed in.'
+83	    );
+84	  }
+85
+86	  return redirectPath;
+87	}
+88
+89	export async function requestPasswordUpdate(formData: FormData) {
+90	  const callbackURL = getURL('/auth/reset_password');
+91
+92	  // Get form data
+93	  const email = String(formData.get('email')).trim();
+94	  let redirectPath: string;
+95
+96	  if (!isValidEmail(email)) {
+97	    redirectPath = getErrorRedirect(
+98	      '/signin/forgot_password',
+99	      'Invalid email address.',
+100	      'Please try again.'
+101	    );
+102	  }
+103
+104	  const supabase = createClient();
+105
+106	  const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+107	    redirectTo: callbackURL
+108	  });
+109
+110	  if (error) {
+111	    redirectPath = getErrorRedirect(
+112	      '/signin/forgot_password',
+113	      error.message,
+114	      'Please try again.'
+115	    );
+116	  } else if (data) {
+117	    redirectPath = getStatusRedirect(
+118	      '/signin/forgot_password',
+119	      'Success!',
+120	      'Please check your email for a password reset link. You may now close this tab.',
+121	      true
+122	    );
+123	  } else {
+124	    redirectPath = getErrorRedirect(
+125	      '/signin/forgot_password',
+126	      'Hmm... Something went wrong.',
+127	      'Password reset email could not be sent.'
+128	    );
+129	  }
+130
+131	  return redirectPath;
+132	}
+133
+134	export async function signInWithPassword(formData: FormData) {
+135	  const cookieStore = cookies();
+136	  const email = String(formData.get('email')).trim();
+137	  const password = String(formData.get('password')).trim();
+138	  let redirectPath: string;
+139
+140	  const supabase = createClient();
+141	  const { error, data } = await supabase.auth.signInWithPassword({
+142	    email,
+143	    password
+144	  });
+145
+146	  if (error) {
+147	    redirectPath = getErrorRedirect(
+148	      '/signin/password_signin',
+149	      'Sign in failed.',
+150	      error.message
+151	    );
+152	  } else if (data.user) {
+153	    cookieStore.set('preferredSignInView', 'password_signin', { path: '/' });
+154	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+155	  } else {
+156	    redirectPath = getErrorRedirect(
+157	      '/signin/password_signin',
+158	      'Hmm... Something went wrong.',
+159	      'You could not be signed in.'
+160	    );
+161	  }
+162
+163	  return redirectPath;
+164	}
+165
+166	export async function signUp(formData: FormData) {
+167	  const callbackURL = getURL('/auth/callback');
+168
+169	  const email = String(formData.get('email')).trim();
+170	  const password = String(formData.get('password')).trim();
+171	  let redirectPath: string;
+172
+173	  if (!isValidEmail(email)) {
+174	    redirectPath = getErrorRedirect(
+175	      '/signin/signup',
+176	      'Invalid email address.',
+177	      'Please try again.'
+178	    );
+179	  }
+180
+181	  const supabase = createClient();
+182	  const { error, data } = await supabase.auth.signUp({
+183	    email,
+184	    password,
+185	    options: {
+186	      emailRedirectTo: callbackURL
+187	    }
+188	  });
+189
+190	  if (error) {
+191	    redirectPath = getErrorRedirect(
+192	      '/signin/signup',
+193	      'Sign up failed.',
+194	      error.message
+195	    );
+196	  } else if (data.session) {
+197	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+198	  } else if (
+199	    data.user &&
+200	    data.user.identities &&
+201	    data.user.identities.length == 0
+202	  ) {
+203	    redirectPath = getErrorRedirect(
+204	      '/signin/signup',
+205	      'Sign up failed.',
+206	      'There is already an account associated with this email address. Try resetting your password.'
+207	    );
+208	  } else if (data.user) {
+209	    redirectPath = getStatusRedirect(
+210	      '/',
+211	      'Success!',
+212	      'Please check your email for a confirmation link. You may now close this tab.'
+213	    );
+214	  } else {
+215	    redirectPath = getErrorRedirect(
+216	      '/signin/signup',
+217	      'Hmm... Something went wrong.',
+218	      'You could not be signed up.'
+219	    );
+220	  }
+221
+222	  return redirectPath;
+223	}
+224
+225	export async function updatePassword(formData: FormData) {
+226	  const password = String(formData.get('password')).trim();
+227	  const passwordConfirm = String(formData.get('passwordConfirm')).trim();
+228	  let redirectPath: string;
+229
+230	  // Check that the password and confirmation match
+231	  if (password !== passwordConfirm) {
+232	    redirectPath = getErrorRedirect(
+233	      '/signin/update_password',
+234	      'Your password could not be updated.',
+235	      'Passwords do not match.'
+236	    );
+237	  }
+238
+239	  const supabase = createClient();
+240	  const { error, data } = await supabase.auth.updateUser({
+241	    password
+242	  });
+243
+244	  if (error) {
+245	    redirectPath = getErrorRedirect(
+246	      '/signin/update_password',
+247	      'Your password could not be updated.',
+248	      error.message
+249	    );
+250	  } else if (data.user) {
+251	    redirectPath = getStatusRedirect(
+252	      '/',
+253	      'Success!',
+254	      'Your password has been updated.'
+255	    );
+256	  } else {
+257	    redirectPath = getErrorRedirect(
+258	      '/signin/update_password',
+259	      'Hmm... Something went wrong.',
+260	      'Your password could not be updated.'
+261	    );
+262	  }
+263
+264	  return redirectPath;
+265	}
+266
+267	export async function updateEmail(formData: FormData) {
+268	  // Get form data
+269	  const newEmail = String(formData.get('newEmail')).trim();
+270
+271	  // Check that the email is valid
+272	  if (!isValidEmail(newEmail)) {
+273	    return getErrorRedirect(
+274	      '/account',
+275	      'Your email could not be updated.',
+276	      'Invalid email address.'
+277	    );
+278	  }
+279
+280	  const supabase = createClient();
+281
+282	  const callbackUrl = getURL(
+283	    getStatusRedirect('/account', 'Success!', `Your email has been updated.`)
+284	  );
+285
+286	  const { error } = await supabase.auth.updateUser(
+287	    { email: newEmail },
+288	    {
+289	      emailRedirectTo: callbackUrl
+290	    }
+291	  );
+292
+293	  if (error) {
+294	    return getErrorRedirect(
+295	      '/account',
+296	      'Your email could not be updated.',
+297	      error.message
+298	    );
+299	  } else {
+300	    return getStatusRedirect(
+301	      '/account',
+302	      'Confirmation emails sent.',
+303	      `You will need to confirm the update by clicking the links sent to both the old and new email addresses.`
+304	    );
+305	  }
+306	}
+307
+308	export async function updateName(formData: FormData) {
+309	  // Get form data
+310	  const fullName = String(formData.get('fullName')).trim();
+311
+312	  const supabase = createClient();
+313	  const { error, data } = await supabase.auth.updateUser({
+314	    data: { full_name: fullName }
+315	  });
+316
+317	  if (error) {
+318	    return getErrorRedirect(
+319	      '/account',
+320	      'Your name could not be updated.',
+321	      error.message
+322	    );
+323	  } else if (data.user) {
+324	    return getStatusRedirect(
+325	      '/account',
+326	      'Success!',
+327	      'Your name has been updated.'
+328	    );
+329	  } else {
+330	    return getErrorRedirect(
+331	      '/account',
+332	      'Hmm... Something went wrong.',
+333	      'Your name could not be updated.'
+334	    );
+335	  }
+336	}
+337	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/helpers.ts with line numbers:
+1	import type { Tables } from '@/types_db';
+2
+3	type Price = Tables<'prices'>;
+4
+5	export const getURL = (path: string = '') => {
+6	  // Check if NEXT_PUBLIC_SITE_URL is set and non-empty. Set this to your site URL in production env.
+7	  let url =
+8	    process?.env?.NEXT_PUBLIC_SITE_URL &&
+9	    process.env.NEXT_PUBLIC_SITE_URL.trim() !== ''
+10	      ? process.env.NEXT_PUBLIC_SITE_URL
+11	      : // If not set, check for NEXT_PUBLIC_VERCEL_URL, which is automatically set by Vercel.
+12	        process?.env?.NEXT_PUBLIC_VERCEL_URL &&
+13	          process.env.NEXT_PUBLIC_VERCEL_URL.trim() !== ''
+14	        ? process.env.NEXT_PUBLIC_VERCEL_URL
+15	        : // If neither is set, default to localhost for local development.
+16	          'http://localhost:3000/';
+17
+18	  // Trim the URL and remove trailing slash if exists.
+19	  url = url.replace(/\/+$/, '');
+20	  // Make sure to include `https://` when not localhost.
+21	  url = url.includes('http') ? url : `https://${url}`;
+22	  // Ensure path starts without a slash to avoid double slashes in the final URL.
+23	  path = path.replace(/^\/+/, '');
+24
+25	  // Concatenate the URL and the path.
+26	  return path ? `${url}/${path}` : url;
+27	};
+28
+29	export const postData = async ({
+30	  url,
+31	  data
+32	}: {
+33	  url: string;
+34	  data?: { price: Price };
+35	}) => {
+36	  const res = await fetch(url, {
+37	    method: 'POST',
+38	    headers: new Headers({ 'Content-Type': 'application/json' }),
+39	    credentials: 'same-origin',
+40	    body: JSON.stringify(data)
+41	  });
+42
+43	  return res.json();
+44	};
+45
+46	export const toDateTime = (secs: number) => {
+47	  var t = new Date(+0); // Unix epoch start.
+48	  t.setSeconds(secs);
+49	  return t;
+50	};
+51
+52	export const calculateTrialEndUnixTimestamp = (
+53	  trialPeriodDays: number | null | undefined
+54	) => {
+55	  // Check if trialPeriodDays is null, undefined, or less than 2 days
+56	  if (
+57	    trialPeriodDays === null ||
+58	    trialPeriodDays === undefined ||
+59	    trialPeriodDays < 2
+60	  ) {
+61	    return undefined;
+62	  }
+63
+64	  const currentDate = new Date(); // Current date and time
+65	  const trialEnd = new Date(
+66	    currentDate.getTime() + (trialPeriodDays + 1) * 24 * 60 * 60 * 1000
+67	  ); // Add trial days
+68	  return Math.floor(trialEnd.getTime() / 1000); // Convert to Unix timestamp in seconds
+69	};
+70
+71	const toastKeyMap: { [key: string]: string[] } = {
+72	  status: ['status', 'status_description'],
+73	  error: ['error', 'error_description']
+74	};
+75
+76	const getToastRedirect = (
+77	  path: string,
+78	  toastType: string,
+79	  toastName: string,
+80	  toastDescription: string = '',
+81	  disableButton: boolean = false,
+82	  arbitraryParams: string = ''
+83	): string => {
+84	  const [nameKey, descriptionKey] = toastKeyMap[toastType];
+85
+86	  let redirectPath = `${path}?${nameKey}=${encodeURIComponent(toastName)}`;
+87
+88	  if (toastDescription) {
+89	    redirectPath += `&${descriptionKey}=${encodeURIComponent(toastDescription)}`;
+90	  }
+91
+92	  if (disableButton) {
+93	    redirectPath += `&disable_button=true`;
+94	  }
+95
+96	  if (arbitraryParams) {
+97	    redirectPath += `&${arbitraryParams}`;
+98	  }
+99
+100	  return redirectPath;
+101	};
+102
+103	export const getStatusRedirect = (
+104	  path: string,
+105	  statusName: string,
+106	  statusDescription: string = '',
+107	  disableButton: boolean = false,
+108	  arbitraryParams: string = ''
+109	) =>
+110	  getToastRedirect(
+111	    path,
+112	    'status',
+113	    statusName,
+114	    statusDescription,
+115	    disableButton,
+116	    arbitraryParams
+117	  );
+118
+119	export const getErrorRedirect = (
+120	  path: string,
+121	  errorName: string,
+122	  errorDescription: string = '',
+123	  disableButton: boolean = false,
+124	  arbitraryParams: string = ''
+125	) =>
+126	  getToastRedirect(
+127	    path,
+128	    'error',
+129	    errorName,
+130	    errorDescription,
+131	    disableButton,
+132	    arbitraryParams
+133	  );
+134	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx with line numbers:
+1	import * as React from 'react';
+2	import * as ToastPrimitives from '@radix-ui/react-toast';
+3	import { cva, type VariantProps } from 'class-variance-authority';
+4	import { X } from 'lucide-react';
+5
+6	import { cn } from '@/utils/cn';
+7
+8	const ToastProvider = ToastPrimitives.Provider;
+9
+10	const ToastViewport = React.forwardRef<
+11	  React.ElementRef<typeof ToastPrimitives.Viewport>,
+12	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Viewport>
+13	>(({ className, ...props }, ref) => (
+14	  <ToastPrimitives.Viewport
+15	    ref={ref}
+16	    className={cn(
+17	      'fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]',
+18	      className
+19	    )}
+20	    {...props}
+21	  />
+22	));
+23	ToastViewport.displayName = ToastPrimitives.Viewport.displayName;
+24
+25	const toastVariants = cva(
+26	  'group pointer-events-auto relative flex w-full items-center justify-between space-x-4 overflow-hidden rounded-md border border-zinc-200 p-6 pr-8 shadow-lg transition-all data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=move]:transition-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-top-full data-[state=open]:sm:slide-in-from-bottom-full dark:border-zinc-800',
+27	  {
+28	    variants: {
+29	      variant: {
+30	        default:
+31	          'border bg-white text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50',
+32	        destructive:
+33	          'destructive group border-red-500 bg-red-500 text-zinc-50 dark:border-red-900 dark:bg-red-900 dark:text-zinc-50'
+34	      }
+35	    },
+36	    defaultVariants: {
+37	      variant: 'default'
+38	    }
+39	  }
+40	);
+41
+42	const Toast = React.forwardRef<
+43	  React.ElementRef<typeof ToastPrimitives.Root>,
+44	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Root> &
+45	    VariantProps<typeof toastVariants>
+46	>(({ className, variant, ...props }, ref) => {
+47	  return (
+48	    <ToastPrimitives.Root
+49	      ref={ref}
+50	      className={cn(toastVariants({ variant }), className)}
+51	      {...props}
+52	    />
+53	  );
+54	});
+55	Toast.displayName = ToastPrimitives.Root.displayName;
+56
+57	const ToastAction = React.forwardRef<
+58	  React.ElementRef<typeof ToastPrimitives.Action>,
+59	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Action>
+60	>(({ className, ...props }, ref) => (
+61	  <ToastPrimitives.Action
+62	    ref={ref}
+63	    className={cn(
+64	      'inline-flex h-8 shrink-0 items-center justify-center rounded-md border border-zinc-200 bg-transparent px-3 text-sm font-medium ring-offset-white transition-colors hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-950 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group-[.destructive]:border-zinc-100/40 group-[.destructive]:hover:border-red-500/30 group-[.destructive]:hover:bg-red-500 group-[.destructive]:hover:text-zinc-50 group-[.destructive]:focus:ring-red-500 dark:border-zinc-800 dark:ring-offset-zinc-950 dark:hover:bg-zinc-800 dark:focus:ring-zinc-300 dark:group-[.destructive]:border-zinc-800/40 dark:group-[.destructive]:hover:border-red-900/30 dark:group-[.destructive]:hover:bg-red-900 dark:group-[.destructive]:hover:text-zinc-50 dark:group-[.destructive]:focus:ring-red-900',
+65	      className
+66	    )}
+67	    {...props}
+68	  />
+69	));
+70	ToastAction.displayName = ToastPrimitives.Action.displayName;
+71
+72	const ToastClose = React.forwardRef<
+73	  React.ElementRef<typeof ToastPrimitives.Close>,
+74	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Close>
+75	>(({ className, ...props }, ref) => (
+76	  <ToastPrimitives.Close
+77	    ref={ref}
+78	    className={cn(
+79	      'absolute right-2 top-2 rounded-md p-1 text-zinc-950/50 opacity-0 transition-opacity hover:text-zinc-950 focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600 dark:text-zinc-50/50 dark:hover:text-zinc-50',
+80	      className
+81	    )}
+82	    toast-close=""
+83	    {...props}
+84	  >
+85	    <X className="h-4 w-4" />
+86	  </ToastPrimitives.Close>
+87	));
+88	ToastClose.displayName = ToastPrimitives.Close.displayName;
+89
+90	const ToastTitle = React.forwardRef<
+91	  React.ElementRef<typeof ToastPrimitives.Title>,
+92	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Title>
+93	>(({ className, ...props }, ref) => (
+94	  <ToastPrimitives.Title
+95	    ref={ref}
+96	    className={cn('text-sm font-semibold', className)}
+97	    {...props}
+98	  />
+99	));
+100	ToastTitle.displayName = ToastPrimitives.Title.displayName;
+101
+102	const ToastDescription = React.forwardRef<
+103	  React.ElementRef<typeof ToastPrimitives.Description>,
+104	  React.ComponentPropsWithoutRef<typeof ToastPrimitives.Description>
+105	>(({ className, ...props }, ref) => (
+106	  <ToastPrimitives.Description
+107	    ref={ref}
+108	    className={cn('text-sm opacity-90', className)}
+109	    {...props}
+110	  />
+111	));
+112	ToastDescription.displayName = ToastPrimitives.Description.displayName;
+113
+114	type ToastProps = React.ComponentPropsWithoutRef<typeof Toast>;
+115
+116	type ToastActionElement = React.ReactElement<typeof ToastAction>;
+117
+118	export {
+119	  type ToastProps,
+120	  type ToastActionElement,
+121	  ToastProvider,
+122	  ToastViewport,
+123	  Toast,
+124	  ToastTitle,
+125	  ToastDescription,
+126	  ToastClose,
+127	  ToastAction
+128	};
+129	
+
+
+bash
+command
+grep -r "dangerouslySetInnerHTML" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" --include="*.jsx" --include="*.js"
+system
+Tool ran without output or errors
+
+
+bash
+command
+grep -r "innerHTML" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" --include="*.jsx" --include="*.js"
+system
+Tool ran without output or errors
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/signin
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/app/signin, excluding hidden items and node_modules:
+4.5K	/tmp/inputs/nextjs-subscription-payments/app/signin
+4.0K	/tmp/inputs/nextjs-subscription-payments/app/signin/[id]
+4.0K	/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+512	/tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx with line numbers:
+1	import Logo from '@/components/icons/Logo';
+2	import { createClient } from '@/utils/supabase/server';
+3	import { cookies } from 'next/headers';
+4	import { redirect } from 'next/navigation';
+5	import {
+6	  getAuthTypes,
+7	  getViewTypes,
+8	  getDefaultSignInView,
+9	  getRedirectMethod
+10	} from '@/utils/auth-helpers/settings';
+11	import Card from '@/components/ui/Card';
+12	import PasswordSignIn from '@/components/ui/AuthForms/PasswordSignIn';
+13	import EmailSignIn from '@/components/ui/AuthForms/EmailSignIn';
+14	import Separator from '@/components/ui/AuthForms/Separator';
+15	import OauthSignIn from '@/components/ui/AuthForms/OauthSignIn';
+16	import ForgotPassword from '@/components/ui/AuthForms/ForgotPassword';
+17	import UpdatePassword from '@/components/ui/AuthForms/UpdatePassword';
+18	import SignUp from '@/components/ui/AuthForms/Signup';
+19
+20	export default async function SignIn({
+21	  params,
+22	  searchParams
+23	}: {
+24	  params: { id: string };
+25	  searchParams: { disable_button: boolean };
+26	}) {
+27	  const { allowOauth, allowEmail, allowPassword } = getAuthTypes();
+28	  const viewTypes = getViewTypes();
+29	  const redirectMethod = getRedirectMethod();
+30
+31	  // Declare 'viewProp' and initialize with the default value
+32	  let viewProp: string;
+33
+34	  // Assign url id to 'viewProp' if it's a valid string and ViewTypes includes it
+35	  if (typeof params.id === 'string' && viewTypes.includes(params.id)) {
+36	    viewProp = params.id;
+37	  } else {
+38	    const preferredSignInView =
+39	      cookies().get('preferredSignInView')?.value || null;
+40	    viewProp = getDefaultSignInView(preferredSignInView);
+41	    return redirect(`/signin/${viewProp}`);
+42	  }
+43
+44	  // Check if the user is already logged in and redirect to the account page if so
+45	  const supabase = createClient();
+46
+47	  const {
+48	    data: { user }
+49	  } = await supabase.auth.getUser();
+50
+51	  if (user && viewProp !== 'update_password') {
+52	    return redirect('/');
+53	  } else if (!user && viewProp === 'update_password') {
+54	    return redirect('/signin');
+55	  }
+56
+57	  return (
+58	    <div className="flex justify-center height-screen-helper">
+59	      <div className="flex flex-col justify-between max-w-lg p-3 m-auto w-80 ">
+60	        <div className="flex justify-center pb-12 ">
+61	          <Logo width="64px" height="64px" />
+62	        </div>
+63	        <Card
+64	          title={
+65	            viewProp === 'forgot_password'
+66	              ? 'Reset Password'
+67	              : viewProp === 'update_password'
+68	                ? 'Update Password'
+69	                : viewProp === 'signup'
+70	                  ? 'Sign Up'
+71	                  : 'Sign In'
+72	          }
+73	        >
+74	          {viewProp === 'password_signin' && (
+75	            <PasswordSignIn
+76	              allowEmail={allowEmail}
+77	              redirectMethod={redirectMethod}
+78	            />
+79	          )}
+80	          {viewProp === 'email_signin' && (
+81	            <EmailSignIn
+82	              allowPassword={allowPassword}
+83	              redirectMethod={redirectMethod}
+84	              disableButton={searchParams.disable_button}
+85	            />
+86	          )}
+87	          {viewProp === 'forgot_password' && (
+88	            <ForgotPassword
+89	              allowEmail={allowEmail}
+90	              redirectMethod={redirectMethod}
+91	              disableButton={searchParams.disable_button}
+92	            />
+93	          )}
+94	          {viewProp === 'update_password' && (
+95	            <UpdatePassword redirectMethod={redirectMethod} />
+96	          )}
+97	          {viewProp === 'signup' && (
+98	            <SignUp allowEmail={allowEmail} redirectMethod={redirectMethod} />
+99	          )}
+100	          {viewProp !== 'update_password' &&
+101	            viewProp !== 'signup' &&
+102	            allowOauth && (
+103	              <>
+104	                <Separator text="Third-party sign-in" />
+105	                <OauthSignIn />
+106	              </>
+107	            )}
+108	        </Card>
+109	      </div>
+110	    </div>
+111	  );
+112	}
+113	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/account
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/app/account, excluding hidden items and node_modules:
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/account
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx with line numbers:
+1	import CustomerPortalForm from '@/components/ui/AccountForms/CustomerPortalForm';
+2	import EmailForm from '@/components/ui/AccountForms/EmailForm';
+3	import NameForm from '@/components/ui/AccountForms/NameForm';
+4	import { redirect } from 'next/navigation';
+5	import { createClient } from '@/utils/supabase/server';
+6	import {
+7	  getUserDetails,
+8	  getSubscription,
+9	  getUser
+10	} from '@/utils/supabase/queries';
+11
+12	export default async function Account() {
+13	  const supabase = createClient();
+14	  const [user, userDetails, subscription] = await Promise.all([
+15	    getUser(supabase),
+16	    getUserDetails(supabase),
+17	    getSubscription(supabase)
+18	  ]);
+19
+20	  if (!user) {
+21	    return redirect('/signin');
+22	  }
+23
+24	  return (
+25	    <section className="mb-32 bg-black">
+26	      <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
+27	        <div className="sm:align-center sm:flex sm:flex-col">
+28	          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+29	            Account
+30	          </h1>
+31	          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+32	            We partnered with Stripe for a simplified billing.
+33	          </p>
+34	        </div>
+35	      </div>
+36	      <div className="p-4">
+37	        <CustomerPortalForm subscription={subscription} />
+38	        <NameForm userName={userDetails?.full_name ?? ''} />
+39	        <EmailForm userEmail={user.email} />
+40	      </div>
+41	    </section>
+42	  );
+43	}
+44	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts with line numbers:
+1	import { SupabaseClient } from '@supabase/supabase-js';
+2	import { cache } from 'react';
+3
+4	export const getUser = cache(async (supabase: SupabaseClient) => {
+5	  const {
+6	    data: { user }
+7	  } = await supabase.auth.getUser();
+8	  return user;
+9	});
+10
+11	export const getSubscription = cache(async (supabase: SupabaseClient) => {
+12	  const { data: subscription, error } = await supabase
+13	    .from('subscriptions')
+14	    .select('*, prices(*, products(*))')
+15	    .in('status', ['trialing', 'active'])
+16	    .maybeSingle();
+17
+18	  return subscription;
+19	});
+20
+21	export const getProducts = cache(async (supabase: SupabaseClient) => {
+22	  const { data: products, error } = await supabase
+23	    .from('products')
+24	    .select('*, prices(*)')
+25	    .eq('active', true)
+26	    .eq('prices.active', true)
+27	    .order('metadata->index')
+28	    .order('unit_amount', { referencedTable: 'prices' });
+29
+30	  return products;
+31	});
+32
+33	export const getUserDetails = cache(async (supabase: SupabaseClient) => {
+34	  const { data: userDetails } = await supabase
+35	    .from('users')
+36	    .select('*')
+37	    .single();
+38	  return userDetails;
+39	});
+40	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx with line numbers:
+1	import { ReactNode } from 'react';
+2
+3	interface Props {
+4	  title: string;
+5	  description?: string;
+6	  footer?: ReactNode;
+7	  children: ReactNode;
+8	}
+9
+10	export default function Card({ title, description, footer, children }: Props) {
+11	  return (
+12	    <div className="w-full max-w-3xl m-auto my-8 border rounded-md p border-zinc-700">
+13	      <div className="px-5 py-4">
+14	        <h3 className="mb-1 text-2xl font-medium">{title}</h3>
+15	        <p className="text-zinc-300">{description}</p>
+16	        {children}
+17	      </div>
+18	      {footer && (
+19	        <div className="p-4 border-t rounded-b-md border-zinc-700 bg-zinc-900 text-zinc-500">
+20	          {footer}
+21	        </div>
+22	      )}
+23	    </div>
+24	  );
+25	}
+26	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Link from 'next/link';
+5	import { signInWithPassword } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import React, { useState } from 'react';
+9
+10	// Define prop type with allowEmail boolean
+11	interface PasswordSignInProps {
+12	  allowEmail: boolean;
+13	  redirectMethod: string;
+14	}
+15
+16	export default function PasswordSignIn({
+17	  allowEmail,
+18	  redirectMethod
+19	}: PasswordSignInProps) {
+20	  const router = redirectMethod === 'client' ? useRouter() : null;
+21	  const [isSubmitting, setIsSubmitting] = useState(false);
+22
+23	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+24	    setIsSubmitting(true); // Disable the button while the request is being handled
+25	    await handleRequest(e, signInWithPassword, router);
+26	    setIsSubmitting(false);
+27	  };
+28
+29	  return (
+30	    <div className="my-8">
+31	      <form
+32	        noValidate={true}
+33	        className="mb-4"
+34	        onSubmit={(e) => handleSubmit(e)}
+35	      >
+36	        <div className="grid gap-2">
+37	          <div className="grid gap-1">
+38	            <label htmlFor="email">Email</label>
+39	            <input
+40	              id="email"
+41	              placeholder="name@example.com"
+42	              type="email"
+43	              name="email"
+44	              autoCapitalize="none"
+45	              autoComplete="email"
+46	              autoCorrect="off"
+47	              className="w-full p-3 rounded-md bg-zinc-800"
+48	            />
+49	            <label htmlFor="password">Password</label>
+50	            <input
+51	              id="password"
+52	              placeholder="Password"
+53	              type="password"
+54	              name="password"
+55	              autoComplete="current-password"
+56	              className="w-full p-3 rounded-md bg-zinc-800"
+57	            />
+58	          </div>
+59	          <Button
+60	            variant="slim"
+61	            type="submit"
+62	            className="mt-1"
+63	            loading={isSubmitting}
+64	          >
+65	            Sign in
+66	          </Button>
+67	        </div>
+68	      </form>
+69	      <p>
+70	        <Link href="/signin/forgot_password" className="font-light text-sm">
+71	          Forgot your password?
+72	        </Link>
+73	      </p>
+74	      {allowEmail && (
+75	        <p>
+76	          <Link href="/signin/email_signin" className="font-light text-sm">
+77	            Sign in via magic link
+78	          </Link>
+79	        </p>
+80	      )}
+81	      <p>
+82	        <Link href="/signin/signup" className="font-light text-sm">
+83	          Don't have an account? Sign up
+84	        </Link>
+85	      </p>
+86	    </div>
+87	  );
+88	}
+89	
+
+
+bash
+command
+grep -rn "searchParams" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" -A 3 -B 1
+output
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-16-  const { toast, toasts } = useToast();
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:17:  const searchParams = useSearchParams();
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-18-  const pathname = usePathname();
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-19-  const router = useRouter();
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-20-
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-21-  useEffect(() => {
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:22:    const status = searchParams.get('status');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:23:    const status_description = searchParams.get('status_description');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:24:    const error = searchParams.get('error');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:25:    const error_description = searchParams.get('error_description');
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-26-    if (error || status) {
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-27-      toast({
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-28-        title: error
+--
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-36-      // intact.
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:37:      const newSearchParams = new URLSearchParams(searchParams.toString());
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-38-      const paramsToRemove = [
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-39-        'error',
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-40-        'status',
+--
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-47-    }
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx:48:  }, [searchParams]);
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-49-
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-50-  return (
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx-51-    <ToastProvider>
+--
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-21-  params,
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:22:  searchParams
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-23-}: {
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-24-  params: { id: string };
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:25:  searchParams: { disable_button: boolean };
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-26-}) {
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-27-  const { allowOauth, allowEmail, allowPassword } = getAuthTypes();
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-28-  const viewTypes = getViewTypes();
+--
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-83-              redirectMethod={redirectMethod}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:84:              disableButton={searchParams.disable_button}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-85-            />
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-86-          )}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-87-          {viewProp === 'forgot_password' && (
+--
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-90-              redirectMethod={redirectMethod}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx:91:              disableButton={searchParams.disable_button}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-92-            />
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-93-          )}
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx-94-          {viewProp === 'update_password' && (
+--
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts-9-  const requestUrl = new URL(request.url);
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts:10:  const code = requestUrl.searchParams.get('code');
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts-11-
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts-12-  if (code) {
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts-13-    const supabase = createClient();
+--
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts-9-  const requestUrl = new URL(request.url);
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts:10:  const code = requestUrl.searchParams.get('code');
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts-11-
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts-12-  if (code) {
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts-13-    const supabase = createClient();
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx with line numbers:
+1	'use client';
+2
+3	import {
+4	  Toast,
+5	  ToastClose,
+6	  ToastDescription,
+7	  ToastProvider,
+8	  ToastTitle,
+9	  ToastViewport
+10	} from '@/components/ui/Toasts/toast';
+11	import { useToast } from '@/components/ui/Toasts/use-toast';
+12	import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+13	import { useEffect } from 'react';
+14
+15	export function Toaster() {
+16	  const { toast, toasts } = useToast();
+17	  const searchParams = useSearchParams();
+18	  const pathname = usePathname();
+19	  const router = useRouter();
+20
+21	  useEffect(() => {
+22	    const status = searchParams.get('status');
+23	    const status_description = searchParams.get('status_description');
+24	    const error = searchParams.get('error');
+25	    const error_description = searchParams.get('error_description');
+26	    if (error || status) {
+27	      toast({
+28	        title: error
+29	          ? error ?? 'Hmm... Something went wrong.'
+30	          : status ?? 'Alright!',
+31	        description: error ? error_description : status_description,
+32	        variant: error ? 'destructive' : undefined
+33	      });
+34	      // Clear any 'error', 'status', 'status_description', and 'error_description' search params
+35	      // so that the toast doesn't show up again on refresh, but leave any other search params
+36	      // intact.
+37	      const newSearchParams = new URLSearchParams(searchParams.toString());
+38	      const paramsToRemove = [
+39	        'error',
+40	        'status',
+41	        'status_description',
+42	        'error_description'
+43	      ];
+44	      paramsToRemove.forEach((param) => newSearchParams.delete(param));
+45	      const redirectPath = `${pathname}?${newSearchParams.toString()}`;
+46	      router.replace(redirectPath, { scroll: false });
+47	    }
+48	  }, [searchParams]);
+49
+50	  return (
+51	    <ToastProvider>
+52	      {toasts.map(function ({ id, title, description, action, ...props }) {
+53	        return (
+54	          <Toast key={id} {...props}>
+55	            <div className="grid gap-1">
+56	              {title && <ToastTitle>{title}</ToastTitle>}
+57	              {description && (
+58	                <ToastDescription>{description}</ToastDescription>
+59	              )}
+60	            </div>
+61	            {action}
+62	            <ToastClose />
+63	          </Toast>
+64	        );
+65	      })}
+66	      <ToastViewport />
+67	    </ToastProvider>
+68	  );
+69	}
+70	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Card from '@/components/ui/Card';
+5	import { updateEmail } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import { useState } from 'react';
+9
+10	export default function EmailForm({
+11	  userEmail
+12	}: {
+13	  userEmail: string | undefined;
+14	}) {
+15	  const router = useRouter();
+16	  const [isSubmitting, setIsSubmitting] = useState(false);
+17
+18	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+19	    setIsSubmitting(true);
+20	    // Check if the new email is the same as the old email
+21	    if (e.currentTarget.newEmail.value === userEmail) {
+22	      e.preventDefault();
+23	      setIsSubmitting(false);
+24	      return;
+25	    }
+26	    handleRequest(e, updateEmail, router);
+27	    setIsSubmitting(false);
+28	  };
+29
+30	  return (
+31	    <Card
+32	      title="Your Email"
+33	      description="Please enter the email address you want to use to login."
+34	      footer={
+35	        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+36	          <p className="pb-4 sm:pb-0">
+37	            We will email you to verify the change.
+38	          </p>
+39	          <Button
+40	            variant="slim"
+41	            type="submit"
+42	            form="emailForm"
+43	            loading={isSubmitting}
+44	          >
+45	            Update Email
+46	          </Button>
+47	        </div>
+48	      }
+49	    >
+50	      <div className="mt-8 mb-4 text-xl font-semibold">
+51	        <form id="emailForm" onSubmit={(e) => handleSubmit(e)}>
+52	          <input
+53	            type="text"
+54	            name="newEmail"
+55	            className="w-1/2 p-3 rounded-md bg-zinc-800"
+56	            defaultValue={userEmail ?? ''}
+57	            placeholder="Your email"
+58	            maxLength={64}
+59	          />
+60	        </form>
+61	      </div>
+62	    </Card>
+63	  );
+64	}
+65	
+
+
+bash
+command
+grep -rn "eval\|Function(" /tmp/inputs/nextjs-subscription-payments --include="*.tsx" --include="*.ts" --include="*.jsx" --include="*.js" | grep -v "node_modules"
+system
+Tool ran without output or errors
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts with line numbers:
+1	'use client';
+2
+3	import { createClient } from '@/utils/supabase/client';
+4	import { type Provider } from '@supabase/supabase-js';
+5	import { getURL } from '@/utils/helpers';
+6	import { redirectToPath } from './server';
+7	import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+8
+9	export async function handleRequest(
+10	  e: React.FormEvent<HTMLFormElement>,
+11	  requestFunc: (formData: FormData) => Promise<string>,
+12	  router: AppRouterInstance | null = null
+13	): Promise<boolean | void> {
+14	  // Prevent default form submission refresh
+15	  e.preventDefault();
+16
+17	  const formData = new FormData(e.currentTarget);
+18	  const redirectUrl: string = await requestFunc(formData);
+19
+20	  if (router) {
+21	    // If client-side router is provided, use it to redirect
+22	    return router.push(redirectUrl);
+23	  } else {
+24	    // Otherwise, redirect server-side
+25	    return await redirectToPath(redirectUrl);
+26	  }
+27	}
+28
+29	export async function signInWithOAuth(e: React.FormEvent<HTMLFormElement>) {
+30	  // Prevent default form submission refresh
+31	  e.preventDefault();
+32	  const formData = new FormData(e.currentTarget);
+33	  const provider = String(formData.get('provider')).trim() as Provider;
+34
+35	  // Create client-side supabase client and call signInWithOAuth
+36	  const supabase = createClient();
+37	  const redirectURL = getURL('/auth/callback');
+38	  await supabase.auth.signInWithOAuth({
+39	    provider: provider,
+40	    options: {
+41	      redirectTo: redirectURL
+42	    }
+43	  });
+44	}
+45	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/api
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/app/api, excluding hidden items and node_modules:
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api/webhooks
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts with line numbers:
+1	import Stripe from 'stripe';
+2	import { stripe } from '@/utils/stripe/config';
+3	import {
+4	  upsertProductRecord,
+5	  upsertPriceRecord,
+6	  manageSubscriptionStatusChange,
+7	  deleteProductRecord,
+8	  deletePriceRecord
+9	} from '@/utils/supabase/admin';
+10
+11	const relevantEvents = new Set([
+12	  'product.created',
+13	  'product.updated',
+14	  'product.deleted',
+15	  'price.created',
+16	  'price.updated',
+17	  'price.deleted',
+18	  'checkout.session.completed',
+19	  'customer.subscription.created',
+20	  'customer.subscription.updated',
+21	  'customer.subscription.deleted'
+22	]);
+23
+24	export async function POST(req: Request) {
+25	  const body = await req.text();
+26	  const sig = req.headers.get('stripe-signature') as string;
+27	  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+28	  let event: Stripe.Event;
+29
+30	  try {
+31	    if (!sig || !webhookSecret)
+32	      return new Response('Webhook secret not found.', { status: 400 });
+33	    event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
+34	    console.log(`🔔  Webhook received: ${event.type}`);
+35	  } catch (err: any) {
+36	    console.log(`❌ Error message: ${err.message}`);
+37	    return new Response(`Webhook Error: ${err.message}`, { status: 400 });
+38	  }
+39
+40	  if (relevantEvents.has(event.type)) {
+41	    try {
+42	      switch (event.type) {
+43	        case 'product.created':
+44	        case 'product.updated':
+45	          await upsertProductRecord(event.data.object as Stripe.Product);
+46	          break;
+47	        case 'price.created':
+48	        case 'price.updated':
+49	          await upsertPriceRecord(event.data.object as Stripe.Price);
+50	          break;
+51	        case 'price.deleted':
+52	          await deletePriceRecord(event.data.object as Stripe.Price);
+53	          break;
+54	        case 'product.deleted':
+55	          await deleteProductRecord(event.data.object as Stripe.Product);
+56	          break;
+57	        case 'customer.subscription.created':
+58	        case 'customer.subscription.updated':
+59	        case 'customer.subscription.deleted':
+60	          const subscription = event.data.object as Stripe.Subscription;
+61	          await manageSubscriptionStatusChange(
+62	            subscription.id,
+63	            subscription.customer as string,
+64	            event.type === 'customer.subscription.created'
+65	          );
+66	          break;
+67	        case 'checkout.session.completed':
+68	          const checkoutSession = event.data.object as Stripe.Checkout.Session;
+69	          if (checkoutSession.mode === 'subscription') {
+70	            const subscriptionId = checkoutSession.subscription;
+71	            await manageSubscriptionStatusChange(
+72	              subscriptionId as string,
+73	              checkoutSession.customer as string,
+74	              true
+75	            );
+76	          }
+77	          break;
+78	        default:
+79	          throw new Error('Unhandled relevant event!');
+80	      }
+81	    } catch (error) {
+82	      console.log(error);
+83	      return new Response(
+84	        'Webhook handler failed. View your Next.js function logs.',
+85	        {
+86	          status: 400
+87	        }
+88	      );
+89	    }
+90	  } else {
+91	    return new Response(`Unsupported event type: ${event.type}`, {
+92	      status: 400
+93	    });
+94	  }
+95	  return new Response(JSON.stringify({ received: true }));
+96	}
+97	
+
+This codebase relies primarily on React/Next.js's built-in protection mechanisms for input sanitization rather than implementing explicit sanitization routines. Here's how it works:
+
+**React's Automatic XSS Protection**: The codebase renders all user-provided data through JSX expressions (curly braces `{}`). For example, in `Pricing.tsx`, product names and descriptions from the database are rendered as `{product.name}` and `{product.description}`. Similarly, in `NameForm.tsx` and `EmailForm.tsx`, user names and emails are rendered via `defaultValue={userName}` and `defaultValue={userEmail}`. React automatically escapes these string values before inserting them into the DOM, which prevents XSS attacks. Notably, there's no use of `dangerouslySetInnerHTML` anywhere in the codebase, which is the primary way to bypass React's escaping.
+
+**Server-Side Input Handling**: On the server side in `utils/auth-helpers/server.ts`, user inputs from form submissions are processed with basic trimming via `String(formData.get('...')).trim()`. There's email validation using a regex pattern (`isValidEmail`), but beyond that, inputs are passed directly to Supabase's authentication APIs. The inputs aren't sanitized for HTML because they're stored in the database and later rendered through React's safe JSX interpolation.
+
+**URL Parameter Handling**: The `Toaster` component reads `status`, `error`, and description values from URL search parameters and displays them in toast notifications. While these come from user-controllable URLs, they're rendered through React components (`ToastTitle` and `ToastDescription`), which automatically escape content. The `getToastRedirect` helper in `helpers.ts` uses `encodeURIComponent()` when building redirect URLs to prevent URL injection.
+
+**Route Parameter Validation**: The sign-in page validates the `params.id` route parameter against an allowlist of valid view types (`viewTypes.includes(params.id)`) before using it, preventing arbitrary values from being processed.
+
+**No Custom Sanitization Library**: The codebase doesn't use libraries like DOMPurify or sanitize-html because it doesn't render raw HTML anywhere. All dynamic content flows through React's standard rendering pipeline.
+
+In summary, input sanitization here is handled implicitly by React's JSX escaping rather than through explicit sanitization functions. This is a common and effective pattern for React applications that don't need to render user-provided HTML markup. 
+
+———MODEL B RESPONES ended!!!!——————
+
+
+
+4. Now write the ideal answer, model a  summary, model a feedback,  model b summary model b feedback,justification. i want same level of details and evidence and writing style and lenght like this sample THIS IS SAMPLE FOR you below, READ CAREFULLY: 
+
+
+SUPER IMPORTANT RULE YOU MUST FOLLOW. YOU MUST WRITE SAME WAY SAME QUALITY SAME FORMAT SAME STYLE AS SAMPLE BELOW!@!!!!!!!
+
+——SAMPLE:—
+—Every below is sample—
+
+Ideal Response.
+
+This ideal answer should clearly describe how Spring Petclinic wires its components through dependency injection using common patterns like constructor based injection, component scanning, and configuration-driven bean factories ...etc, and even dive deeper to explain how controllers (e.g.,src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java) declare all the collaborators in the constructors rather than in the fields, how stereotype annotations make those classes eligible for autodetection, how the repository abstractions are injected as interfaces implemented by the Spring Data JPA, and how @Configuration classes expose shared infrastructure beans that all the other components consume.
+Model must explain that Spring Petclinic leans on constructor-based dependency injection to keep controllers explicit and testable. For example, it should explain controller like spring-petclinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java is annotated with @Controller and declares a single constructor that takes an OwnerRepository, which has the role of letting Spring populate the dependency while preventing partially constructed instance. Model should point out that the controller never uses field injection or @Autowired on members, so the required collaborator is enforced at creation time. For example, in src/main/java/org/springframework/samples/petclinic/vet/VetController.java, whose constructor requires a VetRepository and assigns it to a final field, it is also relying on the container to supply the repository proxy. Even non-controller components follow this approach, for example src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java, which is a @Component that exposes a Formatter<PetType> but takes its PetTypeRepository in the constructor, which is keeping parsing logic decoupled from storage details while still making the repository mandatory for instantiation.
+Model must also explain repository layer demonstrates interface-driven injection. Interfaces such as spring-petclinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java extend Spring Data JPA’s JpaRepository, which is letting the framework auto-create runtime proxies that satisfy the dependency signatures declared in controllers and formatters.
+Overall, the dependency injection explanation should ideally go deep and cover how @SpringBootApplication bootstraps component scanning, constructors declare required collaborators, repositories are injected as interfaces backed by generated proxies, and @Configuration classes publish shared infrastructure as beans.
+
+
+
+Model A Response Summary
+
+Model A did pretty well because it correctly identifiy constructor-based injection as the major dominant pattern and notes the absence of @Autowired, aligning with controllers like OwnerController and VetController that declare single-argument constructors for their repositories, which are src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java and src/main/java/org/springframework/samples/petclinic/vet/VetController.java,. It also correctly observes that PetTypeFormatter uses constructor injection as a component, which matches the formatters’ constructor-driven PetTypeRepository dependency. It points out that in src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java, the response highlights component scanning via the stereotype annotations and the role of repository interfaces that Spring Data implements at runtime, dynamically, and consistent with the JpaRepository extension inside src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java.  Overall, the summary gives good overview of the core DI patterns present in the codebase.
+Model A Response Feedback
+
+the answer is strong on constructor injection and the lack of @Autowired, both supported by the controller and formatter classes cited in summary above, which are very impressive findings in my opinion as tehy’re not that obvious. One area it could be improved is by referencing configuration-driven beans such as the cache and locale interceptors declared in CacheConfiguration and WebConfiguration , to show that DI also wires infrastructure services, not just repositories and controllers in files like src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration,main/java/org/springframework/samples/petclinic/system/WebConfiguration.java. Mentioning of @SpringBootApplication as the trigger for component scanning would further strengthen the explanation by tying bean discovery to the application entry point in src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java. These additions would align the response even more tightly with the full range of DI patterns in the repo. But overall, the model did pretty well despite these issues.
+
+Model B Response Summary
+
+Model B repeats the constructor-injection narrative and cites the same controllers (OwnerController, PetController, VetController, VisitController) and the PetTypeFormatter component under main/java/org/springframework/samples/petclinic/*, matching their constructor-based repository dependencies.It notes the absence of @Autowired/@Inject and correctly attributes bean registration to stereotype annotations and Spring Data proxies for repositories like OwnerRepository in src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java†. The summary emphasizes constructor injection benefits but remains fairly high-level. Overall the model did not give an in-depth explanation and i believe the model did not really check the code thoroughly for the explanation. 
+Model B Response Feedback
+
+While this model is technically accurate about constructor injection and stereotype-based registration, but Model B stays generic and omits key DI elements present in the code which are obvious and should not be missed at all! It does not even mention the configuration classes that publish infrastructure beans (e.g., cache customization or locale handling), which are central examples of DI beyond the configurations like src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration,src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java. The response also overlooks the @SpringBootApplication entry point that enables component scanning for all these beans such as in src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java.Compared to Model A, it provides less depth on how DI wiring spans both application endpoints and shared infrastructure.
+Overall Preference Justification
+
+Model A is way better because it balances correctness about constructor injection with explicit recognition of repository interfaces and the role of component scanning, closely matching the structure seen in controllers, formatters, and repositories...etc such as src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java,src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java,src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java, Although both models miss some configuration details, Model A surfaces more of the actual DI practices visible in the code and provides a clearer link between stereotypes and injection than Model B, which remains more generic and omits infrastructure wiring examples such as ,src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java,src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java.....etc. Therefore, Model A offers the stronger, more code-grounded explanation in my opinion.
