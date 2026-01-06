@@ -1,0 +1,3098 @@
+
+
+DO NOT EVER ADD “WORKSPACE IN FILE PATH, start with src folder!” DO NOT ADD EM DASH! MUST CITE 5 real files in each section especially ideal answer!
+
+Make sure to obey these 100% “. 
+
+-  All answers should have  5+ meaningful sentences and clear as well 
+- All sections must reference at least 5 files with file’s absolute path but without the “WORKSPACE” in the directory url
+- MODEL A and MODEL B RESPONSES ARE PROVIDED. IN 2. And 3. 
+- DO NOt ADD ANY EM DASH!!!
+- Adding a few file references in the feedback section could strength the answer.
+- The ideal response could benefit from a dedicated file-list section summarizing all referenced files together.
+- Adding separate strength and weakness points inside summaries would enhance readability and make the evaluation feel more complete.
+- Model A response is in bullet point 2 after “2.here is model A's response:”. Do a grep if u don’t find it because it exists
+- Model B response is in bullet point 3 after “3.here is model B’s response:” do a grep if u don’t find it because it exists
+
+
+1.new task, question is:How does the overall state management system work, and where does the application actually store its state?
+
+
+
+
+———MODEL A RESPONES IS BELOW!!!!——————
+2.here is model A's response:  I'll analyze the codebase structure to understand if it follows any architectural frontend pattern like MVC.
+
+
+bash
+command
+find /tmp/inputs/nextjs-subscription-payments -type f -name "*.tsx" -o -name "*.ts" -o -name "*.jsx" -o -name "*.js" | head -30
+output
+/tmp/inputs/nextjs-subscription-payments/types_db.ts
+/tmp/inputs/nextjs-subscription-payments/middleware.ts
+/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+/tmp/inputs/nextjs-subscription-payments/components/icons/GitHub.tsx
+/tmp/inputs/nextjs-subscription-payments/components/icons/Logo.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/LogoCloud.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/LoadingDots.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/CustomerPortalForm.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/use-toast.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card/index.ts
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/OauthSignIn.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Separator.tsx
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/EmailSignIn.tsx
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments, excluding hidden items and node_modules:
+2.3M	/tmp/inputs/nextjs-subscription-payments
+1.5K	/tmp/inputs/nextjs-subscription-payments/LICENSE
+16K	/tmp/inputs/nextjs-subscription-payments/README.md
+81K	/tmp/inputs/nextjs-subscription-payments/app
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/account
+3.5K	/tmp/inputs/nextjs-subscription-payments/app/api
+3.0K	/tmp/inputs/nextjs-subscription-payments/app/auth
+1.5K	/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+66K	/tmp/inputs/nextjs-subscription-payments/app/opengraph-image.png
+1.0K	/tmp/inputs/nextjs-subscription-payments/app/page.tsx
+4.5K	/tmp/inputs/nextjs-subscription-payments/app/signin
+62K	/tmp/inputs/nextjs-subscription-payments/components
+512	/tmp/inputs/nextjs-subscription-payments/components.json
+2.5K	/tmp/inputs/nextjs-subscription-payments/components/icons
+60K	/tmp/inputs/nextjs-subscription-payments/components/ui
+2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures
+2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures/stripe-fixtures.json
+1.0K	/tmp/inputs/nextjs-subscription-payments/middleware.ts
+512	/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+2.5K	/tmp/inputs/nextjs-subscription-payments/package.json
+129K	/tmp/inputs/nextjs-subscription-payments/pnpm-lock.yaml
+512	/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+532K	/tmp/inputs/nextjs-subscription-payments/public
+136K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.png
+7.5K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.svg
+255K	/tmp/inputs/nextjs-subscription-payments/public/demo.png
+1.0K	/tmp/inputs/nextjs-subscription-payments/public/favicon.ico
+3.0K	/tmp/inputs/nextjs-subscription-payments/public/github.svg
+4.0K	/tmp/inputs/nextjs-subscription-payments/public/nextjs.svg
+2.0K	/tmp/inputs/nextjs-subscription-payments/public/stripe.svg
+5.5K	/tmp/inputs/nextjs-subscription-payments/public/supabase.svg
+115K	/tmp/inputs/nextjs-subscription-payments/public/vercel-deploy.png
+2.5K	/tmp/inputs/nextjs-subscription-payments/public/vercel.svg
+7.5K	/tmp/inputs/nextjs-subscription-payments/schema.sql
+1.0K	/tmp/inputs/nextjs-subscription-payments/styles
+1.0K	/tmp/inputs/nextjs-subscription-payments/styles/main.css
+14K	/tmp/inputs/nextjs-subscription-payments/supabase
+6.0K	/tmp/inputs/nextjs-subscription-payments/supabase/config.toml
+7.5K	/tmp/inputs/nextjs-subscription-payments/supabase/migrations
+0	/tmp/inputs/nextjs-subscription-payments/supabase/seed.sql
+1.0K	/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+1.0K	/tmp/inputs/nextjs-subscription-payments/tsconfig.json
+20K	/tmp/inputs/nextjs-subscription-payments/types_db.ts
+38K	/tmp/inputs/nextjs-subscription-payments/utils
+12K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+512	/tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+3.5K	/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+6.0K	/tmp/inputs/nextjs-subscription-payments/utils/stripe
+17K	/tmp/inputs/nextjs-subscription-payments/utils/supabase
+
+
+
+bash
+command
+find /tmp/inputs/nextjs-subscription-payments -type d | grep -E "(app|components|utils)" | sort
+output
+/tmp/inputs/nextjs-subscription-payments/app
+/tmp/inputs/nextjs-subscription-payments/app/account
+/tmp/inputs/nextjs-subscription-payments/app/api
+/tmp/inputs/nextjs-subscription-payments/app/api/webhooks
+/tmp/inputs/nextjs-subscription-payments/app/auth
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password
+/tmp/inputs/nextjs-subscription-payments/app/signin
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]
+/tmp/inputs/nextjs-subscription-payments/components
+/tmp/inputs/nextjs-subscription-payments/components/icons
+/tmp/inputs/nextjs-subscription-payments/components/ui
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms
+/tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms
+/tmp/inputs/nextjs-subscription-payments/components/ui/Button
+/tmp/inputs/nextjs-subscription-payments/components/ui/Card
+/tmp/inputs/nextjs-subscription-payments/components/ui/Footer
+/tmp/inputs/nextjs-subscription-payments/components/ui/Input
+/tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots
+/tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud
+/tmp/inputs/nextjs-subscription-payments/components/ui/Navbar
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing
+/tmp/inputs/nextjs-subscription-payments/components/ui/Toasts
+/tmp/inputs/nextjs-subscription-payments/utils
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+/tmp/inputs/nextjs-subscription-payments/utils/stripe
+/tmp/inputs/nextjs-subscription-payments/utils/supabase
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/page.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/page.tsx with line numbers:
+1	import Pricing from '@/components/ui/Pricing/Pricing';
+2	import { createClient } from '@/utils/supabase/server';
+3	import {
+4	  getProducts,
+5	  getSubscription,
+6	  getUser
+7	} from '@/utils/supabase/queries';
+8
+9	export default async function PricingPage() {
+10	  const supabase = createClient();
+11	  const [user, products, subscription] = await Promise.all([
+12	    getUser(supabase),
+13	    getProducts(supabase),
+14	    getSubscription(supabase)
+15	  ]);
+16
+17	  return (
+18	    <Pricing
+19	      user={user}
+20	      products={products ?? []}
+21	      subscription={subscription}
+22	    />
+23	  );
+24	}
+25	
+
+
+bash
+command
+ls -la /tmp/inputs/nextjs-subscription-payments/app/account/
+output
+total 2
+drwxr-xr-x 2 argocd root   60 Jan  6 14:25 .
+drwxr-xr-x 6 argocd root  180 Jan  6 14:25 ..
+-rw-r--r-- 1 argocd root 1430 Jan  1  1970 page.tsx
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx with line numbers:
+1	import CustomerPortalForm from '@/components/ui/AccountForms/CustomerPortalForm';
+2	import EmailForm from '@/components/ui/AccountForms/EmailForm';
+3	import NameForm from '@/components/ui/AccountForms/NameForm';
+4	import { redirect } from 'next/navigation';
+5	import { createClient } from '@/utils/supabase/server';
+6	import {
+7	  getUserDetails,
+8	  getSubscription,
+9	  getUser
+10	} from '@/utils/supabase/queries';
+11
+12	export default async function Account() {
+13	  const supabase = createClient();
+14	  const [user, userDetails, subscription] = await Promise.all([
+15	    getUser(supabase),
+16	    getUserDetails(supabase),
+17	    getSubscription(supabase)
+18	  ]);
+19
+20	  if (!user) {
+21	    return redirect('/signin');
+22	  }
+23
+24	  return (
+25	    <section className="mb-32 bg-black">
+26	      <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
+27	        <div className="sm:align-center sm:flex sm:flex-col">
+28	          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+29	            Account
+30	          </h1>
+31	          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+32	            We partnered with Stripe for a simplified billing.
+33	          </p>
+34	        </div>
+35	      </div>
+36	      <div className="p-4">
+37	        <CustomerPortalForm subscription={subscription} />
+38	        <NameForm userName={userDetails?.full_name ?? ''} />
+39	        <EmailForm userEmail={user.email} />
+40	      </div>
+41	    </section>
+42	  );
+43	}
+44	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/supabase
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/utils/supabase, excluding hidden items and node_modules:
+17K	/tmp/inputs/nextjs-subscription-payments/utils/supabase
+10K	/tmp/inputs/nextjs-subscription-payments/utils/supabase/admin.ts
+512	/tmp/inputs/nextjs-subscription-payments/utils/supabase/client.ts
+2.5K	/tmp/inputs/nextjs-subscription-payments/utils/supabase/middleware.ts
+1.5K	/tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+2.0K	/tmp/inputs/nextjs-subscription-payments/utils/supabase/server.ts
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts with line numbers:
+1	import { SupabaseClient } from '@supabase/supabase-js';
+2	import { cache } from 'react';
+3
+4	export const getUser = cache(async (supabase: SupabaseClient) => {
+5	  const {
+6	    data: { user }
+7	  } = await supabase.auth.getUser();
+8	  return user;
+9	});
+10
+11	export const getSubscription = cache(async (supabase: SupabaseClient) => {
+12	  const { data: subscription, error } = await supabase
+13	    .from('subscriptions')
+14	    .select('*, prices(*, products(*))')
+15	    .in('status', ['trialing', 'active'])
+16	    .maybeSingle();
+17
+18	  return subscription;
+19	});
+20
+21	export const getProducts = cache(async (supabase: SupabaseClient) => {
+22	  const { data: products, error } = await supabase
+23	    .from('products')
+24	    .select('*, prices(*)')
+25	    .eq('active', true)
+26	    .eq('prices.active', true)
+27	    .order('metadata->index')
+28	    .order('unit_amount', { referencedTable: 'prices' });
+29
+30	  return products;
+31	});
+32
+33	export const getUserDetails = cache(async (supabase: SupabaseClient) => {
+34	  const { data: userDetails } = await supabase
+35	    .from('users')
+36	    .select('*')
+37	    .single();
+38	  return userDetails;
+39	});
+40	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import LogoCloud from '@/components/ui/LogoCloud';
+5	import type { Tables } from '@/types_db';
+6	import { getStripe } from '@/utils/stripe/client';
+7	import { checkoutWithStripe } from '@/utils/stripe/server';
+8	import { getErrorRedirect } from '@/utils/helpers';
+9	import { User } from '@supabase/supabase-js';
+10	import cn from 'classnames';
+11	import { useRouter, usePathname } from 'next/navigation';
+12	import { useState } from 'react';
+13
+14	type Subscription = Tables<'subscriptions'>;
+15	type Product = Tables<'products'>;
+16	type Price = Tables<'prices'>;
+17	interface ProductWithPrices extends Product {
+18	  prices: Price[];
+19	}
+20	interface PriceWithProduct extends Price {
+21	  products: Product | null;
+22	}
+23	interface SubscriptionWithProduct extends Subscription {
+24	  prices: PriceWithProduct | null;
+25	}
+26
+27	interface Props {
+28	  user: User | null | undefined;
+29	  products: ProductWithPrices[];
+30	  subscription: SubscriptionWithProduct | null;
+31	}
+32
+33	type BillingInterval = 'lifetime' | 'year' | 'month';
+34
+35	export default function Pricing({ user, products, subscription }: Props) {
+36	  const intervals = Array.from(
+37	    new Set(
+38	      products.flatMap((product) =>
+39	        product?.prices?.map((price) => price?.interval)
+40	      )
+41	    )
+42	  );
+43	  const router = useRouter();
+44	  const [billingInterval, setBillingInterval] =
+45	    useState<BillingInterval>('month');
+46	  const [priceIdLoading, setPriceIdLoading] = useState<string>();
+47	  const currentPath = usePathname();
+48
+49	  const handleStripeCheckout = async (price: Price) => {
+50	    setPriceIdLoading(price.id);
+51
+52	    if (!user) {
+53	      setPriceIdLoading(undefined);
+54	      return router.push('/signin/signup');
+55	    }
+56
+57	    const { errorRedirect, sessionId } = await checkoutWithStripe(
+58	      price,
+59	      currentPath
+60	    );
+61
+62	    if (errorRedirect) {
+63	      setPriceIdLoading(undefined);
+64	      return router.push(errorRedirect);
+65	    }
+66
+67	    if (!sessionId) {
+68	      setPriceIdLoading(undefined);
+69	      return router.push(
+70	        getErrorRedirect(
+71	          currentPath,
+72	          'An unknown error occurred.',
+73	          'Please try again later or contact a system administrator.'
+74	        )
+75	      );
+76	    }
+77
+78	    const stripe = await getStripe();
+79	    stripe?.redirectToCheckout({ sessionId });
+80
+81	    setPriceIdLoading(undefined);
+82	  };
+83
+84	  if (!products.length) {
+85	    return (
+86	      <section className="bg-black">
+87	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+88	          <div className="sm:flex sm:flex-col sm:align-center"></div>
+89	          <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+90	            No subscription pricing plans found. Create them in your{' '}
+91	            <a
+92	              className="text-pink-500 underline"
+93	              href="https://dashboard.stripe.com/products"
+94	              rel="noopener noreferrer"
+95	              target="_blank"
+96	            >
+97	              Stripe Dashboard
+98	            </a>
+99	            .
+100	          </p>
+101	        </div>
+102	        <LogoCloud />
+103	      </section>
+104	    );
+105	  } else {
+106	    return (
+107	      <section className="bg-black">
+108	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+109	          <div className="sm:flex sm:flex-col sm:align-center">
+110	            <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+111	              Pricing Plans
+112	            </h1>
+113	            <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+114	              Start building for free, then add a site plan to go live. Account
+115	              plans unlock additional features.
+116	            </p>
+117	            <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
+118	              {intervals.includes('month') && (
+119	                <button
+120	                  onClick={() => setBillingInterval('month')}
+121	                  type="button"
+122	                  className={`${
+123	                    billingInterval === 'month'
+124	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+125	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+126	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+127	                >
+128	                  Monthly billing
+129	                </button>
+130	              )}
+131	              {intervals.includes('year') && (
+132	                <button
+133	                  onClick={() => setBillingInterval('year')}
+134	                  type="button"
+135	                  className={`${
+136	                    billingInterval === 'year'
+137	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+138	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+139	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+140	                >
+141	                  Yearly billing
+142	                </button>
+143	              )}
+144	            </div>
+145	          </div>
+146	          <div className="mt-12 space-y-0 sm:mt-16 flex flex-wrap justify-center gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0">
+147	            {products.map((product) => {
+148	              const price = product?.prices?.find(
+149	                (price) => price.interval === billingInterval
+150	              );
+151	              if (!price) return null;
+152	              const priceString = new Intl.NumberFormat('en-US', {
+153	                style: 'currency',
+154	                currency: price.currency!,
+155	                minimumFractionDigits: 0
+156	              }).format((price?.unit_amount || 0) / 100);
+157	              return (
+158	                <div
+159	                  key={product.id}
+160	                  className={cn(
+161	                    'flex flex-col rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
+162	                    {
+163	                      'border border-pink-500': subscription
+164	                        ? product.name === subscription?.prices?.products?.name
+165	                        : product.name === 'Freelancer'
+166	                    },
+167	                    'flex-1', // This makes the flex item grow to fill the space
+168	                    'basis-1/3', // Assuming you want each card to take up roughly a third of the container's width
+169	                    'max-w-xs' // Sets a maximum width to the cards to prevent them from getting too large
+170	                  )}
+171	                >
+172	                  <div className="p-6">
+173	                    <h2 className="text-2xl font-semibold leading-6 text-white">
+174	                      {product.name}
+175	                    </h2>
+176	                    <p className="mt-4 text-zinc-300">{product.description}</p>
+177	                    <p className="mt-8">
+178	                      <span className="text-5xl font-extrabold white">
+179	                        {priceString}
+180	                      </span>
+181	                      <span className="text-base font-medium text-zinc-100">
+182	                        /{billingInterval}
+183	                      </span>
+184	                    </p>
+185	                    <Button
+186	                      variant="slim"
+187	                      type="button"
+188	                      loading={priceIdLoading === price.id}
+189	                      onClick={() => handleStripeCheckout(price)}
+190	                      className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"
+191	                    >
+192	                      {subscription ? 'Manage' : 'Subscribe'}
+193	                    </Button>
+194	                  </div>
+195	                </div>
+196	              );
+197	            })}
+198	          </div>
+199	          <LogoCloud />
+200	        </div>
+201	      </section>
+202	    );
+203	  }
+204	}
+205	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx with line numbers:
+1	'use client';
+2
+3	import Button from '@/components/ui/Button';
+4	import Card from '@/components/ui/Card';
+5	import { updateName } from '@/utils/auth-helpers/server';
+6	import { handleRequest } from '@/utils/auth-helpers/client';
+7	import { useRouter } from 'next/navigation';
+8	import { useState } from 'react';
+9
+10	export default function NameForm({ userName }: { userName: string }) {
+11	  const router = useRouter();
+12	  const [isSubmitting, setIsSubmitting] = useState(false);
+13
+14	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+15	    setIsSubmitting(true);
+16	    // Check if the new name is the same as the old name
+17	    if (e.currentTarget.fullName.value === userName) {
+18	      e.preventDefault();
+19	      setIsSubmitting(false);
+20	      return;
+21	    }
+22	    handleRequest(e, updateName, router);
+23	    setIsSubmitting(false);
+24	  };
+25
+26	  return (
+27	    <Card
+28	      title="Your Name"
+29	      description="Please enter your full name, or a display name you are comfortable with."
+30	      footer={
+31	        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+32	          <p className="pb-4 sm:pb-0">64 characters maximum</p>
+33	          <Button
+34	            variant="slim"
+35	            type="submit"
+36	            form="nameForm"
+37	            loading={isSubmitting}
+38	          >
+39	            Update Name
+40	          </Button>
+41	        </div>
+42	      }
+43	    >
+44	      <div className="mt-8 mb-4 text-xl font-semibold">
+45	        <form id="nameForm" onSubmit={(e) => handleSubmit(e)}>
+46	          <input
+47	            type="text"
+48	            name="fullName"
+49	            className="w-1/2 p-3 rounded-md bg-zinc-800"
+50	            defaultValue={userName}
+51	            placeholder="Your name"
+52	            maxLength={64}
+53	          />
+54	        </form>
+55	      </div>
+56	    </Card>
+57	  );
+58	}
+59	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers, excluding hidden items and node_modules:
+12K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+1.5K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts
+8.5K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+1.5K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/settings.ts
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts with line numbers:
+1	'use server';
+2
+3	import { createClient } from '@/utils/supabase/server';
+4	import { cookies } from 'next/headers';
+5	import { redirect } from 'next/navigation';
+6	import { getURL, getErrorRedirect, getStatusRedirect } from 'utils/helpers';
+7	import { getAuthTypes } from 'utils/auth-helpers/settings';
+8
+9	function isValidEmail(email: string) {
+10	  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+11	  return regex.test(email);
+12	}
+13
+14	export async function redirectToPath(path: string) {
+15	  return redirect(path);
+16	}
+17
+18	export async function SignOut(formData: FormData) {
+19	  const pathName = String(formData.get('pathName')).trim();
+20
+21	  const supabase = createClient();
+22	  const { error } = await supabase.auth.signOut();
+23
+24	  if (error) {
+25	    return getErrorRedirect(
+26	      pathName,
+27	      'Hmm... Something went wrong.',
+28	      'You could not be signed out.'
+29	    );
+30	  }
+31
+32	  return '/signin';
+33	}
+34
+35	export async function signInWithEmail(formData: FormData) {
+36	  const cookieStore = cookies();
+37	  const callbackURL = getURL('/auth/callback');
+38
+39	  const email = String(formData.get('email')).trim();
+40	  let redirectPath: string;
+41
+42	  if (!isValidEmail(email)) {
+43	    redirectPath = getErrorRedirect(
+44	      '/signin/email_signin',
+45	      'Invalid email address.',
+46	      'Please try again.'
+47	    );
+48	  }
+49
+50	  const supabase = createClient();
+51	  let options = {
+52	    emailRedirectTo: callbackURL,
+53	    shouldCreateUser: true
+54	  };
+55
+56	  // If allowPassword is false, do not create a new user
+57	  const { allowPassword } = getAuthTypes();
+58	  if (allowPassword) options.shouldCreateUser = false;
+59	  const { data, error } = await supabase.auth.signInWithOtp({
+60	    email,
+61	    options: options
+62	  });
+63
+64	  if (error) {
+65	    redirectPath = getErrorRedirect(
+66	      '/signin/email_signin',
+67	      'You could not be signed in.',
+68	      error.message
+69	    );
+70	  } else if (data) {
+71	    cookieStore.set('preferredSignInView', 'email_signin', { path: '/' });
+72	    redirectPath = getStatusRedirect(
+73	      '/signin/email_signin',
+74	      'Success!',
+75	      'Please check your email for a magic link. You may now close this tab.',
+76	      true
+77	    );
+78	  } else {
+79	    redirectPath = getErrorRedirect(
+80	      '/signin/email_signin',
+81	      'Hmm... Something went wrong.',
+82	      'You could not be signed in.'
+83	    );
+84	  }
+85
+86	  return redirectPath;
+87	}
+88
+89	export async function requestPasswordUpdate(formData: FormData) {
+90	  const callbackURL = getURL('/auth/reset_password');
+91
+92	  // Get form data
+93	  const email = String(formData.get('email')).trim();
+94	  let redirectPath: string;
+95
+96	  if (!isValidEmail(email)) {
+97	    redirectPath = getErrorRedirect(
+98	      '/signin/forgot_password',
+99	      'Invalid email address.',
+100	      'Please try again.'
+101	    );
+102	  }
+103
+104	  const supabase = createClient();
+105
+106	  const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+107	    redirectTo: callbackURL
+108	  });
+109
+110	  if (error) {
+111	    redirectPath = getErrorRedirect(
+112	      '/signin/forgot_password',
+113	      error.message,
+114	      'Please try again.'
+115	    );
+116	  } else if (data) {
+117	    redirectPath = getStatusRedirect(
+118	      '/signin/forgot_password',
+119	      'Success!',
+120	      'Please check your email for a password reset link. You may now close this tab.',
+121	      true
+122	    );
+123	  } else {
+124	    redirectPath = getErrorRedirect(
+125	      '/signin/forgot_password',
+126	      'Hmm... Something went wrong.',
+127	      'Password reset email could not be sent.'
+128	    );
+129	  }
+130
+131	  return redirectPath;
+132	}
+133
+134	export async function signInWithPassword(formData: FormData) {
+135	  const cookieStore = cookies();
+136	  const email = String(formData.get('email')).trim();
+137	  const password = String(formData.get('password')).trim();
+138	  let redirectPath: string;
+139
+140	  const supabase = createClient();
+141	  const { error, data } = await supabase.auth.signInWithPassword({
+142	    email,
+143	    password
+144	  });
+145
+146	  if (error) {
+147	    redirectPath = getErrorRedirect(
+148	      '/signin/password_signin',
+149	      'Sign in failed.',
+150	      error.message
+151	    );
+152	  } else if (data.user) {
+153	    cookieStore.set('preferredSignInView', 'password_signin', { path: '/' });
+154	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+155	  } else {
+156	    redirectPath = getErrorRedirect(
+157	      '/signin/password_signin',
+158	      'Hmm... Something went wrong.',
+159	      'You could not be signed in.'
+160	    );
+161	  }
+162
+163	  return redirectPath;
+164	}
+165
+166	export async function signUp(formData: FormData) {
+167	  const callbackURL = getURL('/auth/callback');
+168
+169	  const email = String(formData.get('email')).trim();
+170	  const password = String(formData.get('password')).trim();
+171	  let redirectPath: string;
+172
+173	  if (!isValidEmail(email)) {
+174	    redirectPath = getErrorRedirect(
+175	      '/signin/signup',
+176	      'Invalid email address.',
+177	      'Please try again.'
+178	    );
+179	  }
+180
+181	  const supabase = createClient();
+182	  const { error, data } = await supabase.auth.signUp({
+183	    email,
+184	    password,
+185	    options: {
+186	      emailRedirectTo: callbackURL
+187	    }
+188	  });
+189
+190	  if (error) {
+191	    redirectPath = getErrorRedirect(
+192	      '/signin/signup',
+193	      'Sign up failed.',
+194	      error.message
+195	    );
+196	  } else if (data.session) {
+197	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+198	  } else if (
+199	    data.user &&
+200	    data.user.identities &&
+201	    data.user.identities.length == 0
+202	  ) {
+203	    redirectPath = getErrorRedirect(
+204	      '/signin/signup',
+205	      'Sign up failed.',
+206	      'There is already an account associated with this email address. Try resetting your password.'
+207	    );
+208	  } else if (data.user) {
+209	    redirectPath = getStatusRedirect(
+210	      '/',
+211	      'Success!',
+212	      'Please check your email for a confirmation link. You may now close this tab.'
+213	    );
+214	  } else {
+215	    redirectPath = getErrorRedirect(
+216	      '/signin/signup',
+217	      'Hmm... Something went wrong.',
+218	      'You could not be signed up.'
+219	    );
+220	  }
+221
+222	  return redirectPath;
+223	}
+224
+225	export async function updatePassword(formData: FormData) {
+226	  const password = String(formData.get('password')).trim();
+227	  const passwordConfirm = String(formData.get('passwordConfirm')).trim();
+228	  let redirectPath: string;
+229
+230	  // Check that the password and confirmation match
+231	  if (password !== passwordConfirm) {
+232	    redirectPath = getErrorRedirect(
+233	      '/signin/update_password',
+234	      'Your password could not be updated.',
+235	      'Passwords do not match.'
+236	    );
+237	  }
+238
+239	  const supabase = createClient();
+240	  const { error, data } = await supabase.auth.updateUser({
+241	    password
+242	  });
+243
+244	  if (error) {
+245	    redirectPath = getErrorRedirect(
+246	      '/signin/update_password',
+247	      'Your password could not be updated.',
+248	      error.message
+249	    );
+250	  } else if (data.user) {
+251	    redirectPath = getStatusRedirect(
+252	      '/',
+253	      'Success!',
+254	      'Your password has been updated.'
+255	    );
+256	  } else {
+257	    redirectPath = getErrorRedirect(
+258	      '/signin/update_password',
+259	      'Hmm... Something went wrong.',
+260	      'Your password could not be updated.'
+261	    );
+262	  }
+263
+264	  return redirectPath;
+265	}
+266
+267	export async function updateEmail(formData: FormData) {
+268	  // Get form data
+269	  const newEmail = String(formData.get('newEmail')).trim();
+270
+271	  // Check that the email is valid
+272	  if (!isValidEmail(newEmail)) {
+273	    return getErrorRedirect(
+274	      '/account',
+275	      'Your email could not be updated.',
+276	      'Invalid email address.'
+277	    );
+278	  }
+279
+280	  const supabase = createClient();
+281
+282	  const callbackUrl = getURL(
+283	    getStatusRedirect('/account', 'Success!', `Your email has been updated.`)
+284	  );
+285
+286	  const { error } = await supabase.auth.updateUser(
+287	    { email: newEmail },
+288	    {
+289	      emailRedirectTo: callbackUrl
+290	    }
+291	  );
+292
+293	  if (error) {
+294	    return getErrorRedirect(
+295	      '/account',
+296	      'Your email could not be updated.',
+297	      error.message
+298	    );
+299	  } else {
+300	    return getStatusRedirect(
+301	      '/account',
+302	      'Confirmation emails sent.',
+303	      `You will need to confirm the update by clicking the links sent to both the old and new email addresses.`
+304	    );
+305	  }
+306	}
+307
+308	export async function updateName(formData: FormData) {
+309	  // Get form data
+310	  const fullName = String(formData.get('fullName')).trim();
+311
+312	  const supabase = createClient();
+313	  const { error, data } = await supabase.auth.updateUser({
+314	    data: { full_name: fullName }
+315	  });
+316
+317	  if (error) {
+318	    return getErrorRedirect(
+319	      '/account',
+320	      'Your name could not be updated.',
+321	      error.message
+322	    );
+323	  } else if (data.user) {
+324	    return getStatusRedirect(
+325	      '/account',
+326	      'Success!',
+327	      'Your name has been updated.'
+328	    );
+329	  } else {
+330	    return getErrorRedirect(
+331	      '/account',
+332	      'Hmm... Something went wrong.',
+333	      'Your name could not be updated.'
+334	    );
+335	  }
+336	}
+337	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/types_db.ts
+'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+
+bash
+command
+file /tmp/inputs/nextjs-subscription-payments/types_db.ts
+output
+/tmp/inputs/nextjs-subscription-payments/types_db.ts: C++ source, Little-endian UTF-16 Unicode text, with CRLF line terminators
+
+
+bash
+command
+iconv -f UTF-16LE -t UTF-8 /tmp/inputs/nextjs-subscription-payments/types_db.ts | head -50
+output
+﻿export type Json =
+| string
+| number
+| boolean
+| null
+| { [key: string]: Json | undefined }
+| Json[]
+
+export interface Database {
+public: {
+Tables: {
+customers: {
+Row: {
+id: string
+stripe_customer_id: string | null
+}
+Insert: {
+id: string
+stripe_customer_id?: string | null
+}
+Update: {
+id?: string
+stripe_customer_id?: string | null
+}
+Relationships: [
+{
+foreignKeyName: "customers_id_fkey"
+columns: ["id"]
+isOneToOne: true
+referencedRelation: "users"
+referencedColumns: ["id"]
+}
+]
+}
+prices: {
+Row: {
+active: boolean | null
+currency: string | null
+id: string
+interval: Database["public"]["Enums"]["pricing_plan_interval"] | null
+interval_count: number | null
+product_id: string | null
+trial_period_days: number | null
+type: Database["public"]["Enums"]["pricing_type"] | null
+unit_amount: number | null
+}
+Insert: {
+active?: boolean | null
+currency?: string | null
+id: string
+
+
+bash
+command
+ls -la /tmp/inputs/nextjs-subscription-payments/app/api/
+output
+total 0
+drwxr-xr-x 3 argocd root  60 Jan  6 14:25 .
+drwxr-xr-x 6 argocd root 180 Jan  6 14:25 ..
+drwxr-xr-x 2 argocd root  60 Jan  6 14:25 webhooks
+
+
+bash
+command
+find /tmp/inputs/nextjs-subscription-payments -name "*.tsx" -o -name "*.ts" | grep -E "(app|components)" | wc -l
+output
+39
+
+
+bash
+command
+tree -L 3 /tmp/inputs/nextjs-subscription-payments/app/ -I 'node_modules'
+bash: tree: command not found
+
+
+bash
+command
+find /tmp/inputs/nextjs-subscription-payments/app -type f -name "*.tsx" -o -name "*.ts" | sort
+output
+/tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+/tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+/tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts
+/tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts
+/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+/tmp/inputs/nextjs-subscription-payments/app/page.tsx
+/tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+/tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/stripe
+output
+Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments/utils/stripe, excluding hidden items and node_modules:
+6.0K	/tmp/inputs/nextjs-subscription-payments/utils/stripe
+512	/tmp/inputs/nextjs-subscription-payments/utils/stripe/client.ts
+1.0K	/tmp/inputs/nextjs-subscription-payments/utils/stripe/config.ts
+4.5K	/tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts
+
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts with line numbers:
+1	'use server';
+2
+3	import Stripe from 'stripe';
+4	import { stripe } from '@/utils/stripe/config';
+5	import { createClient } from '@/utils/supabase/server';
+6	import { createOrRetrieveCustomer } from '@/utils/supabase/admin';
+7	import {
+8	  getURL,
+9	  getErrorRedirect,
+10	  calculateTrialEndUnixTimestamp
+11	} from '@/utils/helpers';
+12	import { Tables } from '@/types_db';
+13
+14	type Price = Tables<'prices'>;
+15
+16	type CheckoutResponse = {
+17	  errorRedirect?: string;
+18	  sessionId?: string;
+19	};
+20
+21	export async function checkoutWithStripe(
+22	  price: Price,
+23	  redirectPath: string = '/account'
+24	): Promise<CheckoutResponse> {
+25	  try {
+26	    // Get the user from Supabase auth
+27	    const supabase = createClient();
+28	    const {
+29	      error,
+30	      data: { user }
+31	    } = await supabase.auth.getUser();
+32
+33	    if (error || !user) {
+34	      console.error(error);
+35	      throw new Error('Could not get user session.');
+36	    }
+37
+38	    // Retrieve or create the customer in Stripe
+39	    let customer: string;
+40	    try {
+41	      customer = await createOrRetrieveCustomer({
+42	        uuid: user?.id || '',
+43	        email: user?.email || ''
+44	      });
+45	    } catch (err) {
+46	      console.error(err);
+47	      throw new Error('Unable to access customer record.');
+48	    }
+49
+50	    let params: Stripe.Checkout.SessionCreateParams = {
+51	      allow_promotion_codes: true,
+52	      billing_address_collection: 'required',
+53	      customer,
+54	      customer_update: {
+55	        address: 'auto'
+56	      },
+57	      line_items: [
+58	        {
+59	          price: price.id,
+60	          quantity: 1
+61	        }
+62	      ],
+63	      cancel_url: getURL(),
+64	      success_url: getURL(redirectPath)
+65	    };
+66
+67	    console.log(
+68	      'Trial end:',
+69	      calculateTrialEndUnixTimestamp(price.trial_period_days)
+70	    );
+71	    if (price.type === 'recurring') {
+72	      params = {
+73	        ...params,
+74	        mode: 'subscription',
+75	        subscription_data: {
+76	          trial_end: calculateTrialEndUnixTimestamp(price.trial_period_days)
+77	        }
+78	      };
+79	    } else if (price.type === 'one_time') {
+80	      params = {
+81	        ...params,
+82	        mode: 'payment'
+83	      };
+84	    }
+85
+86	    // Create a checkout session in Stripe
+87	    let session;
+88	    try {
+89	      session = await stripe.checkout.sessions.create(params);
+90	    } catch (err) {
+91	      console.error(err);
+92	      throw new Error('Unable to create checkout session.');
+93	    }
+94
+95	    // Instead of returning a Response, just return the data or error.
+96	    if (session) {
+97	      return { sessionId: session.id };
+98	    } else {
+99	      throw new Error('Unable to create checkout session.');
+100	    }
+101	  } catch (error) {
+102	    if (error instanceof Error) {
+103	      return {
+104	        errorRedirect: getErrorRedirect(
+105	          redirectPath,
+106	          error.message,
+107	          'Please try again later or contact a system administrator.'
+108	        )
+109	      };
+110	    } else {
+111	      return {
+112	        errorRedirect: getErrorRedirect(
+113	          redirectPath,
+114	          'An unknown error occurred.',
+115	          'Please try again later or contact a system administrator.'
+116	        )
+117	      };
+118	    }
+119	  }
+120	}
+121
+122	export async function createStripePortal(currentPath: string) {
+123	  try {
+124	    const supabase = createClient();
+125	    const {
+126	      error,
+127	      data: { user }
+128	    } = await supabase.auth.getUser();
+129
+130	    if (!user) {
+131	      if (error) {
+132	        console.error(error);
+133	      }
+134	      throw new Error('Could not get user session.');
+135	    }
+136
+137	    let customer;
+138	    try {
+139	      customer = await createOrRetrieveCustomer({
+140	        uuid: user.id || '',
+141	        email: user.email || ''
+142	      });
+143	    } catch (err) {
+144	      console.error(err);
+145	      throw new Error('Unable to access customer record.');
+146	    }
+147
+148	    if (!customer) {
+149	      throw new Error('Could not get customer.');
+150	    }
+151
+152	    try {
+153	      const { url } = await stripe.billingPortal.sessions.create({
+154	        customer,
+155	        return_url: getURL('/account')
+156	      });
+157	      if (!url) {
+158	        throw new Error('Could not create billing portal');
+159	      }
+160	      return url;
+161	    } catch (err) {
+162	      console.error(err);
+163	      throw new Error('Could not create billing portal');
+164	    }
+165	  } catch (error) {
+166	    if (error instanceof Error) {
+167	      console.error(error);
+168	      return getErrorRedirect(
+169	        currentPath,
+170	        error.message,
+171	        'Please try again later or contact a system administrator.'
+172	      );
+173	    } else {
+174	      return getErrorRedirect(
+175	        currentPath,
+176	        'An unknown error occurred.',
+177	        'Please try again later or contact a system administrator.'
+178	      );
+179	    }
+180	  }
+181	}
+182	
+
+
+str_replace_based_edit_tool
+command
+view
+path
+/tmp/inputs/nextjs-subscription-payments/README.md
+view_range
+[1, 100]
+output
+Here's the content of /tmp/inputs/nextjs-subscription-payments/README.md with line numbers (which has a total of 262 lines) with view_range=[1, 100]:
+1	# Next.js Subscription Payments Starter
+2
+3
+4	> [!WARNING]
+5	> This repo has been sunset and replaced by a new template: https://github.com/nextjs/saas-starter
+6
+7	## Features
+8
+9	- Secure user management and authentication with [Supabase](https://supabase.io/docs/guides/auth)
+10	- Powerful data access & management tooling on top of PostgreSQL with [Supabase](https://supabase.io/docs/guides/database)
+11	- Integration with [Stripe Checkout](https://stripe.com/docs/payments/checkout) and the [Stripe customer portal](https://stripe.com/docs/billing/subscriptions/customer-portal)
+12	- Automatic syncing of pricing plans and subscription statuses via [Stripe webhooks](https://stripe.com/docs/webhooks)
+13
+14	## Demo
+15
+16	- https://subscription-payments.vercel.app/
+17
+18	[![Screenshot of demo](./public/demo.png)](https://subscription-payments.vercel.app/)
+19
+20	## Architecture
+21
+22	![Architecture diagram](./public/architecture_diagram.png)
+23
+24	## Step-by-step setup
+25
+26	When deploying this template, the sequence of steps is important. Follow the steps below in order to get up and running.
+27
+28	### Initiate Deployment
+29
+30	#### Vercel Deploy Button
+31
+32	[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextjs-subscription-payments&env=NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,STRIPE_SECRET_KEY&envDescription=Enter%20your%20Stripe%20API%20keys.&envLink=https%3A%2F%2Fdashboard.stripe.com%2Fapikeys&project-name=nextjs-subscription-payments&repository-name=nextjs-subscription-payments&integration-ids=oac_VqOgBHqhEoFTPzGkPd7L0iH6&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextjs-subscription-payments%2Ftree%2Fmain)
+33
+34	The Vercel Deployment will create a new repository with this template on your GitHub account and guide you through a new Supabase project creation. The [Supabase Vercel Deploy Integration](https://vercel.com/integrations/supabase) will set up the necessary Supabase environment variables and run the [SQL migrations](./supabase/migrations/20230530034630_init.sql) to set up the Database schema on your account. You can inspect the created tables in your project's [Table editor](https://app.supabase.com/project/_/editor).
+35
+36	Should the automatic setup fail, please [create a Supabase account](https://app.supabase.com/projects), and a new project if needed. In your project, navigate to the [SQL editor](https://app.supabase.com/project/_/sql) and select the "Stripe Subscriptions" starter template from the Quick start section.
+37
+38	### Configure Auth
+39
+40	Follow [this guide](https://supabase.com/docs/guides/auth/social-login/auth-github) to set up an OAuth app with GitHub and configure Supabase to use it as an auth provider.
+41
+42	In your Supabase project, navigate to [auth > URL configuration](https://app.supabase.com/project/_/auth/url-configuration) and set your main production URL (e.g. https://your-deployment-url.vercel.app) as the site url.
+43
+44	Next, in your Vercel deployment settings, add a new **Production** environment variable called `NEXT_PUBLIC_SITE_URL` and set it to the same URL. Make sure to deselect preview and development environments to make sure that preview branches and local development work correctly.
+45
+46	#### [Optional] - Set up redirect wildcards for deploy previews (not needed if you installed via the Deploy Button)
+47
+48	If you've deployed this template via the "Deploy to Vercel" button above, you can skip this step. The Supabase Vercel Integration will have set redirect wildcards for you. You can check this by going to your Supabase [auth settings](https://app.supabase.com/project/_/auth/url-configuration) and you should see a list of redirects under "Redirect URLs".
+49
+50	Otherwise, for auth redirects (email confirmations, magic links, OAuth providers) to work correctly in deploy previews, navigate to the [auth settings](https://app.supabase.com/project/_/auth/url-configuration) and add the following wildcard URL to "Redirect URLs": `https://*-username.vercel.app/**`. You can read more about redirect wildcard patterns in the [docs](https://supabase.com/docs/guides/auth#redirect-urls-and-wildcards).
+51
+52	If you've deployed this template via the "Deploy to Vercel" button above, you can skip this step. The Supabase Vercel Integration will have run database migrations for you. You can check this by going to [the Table Editor for your Supabase project](https://supabase.com/dashboard/project/_/editor), and confirming there are tables with seed data.
+53
+54	Otherwise, navigate to the [SQL Editor](https://supabase.com/dashboard/project/_/sql/new), paste the contents of [the Supabase `schema.sql` file](./schema.sql), and click RUN to initialize the database.
+55
+56	#### [Maybe Optional] - Set up Supabase environment variables (not needed if you installed via the Deploy Button)
+57
+58	If you've deployed this template via the "Deploy to Vercel" button above, you can skip this step. The Supabase Vercel Integration will have set your environment variables for you. You can check this by going to your Vercel project settings, and clicking on 'Environment variables', there will be a list of environment variables with the Supabase icon displayed next to them.
+59
+60	Otherwise navigate to the [API settings](https://app.supabase.com/project/_/settings/api) and paste them into the Vercel deployment interface. Copy project API keys and paste into the `NEXT_PUBLIC_SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY` fields, and copy the project URL and paste to Vercel as `NEXT_PUBLIC_SUPABASE_URL`.
+61
+62	Congrats, this completes the Supabase setup, almost there!
+63
+64	### Configure Stripe
+65
+66	Next, we'll need to configure [Stripe](https://stripe.com/) to handle test payments. If you don't already have a Stripe account, create one now.
+67
+68	For the following steps, make sure you have the ["Test Mode" toggle](https://stripe.com/docs/testing) switched on.
+69
+70	#### Create a Webhook
+71
+72	We need to create a webhook in the `Developers` section of Stripe. Pictured in the architecture diagram above, this webhook is the piece that connects Stripe to your Vercel Serverless Functions.
+73
+74	1. Click the "Add Endpoint" button on the [test Endpoints page](https://dashboard.stripe.com/test/webhooks).
+75	1. Enter your production deployment URL followed by `/api/webhooks` for the endpoint URL. (e.g. `https://your-deployment-url.vercel.app/api/webhooks`)
+76	1. Click `Select events` under the `Select events to listen to` heading.
+77	1. Click `Select all events` in the `Select events to send` section.
+78	1. Copy `Signing secret` as we'll need that in the next step (e.g `whsec_xxx`) (/!\ be careful not to copy the webook id we_xxxx).
+79	1. In addition to the `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` and the `STRIPE_SECRET_KEY` we've set earlier during deployment, we need to add the webhook secret as `STRIPE_WEBHOOK_SECRET` env var.
+80
+81	#### Redeploy with new env vars
+82
+83	For the newly set environment variables to take effect and everything to work together correctly, we need to redeploy our app in Vercel. In your Vercel Dashboard, navigate to deployments, click the overflow menu button and select "Redeploy" (do NOT enable the "Use existing Build Cache" option). Once Vercel has rebuilt and redeployed your app, you're ready to set up your products and prices.
+84
+85	#### Create product and pricing information
+86
+87	Your application's webhook listens for product updates on Stripe and automatically propagates them to your Supabase database. So with your webhook listener running, you can now create your product and pricing information in the [Stripe Dashboard](https://dashboard.stripe.com/test/products).
+88
+89	Stripe Checkout currently supports pricing that bills a predefined amount at a specific interval. More complex plans (e.g., different pricing tiers or seats) are not yet supported.
+90
+91	For example, you can create business models with different pricing tiers, e.g.:
+92
+93	- Product 1: Hobby
+94	  - Price 1: 10 USD per month
+95	  - Price 2: 100 USD per year
+96	- Product 2: Freelancer
+97	  - Price 1: 20 USD per month
+98	  - Price 2: 200 USD per year
+99
+100	Optionally, to speed up the setup, we have added a [fixtures file](fixtures/stripe-fixtures.json) to bootstrap test product and pricing data in your Stripe account. The [Stripe CLI](https://stripe.com/docs/stripe-cli#install) `fixtures` command executes a series of API requests defined in this JSON file. Simply run `stripe fixtures fixtures/stripe-fixtures.json`.
+
+
+Now let me create a summary document with my findings:
+
+
+bash
+command
+cat > /tmp/inputs/architecture_analysis.txt << 'EOF'
+ARCHITECTURAL PATTERN ANALYSIS
+Next.js Subscription Payments Repository
+
+SUMMARY:
+This Next.js application does NOT follow a traditional MVC (Model-View-Controller) pattern. Instead, it follows modern React/Next.js architectural patterns that are more aligned with component-based architecture and server-side rendering conventions.
+
+KEY ARCHITECTURAL PATTERNS IDENTIFIED:
+
+1. NEXT.JS APP ROUTER PATTERN (Primary Architecture)
+   - Uses Next.js 13+ App Router with server components
+   - File-system based routing in /app directory
+   - Server-side data fetching at the route level
+   - Example: app/page.tsx, app/account/page.tsx
+
+2. COMPONENT-BASED ARCHITECTURE
+   - Presentational components in /components/ui/
+   - Reusable UI components (Button, Card, Input, etc.)
+   - Business logic components (Pricing, AuthForms, AccountForms)
+   - No traditional "View" layer separation
+
+3. SERVICE/UTILITY LAYER (Closest to "Model" in MVC)
+   - /utils/supabase/queries.ts - Data fetching functions
+   - /utils/auth-helpers/server.ts - Authentication business logic
+   - /utils/stripe/server.ts - Payment processing logic
+   - Database types defined in types_db.ts
+   - These handle data access and business operations
+
+4. SERVER ACTIONS PATTERN
+   - Server-side functions marked with 'use server'
+   - Direct database operations without traditional controllers
+   - Found in: utils/auth-helpers/server.ts, utils/stripe/server.ts
+
+5. API ROUTES (Limited Controller-like behavior)
+   - Minimal API routes in app/api/
+   - Primarily webhooks for Stripe integration
+   - Most logic uses Server Actions instead
+
+STRUCTURE BREAKDOWN:
+
+├── app/                          # Routes (combines routing + page composition)
+│   ├── page.tsx                 # Homepage - fetches data, renders Pricing component
+│   ├── account/page.tsx         # Account page - fetches user data, renders forms
+│   ├── api/webhooks/            # API endpoints (minimal)
+│   └── auth/                    # Auth callback routes
+
+├── components/                   # UI Components (View-like, but not pure views)
+│   └── ui/
+│       ├── Pricing/             # Complex component with state & logic
+│       ├── AuthForms/           # Form components with client interaction
+│       ├── AccountForms/        # Form components calling server actions
+│       └── Button, Card, Input  # Reusable UI primitives
+
+├── utils/                        # Business Logic & Data Access (Model-like)
+│   ├── supabase/
+│   │   ├── queries.ts           # Data fetching (cached)
+│   │   ├── admin.ts             # Admin operations
+│   │   └── server.ts/client.ts  # Supabase client setup
+│   ├── auth-helpers/
+│   │   └── server.ts            # Auth operations (signIn, signUp, updateName, etc.)
+│   └── stripe/
+│       └── server.ts            # Stripe checkout & billing logic
+
+└── types_db.ts                   # Database schema types (Data Models)
+
+WHY NOT MVC?
+
+1. NO SEPARATE CONTROLLERS:
+   - Route handlers (page.tsx files) fetch data and compose components directly
+   - Server Actions replace traditional controller methods
+   - Business logic distributed across utility functions
+
+2. NO SEPARATE VIEWS:
+   - Components are not passive templates
+   - They contain both UI and interaction logic (especially 'use client' components)
+   - State management happens within components
+
+3. MODELS ARE DISTRIBUTED:
+   - No traditional model classes
+   - Type definitions for database tables (types_db.ts)
+   - Data access through utility functions (queries.ts)
+   - No ORM or traditional model layer
+
+ACTUAL PATTERN: MODERN NEXT.JS ARCHITECTURE
+
+This follows what could be called:
+- "Server Component + Server Actions Pattern"
+- "Colocation Pattern" (components near their routes)
+- "Data Fetching at Route Level"
+- "Utility/Service Layer for Business Logic"
+
+COMPARISON TO MVC:
+
+MVC Pattern              →    This Next.js App
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Model (Data Layer)       →    utils/ functions + types_db.ts (scattered)
+View (Presentation)      →    Components (but with logic)
+Controller (Logic)       →    Route handlers + Server Actions (distributed)
+
+CONCLUSION:
+This is a modern React/Next.js application that embraces:
+- Component-based architecture over MVC separation
+- Server Components and Server Actions for data/logic
+- Utility pattern for shared business logic
+- Type-safe data access with TypeScript
+- Convention over configuration (Next.js App Router)
+
+It does NOT follow MVC in any traditional sense, but rather follows contemporary React/Next.js best practices where concerns are organized differently than classic MVC frameworks.
+EOF
+cat /tmp/inputs/architecture_analysis.txt
+
+output
+ARCHITECTURAL PATTERN ANALYSIS
+Next.js Subscription Payments Repository
+
+SUMMARY:
+This Next.js application does NOT follow a traditional MVC (Model-View-Controller) pattern. Instead, it follows modern React/Next.js architectural patterns that are more aligned with component-based architecture and server-side rendering conventions.
+
+KEY ARCHITECTURAL PATTERNS IDENTIFIED:
+
+1. NEXT.JS APP ROUTER PATTERN (Primary Architecture)
+- Uses Next.js 13+ App Router with server components
+- File-system based routing in /app directory
+- Server-side data fetching at the route level
+- Example: app/page.tsx, app/account/page.tsx
+
+2. COMPONENT-BASED ARCHITECTURE
+- Presentational components in /components/ui/
+- Reusable UI components (Button, Card, Input, etc.)
+- Business logic components (Pricing, AuthForms, AccountForms)
+- No traditional "View" layer separation
+
+3. SERVICE/UTILITY LAYER (Closest to "Model" in MVC)
+- /utils/supabase/queries.ts - Data fetching functions
+- /utils/auth-helpers/server.ts - Authentication business logic
+- /utils/stripe/server.ts - Payment processing logic
+- Database types defined in types_db.ts
+- These handle data access and business operations
+
+4. SERVER ACTIONS PATTERN
+- Server-side functions marked with 'use server'
+- Direct database operations without traditional controllers
+- Found in: utils/auth-helpers/server.ts, utils/stripe/server.ts
+
+5. API ROUTES (Limited Controller-like behavior)
+- Minimal API routes in app/api/
+- Primarily webhooks for Stripe integration
+- Most logic uses Server Actions instead
+
+STRUCTURE BREAKDOWN:
+
+├── app/                          # Routes (combines routing + page composition)
+│   ├── page.tsx                 # Homepage - fetches data, renders Pricing component
+│   ├── account/page.tsx         # Account page - fetches user data, renders forms
+│   ├── api/webhooks/            # API endpoints (minimal)
+│   └── auth/                    # Auth callback routes
+
+├── components/                   # UI Components (View-like, but not pure views)
+│   └── ui/
+│       ├── Pricing/             # Complex component with state & logic
+│       ├── AuthForms/           # Form components with client interaction
+│       ├── AccountForms/        # Form components calling server actions
+│       └── Button, Card, Input  # Reusable UI primitives
+
+├── utils/                        # Business Logic & Data Access (Model-like)
+│   ├── supabase/
+│   │   ├── queries.ts           # Data fetching (cached)
+│   │   ├── admin.ts             # Admin operations
+│   │   └── server.ts/client.ts  # Supabase client setup
+│   ├── auth-helpers/
+│   │   └── server.ts            # Auth operations (signIn, signUp, updateName, etc.)
+│   └── stripe/
+│       └── server.ts            # Stripe checkout & billing logic
+
+└── types_db.ts                   # Database schema types (Data Models)
+
+WHY NOT MVC?
+
+1. NO SEPARATE CONTROLLERS:
+- Route handlers (page.tsx files) fetch data and compose components directly
+- Server Actions replace traditional controller methods
+- Business logic distributed across utility functions
+
+2. NO SEPARATE VIEWS:
+- Components are not passive templates
+- They contain both UI and interaction logic (especially 'use client' components)
+- State management happens within components
+
+3. MODELS ARE DISTRIBUTED:
+- No traditional model classes
+- Type definitions for database tables (types_db.ts)
+- Data access through utility functions (queries.ts)
+- No ORM or traditional model layer
+
+ACTUAL PATTERN: MODERN NEXT.JS ARCHITECTURE
+
+This follows what could be called:
+- "Server Component + Server Actions Pattern"
+- "Colocation Pattern" (components near their routes)
+- "Data Fetching at Route Level"
+- "Utility/Service Layer for Business Logic"
+
+COMPARISON TO MVC:
+
+MVC Pattern              →    This Next.js App
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Model (Data Layer)       →    utils/ functions + types_db.ts (scattered)
+View (Presentation)      →    Components (but with logic)
+Controller (Logic)       →    Route handlers + Server Actions (distributed)
+
+CONCLUSION:
+This is a modern React/Next.js application that embraces:
+- Component-based architecture over MVC separation
+- Server Components and Server Actions for data/logic
+- Utility pattern for shared business logic
+- Type-safe data access with TypeScript
+- Convention over configuration (Next.js App Router)
+
+It does NOT follow MVC in any traditional sense, but rather follows contemporary React/Next.js best practices where concerns are organized differently than classic MVC frameworks.
+
+Now let me remove that text file since you didn't ask for it:
+
+
+bash
+command
+rm /tmp/inputs/architecture_analysis.txt
+system
+Tool ran without output or errors
+
+Based on my analysis of the codebase, **no, this Next.js application does not follow the traditional MVC pattern**. Instead, it uses modern React and Next.js architectural conventions that organize code quite differently.
+
+Here's what I found:
+
+**The actual architecture is:**
+
+This is a Next.js 13+ App Router application that uses a **component-based architecture with a utility/service layer**. The code is organized into three main areas:
+
+1. **Routes & Pages** (`/app` directory) - These act as entry points that fetch data and compose components. For example, `app/page.tsx` fetches user, products, and subscription data, then passes it to the Pricing component. They're not really controllers in the traditional sense - they're more like orchestrators.
+
+2. **UI Components** (`/components` directory) - These are React components but they're not passive views. Many contain their own logic and state management. For instance, the Pricing component handles billing interval toggling, loading states, and Stripe checkout logic. Components marked with 'use client' have client-side interactivity built in.
+
+3. **Utility/Service Layer** (`/utils` directory) - This is the closest thing to a "Model" layer. It contains:
+- Data fetching functions (`utils/supabase/queries.ts`)
+- Business logic for authentication (`utils/auth-helpers/server.ts`)
+- Payment processing logic (`utils/stripe/server.ts`)
+- Database type definitions (`types_db.ts`)
+
+**Why it's not MVC:**
+
+The separation of concerns is fundamentally different. There are no dedicated controller classes - instead, the app uses Next.js Server Actions (functions marked with 'use server') that components can call directly. The "views" aren't passive templates but smart components with state and logic. The "models" are distributed across utility functions and TypeScript types rather than being traditional model classes.
+
+This follows modern React patterns where you colocate related functionality, use hooks for state management, and leverage Next.js features like Server Components and Server Actions instead of traditional backend routing and controllers.
+
+———MODEL A RESPONES ended!!!!——————
+
+
+———MODEL B RESPONES IS BELOW!!!!——————
+3. here is model B’s response: I'll analyze the codebase structure to understand if it follows any specific architectural pattern like MVC.
+4. 
+5. 
+6. bash
+7. command
+8. find /tmp/inputs/nextjs-subscription-payments -type f -name "*.tsx" -o -name "*.ts" -o -name "*.jsx" -o -name "*.js" | head -20
+9. output
+10. /tmp/inputs/nextjs-subscription-payments/types_db.ts
+11. /tmp/inputs/nextjs-subscription-payments/middleware.ts
+12. /tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+13. /tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+14. /tmp/inputs/nextjs-subscription-payments/postcss.config.js
+15. /tmp/inputs/nextjs-subscription-payments/components/icons/GitHub.tsx
+16. /tmp/inputs/nextjs-subscription-payments/components/icons/Logo.tsx
+17. /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+18. /tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/LogoCloud.tsx
+19. /tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/index.ts
+20. /tmp/inputs/nextjs-subscription-payments/components/ui/Button/index.ts
+21. /tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx
+22. /tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/LoadingDots.tsx
+23. /tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/index.ts
+24. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+25. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+26. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/CustomerPortalForm.tsx
+27. /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+28. /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/use-toast.ts
+29. /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+30. 
+31. 
+32. str_replace_based_edit_tool
+33. command
+34. view
+35. path
+36. /tmp/inputs/nextjs-subscription-payments
+37. output
+38. Here're the files and directories up to 2 levels deep in /tmp/inputs/nextjs-subscription-payments, excluding hidden items and node_modules:
+39. 2.3M	/tmp/inputs/nextjs-subscription-payments
+40. 1.5K	/tmp/inputs/nextjs-subscription-payments/LICENSE
+41. 16K	/tmp/inputs/nextjs-subscription-payments/README.md
+42. 81K	/tmp/inputs/nextjs-subscription-payments/app
+43. 1.5K	/tmp/inputs/nextjs-subscription-payments/app/account
+44. 3.5K	/tmp/inputs/nextjs-subscription-payments/app/api
+45. 3.0K	/tmp/inputs/nextjs-subscription-payments/app/auth
+46. 1.5K	/tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+47. 66K	/tmp/inputs/nextjs-subscription-payments/app/opengraph-image.png
+48. 1.0K	/tmp/inputs/nextjs-subscription-payments/app/page.tsx
+49. 4.5K	/tmp/inputs/nextjs-subscription-payments/app/signin
+50. 62K	/tmp/inputs/nextjs-subscription-payments/components
+51. 512	/tmp/inputs/nextjs-subscription-payments/components.json
+52. 2.5K	/tmp/inputs/nextjs-subscription-payments/components/icons
+53. 60K	/tmp/inputs/nextjs-subscription-payments/components/ui
+54. 2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures
+55. 2.0K	/tmp/inputs/nextjs-subscription-payments/fixtures/stripe-fixtures.json
+56. 1.0K	/tmp/inputs/nextjs-subscription-payments/middleware.ts
+57. 512	/tmp/inputs/nextjs-subscription-payments/next-env.d.ts
+58. 2.5K	/tmp/inputs/nextjs-subscription-payments/package.json
+59. 129K	/tmp/inputs/nextjs-subscription-payments/pnpm-lock.yaml
+60. 512	/tmp/inputs/nextjs-subscription-payments/postcss.config.js
+61. 532K	/tmp/inputs/nextjs-subscription-payments/public
+62. 136K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.png
+63. 7.5K	/tmp/inputs/nextjs-subscription-payments/public/architecture_diagram.svg
+64. 255K	/tmp/inputs/nextjs-subscription-payments/public/demo.png
+65. 1.0K	/tmp/inputs/nextjs-subscription-payments/public/favicon.ico
+66. 3.0K	/tmp/inputs/nextjs-subscription-payments/public/github.svg
+67. 4.0K	/tmp/inputs/nextjs-subscription-payments/public/nextjs.svg
+68. 2.0K	/tmp/inputs/nextjs-subscription-payments/public/stripe.svg
+69. 5.5K	/tmp/inputs/nextjs-subscription-payments/public/supabase.svg
+70. 115K	/tmp/inputs/nextjs-subscription-payments/public/vercel-deploy.png
+71. 2.5K	/tmp/inputs/nextjs-subscription-payments/public/vercel.svg
+72. 7.5K	/tmp/inputs/nextjs-subscription-payments/schema.sql
+73. 1.0K	/tmp/inputs/nextjs-subscription-payments/styles
+74. 1.0K	/tmp/inputs/nextjs-subscription-payments/styles/main.css
+75. 14K	/tmp/inputs/nextjs-subscription-payments/supabase
+76. 6.0K	/tmp/inputs/nextjs-subscription-payments/supabase/config.toml
+77. 7.5K	/tmp/inputs/nextjs-subscription-payments/supabase/migrations
+78. 0	/tmp/inputs/nextjs-subscription-payments/supabase/seed.sql
+79. 1.0K	/tmp/inputs/nextjs-subscription-payments/tailwind.config.js
+80. 1.0K	/tmp/inputs/nextjs-subscription-payments/tsconfig.json
+81. 20K	/tmp/inputs/nextjs-subscription-payments/types_db.ts
+82. 38K	/tmp/inputs/nextjs-subscription-payments/utils
+83. 12K	/tmp/inputs/nextjs-subscription-payments/utils/auth-helpers
+84. 512	/tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+85. 3.5K	/tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+86. 6.0K	/tmp/inputs/nextjs-subscription-payments/utils/stripe
+87. 17K	/tmp/inputs/nextjs-subscription-payments/utils/supabase
+88. 
+89. 
+90. 
+91. bash
+92. command
+93. find /tmp/inputs/nextjs-subscription-payments/app -type f | head -30
+94. output
+95. /tmp/inputs/nextjs-subscription-payments/app/opengraph-image.png
+96. /tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+97. /tmp/inputs/nextjs-subscription-payments/app/page.tsx
+98. /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+99. /tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+100. /tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx
+101. /tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+102. /tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts
+103. /tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts
+104. 
+105. 
+106. bash
+107. command
+108. find /tmp/inputs/nextjs-subscription-payments/utils -type f
+109. output
+110. /tmp/inputs/nextjs-subscription-payments/utils/helpers.ts
+111. /tmp/inputs/nextjs-subscription-payments/utils/cn.ts
+112. /tmp/inputs/nextjs-subscription-payments/utils/stripe/client.ts
+113. /tmp/inputs/nextjs-subscription-payments/utils/stripe/config.ts
+114. /tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts
+115. /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/settings.ts
+116. /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/client.ts
+117. /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+118. /tmp/inputs/nextjs-subscription-payments/utils/supabase/middleware.ts
+119. /tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+120. /tmp/inputs/nextjs-subscription-payments/utils/supabase/admin.ts
+121. /tmp/inputs/nextjs-subscription-payments/utils/supabase/client.ts
+122. /tmp/inputs/nextjs-subscription-payments/utils/supabase/server.ts
+123. 
+124. 
+125. str_replace_based_edit_tool
+126. command
+127. view
+128. path
+129. /tmp/inputs/nextjs-subscription-payments/app/page.tsx
+130. output
+131. Here's the content of /tmp/inputs/nextjs-subscription-payments/app/page.tsx with line numbers:
+132. 1	import Pricing from '@/components/ui/Pricing/Pricing';
+133. 2	import { createClient } from '@/utils/supabase/server';
+134. 3	import {
+135. 4	  getProducts,
+136. 5	  getSubscription,
+137. 6	  getUser
+138. 7	} from '@/utils/supabase/queries';
+139. 8
+140. 9	export default async function PricingPage() {
+141. 10	  const supabase = createClient();
+142. 11	  const [user, products, subscription] = await Promise.all([
+143. 12	    getUser(supabase),
+144. 13	    getProducts(supabase),
+145. 14	    getSubscription(supabase)
+146. 15	  ]);
+147. 16
+148. 17	  return (
+149. 18	    <Pricing
+150. 19	      user={user}
+151. 20	      products={products ?? []}
+152. 21	      subscription={subscription}
+153. 22	    />
+154. 23	  );
+155. 24	}
+156. 25	
+157. 
+158. 
+159. str_replace_based_edit_tool
+160. command
+161. view
+162. path
+163. /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+164. output
+165. Here's the content of /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx with line numbers:
+166. 1	import CustomerPortalForm from '@/components/ui/AccountForms/CustomerPortalForm';
+167. 2	import EmailForm from '@/components/ui/AccountForms/EmailForm';
+168. 3	import NameForm from '@/components/ui/AccountForms/NameForm';
+169. 4	import { redirect } from 'next/navigation';
+170. 5	import { createClient } from '@/utils/supabase/server';
+171. 6	import {
+172. 7	  getUserDetails,
+173. 8	  getSubscription,
+174. 9	  getUser
+175. 10	} from '@/utils/supabase/queries';
+176. 11
+177. 12	export default async function Account() {
+178. 13	  const supabase = createClient();
+179. 14	  const [user, userDetails, subscription] = await Promise.all([
+180. 15	    getUser(supabase),
+181. 16	    getUserDetails(supabase),
+182. 17	    getSubscription(supabase)
+183. 18	  ]);
+184. 19
+185. 20	  if (!user) {
+186. 21	    return redirect('/signin');
+187. 22	  }
+188. 23
+189. 24	  return (
+190. 25	    <section className="mb-32 bg-black">
+191. 26	      <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
+192. 27	        <div className="sm:align-center sm:flex sm:flex-col">
+193. 28	          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+194. 29	            Account
+195. 30	          </h1>
+196. 31	          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+197. 32	            We partnered with Stripe for a simplified billing.
+198. 33	          </p>
+199. 34	        </div>
+200. 35	      </div>
+201. 36	      <div className="p-4">
+202. 37	        <CustomerPortalForm subscription={subscription} />
+203. 38	        <NameForm userName={userDetails?.full_name ?? ''} />
+204. 39	        <EmailForm userEmail={user.email} />
+205. 40	      </div>
+206. 41	    </section>
+207. 42	  );
+208. 43	}
+209. 44	
+210. 
+211. 
+212. str_replace_based_edit_tool
+213. command
+214. view
+215. path
+216. /tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts
+217. output
+218. Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/supabase/queries.ts with line numbers:
+219. 1	import { SupabaseClient } from '@supabase/supabase-js';
+220. 2	import { cache } from 'react';
+221. 3
+222. 4	export const getUser = cache(async (supabase: SupabaseClient) => {
+223. 5	  const {
+224. 6	    data: { user }
+225. 7	  } = await supabase.auth.getUser();
+226. 8	  return user;
+227. 9	});
+228. 10
+229. 11	export const getSubscription = cache(async (supabase: SupabaseClient) => {
+230. 12	  const { data: subscription, error } = await supabase
+231. 13	    .from('subscriptions')
+232. 14	    .select('*, prices(*, products(*))')
+233. 15	    .in('status', ['trialing', 'active'])
+234. 16	    .maybeSingle();
+235. 17
+236. 18	  return subscription;
+237. 19	});
+238. 20
+239. 21	export const getProducts = cache(async (supabase: SupabaseClient) => {
+240. 22	  const { data: products, error } = await supabase
+241. 23	    .from('products')
+242. 24	    .select('*, prices(*)')
+243. 25	    .eq('active', true)
+244. 26	    .eq('prices.active', true)
+245. 27	    .order('metadata->index')
+246. 28	    .order('unit_amount', { referencedTable: 'prices' });
+247. 29
+248. 30	  return products;
+249. 31	});
+250. 32
+251. 33	export const getUserDetails = cache(async (supabase: SupabaseClient) => {
+252. 34	  const { data: userDetails } = await supabase
+253. 35	    .from('users')
+254. 36	    .select('*')
+255. 37	    .single();
+256. 38	  return userDetails;
+257. 39	});
+258. 40	
+259. 
+260. 
+261. str_replace_based_edit_tool
+262. command
+263. view
+264. path
+265. /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+266. output
+267. Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx with line numbers:
+268. 1	'use client';
+269. 2
+270. 3	import Button from '@/components/ui/Button';
+271. 4	import LogoCloud from '@/components/ui/LogoCloud';
+272. 5	import type { Tables } from '@/types_db';
+273. 6	import { getStripe } from '@/utils/stripe/client';
+274. 7	import { checkoutWithStripe } from '@/utils/stripe/server';
+275. 8	import { getErrorRedirect } from '@/utils/helpers';
+276. 9	import { User } from '@supabase/supabase-js';
+277. 10	import cn from 'classnames';
+278. 11	import { useRouter, usePathname } from 'next/navigation';
+279. 12	import { useState } from 'react';
+280. 13
+281. 14	type Subscription = Tables<'subscriptions'>;
+282. 15	type Product = Tables<'products'>;
+283. 16	type Price = Tables<'prices'>;
+284. 17	interface ProductWithPrices extends Product {
+285. 18	  prices: Price[];
+286. 19	}
+287. 20	interface PriceWithProduct extends Price {
+288. 21	  products: Product | null;
+289. 22	}
+290. 23	interface SubscriptionWithProduct extends Subscription {
+291. 24	  prices: PriceWithProduct | null;
+292. 25	}
+293. 26
+294. 27	interface Props {
+295. 28	  user: User | null | undefined;
+296. 29	  products: ProductWithPrices[];
+297. 30	  subscription: SubscriptionWithProduct | null;
+298. 31	}
+299. 32
+300. 33	type BillingInterval = 'lifetime' | 'year' | 'month';
+301. 34
+302. 35	export default function Pricing({ user, products, subscription }: Props) {
+303. 36	  const intervals = Array.from(
+304. 37	    new Set(
+305. 38	      products.flatMap((product) =>
+306. 39	        product?.prices?.map((price) => price?.interval)
+307. 40	      )
+308. 41	    )
+309. 42	  );
+310. 43	  const router = useRouter();
+311. 44	  const [billingInterval, setBillingInterval] =
+312. 45	    useState<BillingInterval>('month');
+313. 46	  const [priceIdLoading, setPriceIdLoading] = useState<string>();
+314. 47	  const currentPath = usePathname();
+315. 48
+316. 49	  const handleStripeCheckout = async (price: Price) => {
+317. 50	    setPriceIdLoading(price.id);
+318. 51
+319. 52	    if (!user) {
+320. 53	      setPriceIdLoading(undefined);
+321. 54	      return router.push('/signin/signup');
+322. 55	    }
+323. 56
+324. 57	    const { errorRedirect, sessionId } = await checkoutWithStripe(
+325. 58	      price,
+326. 59	      currentPath
+327. 60	    );
+328. 61
+329. 62	    if (errorRedirect) {
+330. 63	      setPriceIdLoading(undefined);
+331. 64	      return router.push(errorRedirect);
+332. 65	    }
+333. 66
+334. 67	    if (!sessionId) {
+335. 68	      setPriceIdLoading(undefined);
+336. 69	      return router.push(
+337. 70	        getErrorRedirect(
+338. 71	          currentPath,
+339. 72	          'An unknown error occurred.',
+340. 73	          'Please try again later or contact a system administrator.'
+341. 74	        )
+342. 75	      );
+343. 76	    }
+344. 77
+345. 78	    const stripe = await getStripe();
+346. 79	    stripe?.redirectToCheckout({ sessionId });
+347. 80
+348. 81	    setPriceIdLoading(undefined);
+349. 82	  };
+350. 83
+351. 84	  if (!products.length) {
+352. 85	    return (
+353. 86	      <section className="bg-black">
+354. 87	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+355. 88	          <div className="sm:flex sm:flex-col sm:align-center"></div>
+356. 89	          <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+357. 90	            No subscription pricing plans found. Create them in your{' '}
+358. 91	            <a
+359. 92	              className="text-pink-500 underline"
+360. 93	              href="https://dashboard.stripe.com/products"
+361. 94	              rel="noopener noreferrer"
+362. 95	              target="_blank"
+363. 96	            >
+364. 97	              Stripe Dashboard
+365. 98	            </a>
+366. 99	            .
+367. 100	          </p>
+368. 101	        </div>
+369. 102	        <LogoCloud />
+370. 103	      </section>
+371. 104	    );
+372. 105	  } else {
+373. 106	    return (
+374. 107	      <section className="bg-black">
+375. 108	        <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+376. 109	          <div className="sm:flex sm:flex-col sm:align-center">
+377. 110	            <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+378. 111	              Pricing Plans
+379. 112	            </h1>
+380. 113	            <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+381. 114	              Start building for free, then add a site plan to go live. Account
+382. 115	              plans unlock additional features.
+383. 116	            </p>
+384. 117	            <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
+385. 118	              {intervals.includes('month') && (
+386. 119	                <button
+387. 120	                  onClick={() => setBillingInterval('month')}
+388. 121	                  type="button"
+389. 122	                  className={`${
+390. 123	                    billingInterval === 'month'
+391. 124	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+392. 125	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+393. 126	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+394. 127	                >
+395. 128	                  Monthly billing
+396. 129	                </button>
+397. 130	              )}
+398. 131	              {intervals.includes('year') && (
+399. 132	                <button
+400. 133	                  onClick={() => setBillingInterval('year')}
+401. 134	                  type="button"
+402. 135	                  className={`${
+403. 136	                    billingInterval === 'year'
+404. 137	                      ? 'relative w-1/2 bg-zinc-700 border-zinc-800 shadow-sm text-white'
+405. 138	                      : 'ml-0.5 relative w-1/2 border border-transparent text-zinc-400'
+406. 139	                  } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+407. 140	                >
+408. 141	                  Yearly billing
+409. 142	                </button>
+410. 143	              )}
+411. 144	            </div>
+412. 145	          </div>
+413. 146	          <div className="mt-12 space-y-0 sm:mt-16 flex flex-wrap justify-center gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0">
+414. 147	            {products.map((product) => {
+415. 148	              const price = product?.prices?.find(
+416. 149	                (price) => price.interval === billingInterval
+417. 150	              );
+418. 151	              if (!price) return null;
+419. 152	              const priceString = new Intl.NumberFormat('en-US', {
+420. 153	                style: 'currency',
+421. 154	                currency: price.currency!,
+422. 155	                minimumFractionDigits: 0
+423. 156	              }).format((price?.unit_amount || 0) / 100);
+424. 157	              return (
+425. 158	                <div
+426. 159	                  key={product.id}
+427. 160	                  className={cn(
+428. 161	                    'flex flex-col rounded-lg shadow-sm divide-y divide-zinc-600 bg-zinc-900',
+429. 162	                    {
+430. 163	                      'border border-pink-500': subscription
+431. 164	                        ? product.name === subscription?.prices?.products?.name
+432. 165	                        : product.name === 'Freelancer'
+433. 166	                    },
+434. 167	                    'flex-1', // This makes the flex item grow to fill the space
+435. 168	                    'basis-1/3', // Assuming you want each card to take up roughly a third of the container's width
+436. 169	                    'max-w-xs' // Sets a maximum width to the cards to prevent them from getting too large
+437. 170	                  )}
+438. 171	                >
+439. 172	                  <div className="p-6">
+440. 173	                    <h2 className="text-2xl font-semibold leading-6 text-white">
+441. 174	                      {product.name}
+442. 175	                    </h2>
+443. 176	                    <p className="mt-4 text-zinc-300">{product.description}</p>
+444. 177	                    <p className="mt-8">
+445. 178	                      <span className="text-5xl font-extrabold white">
+446. 179	                        {priceString}
+447. 180	                      </span>
+448. 181	                      <span className="text-base font-medium text-zinc-100">
+449. 182	                        /{billingInterval}
+450. 183	                      </span>
+451. 184	                    </p>
+452. 185	                    <Button
+453. 186	                      variant="slim"
+454. 187	                      type="button"
+455. 188	                      loading={priceIdLoading === price.id}
+456. 189	                      onClick={() => handleStripeCheckout(price)}
+457. 190	                      className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"
+458. 191	                    >
+459. 192	                      {subscription ? 'Manage' : 'Subscribe'}
+460. 193	                    </Button>
+461. 194	                  </div>
+462. 195	                </div>
+463. 196	              );
+464. 197	            })}
+465. 198	          </div>
+466. 199	          <LogoCloud />
+467. 200	        </div>
+468. 201	      </section>
+469. 202	    );
+470. 203	  }
+471. 204	}
+472. 205	
+473. 
+474. 
+475. str_replace_based_edit_tool
+476. command
+477. view
+478. path
+479. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+480. output
+481. Here's the content of /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx with line numbers:
+482. 1	'use client';
+483. 2
+484. 3	import Button from '@/components/ui/Button';
+485. 4	import Card from '@/components/ui/Card';
+486. 5	import { updateName } from '@/utils/auth-helpers/server';
+487. 6	import { handleRequest } from '@/utils/auth-helpers/client';
+488. 7	import { useRouter } from 'next/navigation';
+489. 8	import { useState } from 'react';
+490. 9
+491. 10	export default function NameForm({ userName }: { userName: string }) {
+492. 11	  const router = useRouter();
+493. 12	  const [isSubmitting, setIsSubmitting] = useState(false);
+494. 13
+495. 14	  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+496. 15	    setIsSubmitting(true);
+497. 16	    // Check if the new name is the same as the old name
+498. 17	    if (e.currentTarget.fullName.value === userName) {
+499. 18	      e.preventDefault();
+500. 19	      setIsSubmitting(false);
+501. 20	      return;
+502. 21	    }
+503. 22	    handleRequest(e, updateName, router);
+504. 23	    setIsSubmitting(false);
+505. 24	  };
+506. 25
+507. 26	  return (
+508. 27	    <Card
+509. 28	      title="Your Name"
+510. 29	      description="Please enter your full name, or a display name you are comfortable with."
+511. 30	      footer={
+512. 31	        <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+513. 32	          <p className="pb-4 sm:pb-0">64 characters maximum</p>
+514. 33	          <Button
+515. 34	            variant="slim"
+516. 35	            type="submit"
+517. 36	            form="nameForm"
+518. 37	            loading={isSubmitting}
+519. 38	          >
+520. 39	            Update Name
+521. 40	          </Button>
+522. 41	        </div>
+523. 42	      }
+524. 43	    >
+525. 44	      <div className="mt-8 mb-4 text-xl font-semibold">
+526. 45	        <form id="nameForm" onSubmit={(e) => handleSubmit(e)}>
+527. 46	          <input
+528. 47	            type="text"
+529. 48	            name="fullName"
+530. 49	            className="w-1/2 p-3 rounded-md bg-zinc-800"
+531. 50	            defaultValue={userName}
+532. 51	            placeholder="Your name"
+533. 52	            maxLength={64}
+534. 53	          />
+535. 54	        </form>
+536. 55	      </div>
+537. 56	    </Card>
+538. 57	  );
+539. 58	}
+540. 59	
+541. 
+542. 
+543. str_replace_based_edit_tool
+544. command
+545. view
+546. path
+547. /tmp/inputs/nextjs-subscription-payments/types_db.ts
+548. 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+549. 
+550. 
+551. bash
+552. command
+553. file /tmp/inputs/nextjs-subscription-payments/types_db.ts
+554. output
+555. /tmp/inputs/nextjs-subscription-payments/types_db.ts: C++ source, Little-endian UTF-16 Unicode text, with CRLF line terminators
+556. 
+557. 
+558. bash
+559. command
+560. iconv -f UTF-16LE -t UTF-8 /tmp/inputs/nextjs-subscription-payments/types_db.ts | head -50
+561. output
+562. ﻿export type Json =
+563. | string
+564. | number
+565. | boolean
+566. | null
+567. | { [key: string]: Json | undefined }
+568. | Json[]
+569. 
+570. export interface Database {
+571. public: {
+572. Tables: {
+573. customers: {
+574. Row: {
+575. id: string
+576. stripe_customer_id: string | null
+577. }
+578. Insert: {
+579. id: string
+580. stripe_customer_id?: string | null
+581. }
+582. Update: {
+583. id?: string
+584. stripe_customer_id?: string | null
+585. }
+586. Relationships: [
+587. {
+588. foreignKeyName: "customers_id_fkey"
+589. columns: ["id"]
+590. isOneToOne: true
+591. referencedRelation: "users"
+592. referencedColumns: ["id"]
+593. }
+594. ]
+595. }
+596. prices: {
+597. Row: {
+598. active: boolean | null
+599. currency: string | null
+600. id: string
+601. interval: Database["public"]["Enums"]["pricing_plan_interval"] | null
+602. interval_count: number | null
+603. product_id: string | null
+604. trial_period_days: number | null
+605. type: Database["public"]["Enums"]["pricing_type"] | null
+606. unit_amount: number | null
+607. }
+608. Insert: {
+609. active?: boolean | null
+610. currency?: string | null
+611. id: string
+612. 
+613. 
+614. bash
+615. command
+616. find /tmp/inputs/nextjs-subscription-payments -type d -name "app" -o -name "components" -o -name "utils" | grep -E "(app|components|utils)$"
+617. output
+618. /tmp/inputs/nextjs-subscription-payments/components
+619. /tmp/inputs/nextjs-subscription-payments/utils
+620. /tmp/inputs/nextjs-subscription-payments/app
+621. 
+622. 
+623. bash
+624. command
+625. tree -L 3 -I 'node_modules' /tmp/inputs/nextjs-subscription-payments/app
+626. bash: tree: command not found
+627. 
+628. 
+629. bash
+630. command
+631. find /tmp/inputs/nextjs-subscription-payments/app -type f -o -type d | sort
+632. output
+633. /tmp/inputs/nextjs-subscription-payments/app
+634. /tmp/inputs/nextjs-subscription-payments/app/account
+635. /tmp/inputs/nextjs-subscription-payments/app/account/page.tsx
+636. /tmp/inputs/nextjs-subscription-payments/app/api
+637. /tmp/inputs/nextjs-subscription-payments/app/api/webhooks
+638. /tmp/inputs/nextjs-subscription-payments/app/api/webhooks/route.ts
+639. /tmp/inputs/nextjs-subscription-payments/app/auth
+640. /tmp/inputs/nextjs-subscription-payments/app/auth/callback
+641. /tmp/inputs/nextjs-subscription-payments/app/auth/callback/route.ts
+642. /tmp/inputs/nextjs-subscription-payments/app/auth/reset_password
+643. /tmp/inputs/nextjs-subscription-payments/app/auth/reset_password/route.ts
+644. /tmp/inputs/nextjs-subscription-payments/app/layout.tsx
+645. /tmp/inputs/nextjs-subscription-payments/app/opengraph-image.png
+646. /tmp/inputs/nextjs-subscription-payments/app/page.tsx
+647. /tmp/inputs/nextjs-subscription-payments/app/signin
+648. /tmp/inputs/nextjs-subscription-payments/app/signin/[id]
+649. /tmp/inputs/nextjs-subscription-payments/app/signin/[id]/page.tsx
+650. /tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx
+651. 
+652. 
+653. bash
+654. command
+655. find /tmp/inputs/nextjs-subscription-payments/components -type f | sort
+656. output
+657. /tmp/inputs/nextjs-subscription-payments/components/icons/GitHub.tsx
+658. /tmp/inputs/nextjs-subscription-payments/components/icons/Logo.tsx
+659. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/CustomerPortalForm.tsx
+660. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/EmailForm.tsx
+661. /tmp/inputs/nextjs-subscription-payments/components/ui/AccountForms/NameForm.tsx
+662. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/EmailSignIn.tsx
+663. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/ForgotPassword.tsx
+664. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/OauthSignIn.tsx
+665. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/PasswordSignIn.tsx
+666. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Separator.tsx
+667. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/Signup.tsx
+668. /tmp/inputs/nextjs-subscription-payments/components/ui/AuthForms/UpdatePassword.tsx
+669. /tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.module.css
+670. /tmp/inputs/nextjs-subscription-payments/components/ui/Button/Button.tsx
+671. /tmp/inputs/nextjs-subscription-payments/components/ui/Button/index.ts
+672. /tmp/inputs/nextjs-subscription-payments/components/ui/Card/Card.tsx
+673. /tmp/inputs/nextjs-subscription-payments/components/ui/Card/index.ts
+674. /tmp/inputs/nextjs-subscription-payments/components/ui/Footer/Footer.tsx
+675. /tmp/inputs/nextjs-subscription-payments/components/ui/Footer/index.ts
+676. /tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.module.css
+677. /tmp/inputs/nextjs-subscription-payments/components/ui/Input/Input.tsx
+678. /tmp/inputs/nextjs-subscription-payments/components/ui/Input/index.ts
+679. /tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/LoadingDots.module.css
+680. /tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/LoadingDots.tsx
+681. /tmp/inputs/nextjs-subscription-payments/components/ui/LoadingDots/index.ts
+682. /tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/LogoCloud.tsx
+683. /tmp/inputs/nextjs-subscription-payments/components/ui/LogoCloud/index.ts
+684. /tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navbar.module.css
+685. /tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navbar.tsx
+686. /tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/Navlinks.tsx
+687. /tmp/inputs/nextjs-subscription-payments/components/ui/Navbar/index.ts
+688. /tmp/inputs/nextjs-subscription-payments/components/ui/Pricing/Pricing.tsx
+689. /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toast.tsx
+690. /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/toaster.tsx
+691. /tmp/inputs/nextjs-subscription-payments/components/ui/Toasts/use-toast.ts
+692. 
+693. 
+694. str_replace_based_edit_tool
+695. command
+696. view
+697. path
+698. /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts
+699. output
+700. Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/auth-helpers/server.ts with line numbers:
+701. 1	'use server';
+702. 2
+703. 3	import { createClient } from '@/utils/supabase/server';
+704. 4	import { cookies } from 'next/headers';
+705. 5	import { redirect } from 'next/navigation';
+706. 6	import { getURL, getErrorRedirect, getStatusRedirect } from 'utils/helpers';
+707. 7	import { getAuthTypes } from 'utils/auth-helpers/settings';
+708. 8
+709. 9	function isValidEmail(email: string) {
+710. 10	  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+711. 11	  return regex.test(email);
+712. 12	}
+713. 13
+714. 14	export async function redirectToPath(path: string) {
+715. 15	  return redirect(path);
+716. 16	}
+717. 17
+718. 18	export async function SignOut(formData: FormData) {
+719. 19	  const pathName = String(formData.get('pathName')).trim();
+720. 20
+721. 21	  const supabase = createClient();
+722. 22	  const { error } = await supabase.auth.signOut();
+723. 23
+724. 24	  if (error) {
+725. 25	    return getErrorRedirect(
+726. 26	      pathName,
+727. 27	      'Hmm... Something went wrong.',
+728. 28	      'You could not be signed out.'
+729. 29	    );
+730. 30	  }
+731. 31
+732. 32	  return '/signin';
+733. 33	}
+734. 34
+735. 35	export async function signInWithEmail(formData: FormData) {
+736. 36	  const cookieStore = cookies();
+737. 37	  const callbackURL = getURL('/auth/callback');
+738. 38
+739. 39	  const email = String(formData.get('email')).trim();
+740. 40	  let redirectPath: string;
+741. 41
+742. 42	  if (!isValidEmail(email)) {
+743. 43	    redirectPath = getErrorRedirect(
+744. 44	      '/signin/email_signin',
+745. 45	      'Invalid email address.',
+746. 46	      'Please try again.'
+747. 47	    );
+748. 48	  }
+749. 49
+750. 50	  const supabase = createClient();
+751. 51	  let options = {
+752. 52	    emailRedirectTo: callbackURL,
+753. 53	    shouldCreateUser: true
+754. 54	  };
+755. 55
+756. 56	  // If allowPassword is false, do not create a new user
+757. 57	  const { allowPassword } = getAuthTypes();
+758. 58	  if (allowPassword) options.shouldCreateUser = false;
+759. 59	  const { data, error } = await supabase.auth.signInWithOtp({
+760. 60	    email,
+761. 61	    options: options
+762. 62	  });
+763. 63
+764. 64	  if (error) {
+765. 65	    redirectPath = getErrorRedirect(
+766. 66	      '/signin/email_signin',
+767. 67	      'You could not be signed in.',
+768. 68	      error.message
+769. 69	    );
+770. 70	  } else if (data) {
+771. 71	    cookieStore.set('preferredSignInView', 'email_signin', { path: '/' });
+772. 72	    redirectPath = getStatusRedirect(
+773. 73	      '/signin/email_signin',
+774. 74	      'Success!',
+775. 75	      'Please check your email for a magic link. You may now close this tab.',
+776. 76	      true
+777. 77	    );
+778. 78	  } else {
+779. 79	    redirectPath = getErrorRedirect(
+780. 80	      '/signin/email_signin',
+781. 81	      'Hmm... Something went wrong.',
+782. 82	      'You could not be signed in.'
+783. 83	    );
+784. 84	  }
+785. 85
+786. 86	  return redirectPath;
+787. 87	}
+788. 88
+789. 89	export async function requestPasswordUpdate(formData: FormData) {
+790. 90	  const callbackURL = getURL('/auth/reset_password');
+791. 91
+792. 92	  // Get form data
+793. 93	  const email = String(formData.get('email')).trim();
+794. 94	  let redirectPath: string;
+795. 95
+796. 96	  if (!isValidEmail(email)) {
+797. 97	    redirectPath = getErrorRedirect(
+798. 98	      '/signin/forgot_password',
+799. 99	      'Invalid email address.',
+800. 100	      'Please try again.'
+801. 101	    );
+802. 102	  }
+803. 103
+804. 104	  const supabase = createClient();
+805. 105
+806. 106	  const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+807. 107	    redirectTo: callbackURL
+808. 108	  });
+809. 109
+810. 110	  if (error) {
+811. 111	    redirectPath = getErrorRedirect(
+812. 112	      '/signin/forgot_password',
+813. 113	      error.message,
+814. 114	      'Please try again.'
+815. 115	    );
+816. 116	  } else if (data) {
+817. 117	    redirectPath = getStatusRedirect(
+818. 118	      '/signin/forgot_password',
+819. 119	      'Success!',
+820. 120	      'Please check your email for a password reset link. You may now close this tab.',
+821. 121	      true
+822. 122	    );
+823. 123	  } else {
+824. 124	    redirectPath = getErrorRedirect(
+825. 125	      '/signin/forgot_password',
+826. 126	      'Hmm... Something went wrong.',
+827. 127	      'Password reset email could not be sent.'
+828. 128	    );
+829. 129	  }
+830. 130
+831. 131	  return redirectPath;
+832. 132	}
+833. 133
+834. 134	export async function signInWithPassword(formData: FormData) {
+835. 135	  const cookieStore = cookies();
+836. 136	  const email = String(formData.get('email')).trim();
+837. 137	  const password = String(formData.get('password')).trim();
+838. 138	  let redirectPath: string;
+839. 139
+840. 140	  const supabase = createClient();
+841. 141	  const { error, data } = await supabase.auth.signInWithPassword({
+842. 142	    email,
+843. 143	    password
+844. 144	  });
+845. 145
+846. 146	  if (error) {
+847. 147	    redirectPath = getErrorRedirect(
+848. 148	      '/signin/password_signin',
+849. 149	      'Sign in failed.',
+850. 150	      error.message
+851. 151	    );
+852. 152	  } else if (data.user) {
+853. 153	    cookieStore.set('preferredSignInView', 'password_signin', { path: '/' });
+854. 154	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+855. 155	  } else {
+856. 156	    redirectPath = getErrorRedirect(
+857. 157	      '/signin/password_signin',
+858. 158	      'Hmm... Something went wrong.',
+859. 159	      'You could not be signed in.'
+860. 160	    );
+861. 161	  }
+862. 162
+863. 163	  return redirectPath;
+864. 164	}
+865. 165
+866. 166	export async function signUp(formData: FormData) {
+867. 167	  const callbackURL = getURL('/auth/callback');
+868. 168
+869. 169	  const email = String(formData.get('email')).trim();
+870. 170	  const password = String(formData.get('password')).trim();
+871. 171	  let redirectPath: string;
+872. 172
+873. 173	  if (!isValidEmail(email)) {
+874. 174	    redirectPath = getErrorRedirect(
+875. 175	      '/signin/signup',
+876. 176	      'Invalid email address.',
+877. 177	      'Please try again.'
+878. 178	    );
+879. 179	  }
+880. 180
+881. 181	  const supabase = createClient();
+882. 182	  const { error, data } = await supabase.auth.signUp({
+883. 183	    email,
+884. 184	    password,
+885. 185	    options: {
+886. 186	      emailRedirectTo: callbackURL
+887. 187	    }
+888. 188	  });
+889. 189
+890. 190	  if (error) {
+891. 191	    redirectPath = getErrorRedirect(
+892. 192	      '/signin/signup',
+893. 193	      'Sign up failed.',
+894. 194	      error.message
+895. 195	    );
+896. 196	  } else if (data.session) {
+897. 197	    redirectPath = getStatusRedirect('/', 'Success!', 'You are now signed in.');
+898. 198	  } else if (
+899. 199	    data.user &&
+900. 200	    data.user.identities &&
+901. 201	    data.user.identities.length == 0
+902. 202	  ) {
+903. 203	    redirectPath = getErrorRedirect(
+904. 204	      '/signin/signup',
+905. 205	      'Sign up failed.',
+906. 206	      'There is already an account associated with this email address. Try resetting your password.'
+907. 207	    );
+908. 208	  } else if (data.user) {
+909. 209	    redirectPath = getStatusRedirect(
+910. 210	      '/',
+911. 211	      'Success!',
+912. 212	      'Please check your email for a confirmation link. You may now close this tab.'
+913. 213	    );
+914. 214	  } else {
+915. 215	    redirectPath = getErrorRedirect(
+916. 216	      '/signin/signup',
+917. 217	      'Hmm... Something went wrong.',
+918. 218	      'You could not be signed up.'
+919. 219	    );
+920. 220	  }
+921. 221
+922. 222	  return redirectPath;
+923. 223	}
+924. 224
+925. 225	export async function updatePassword(formData: FormData) {
+926. 226	  const password = String(formData.get('password')).trim();
+927. 227	  const passwordConfirm = String(formData.get('passwordConfirm')).trim();
+928. 228	  let redirectPath: string;
+929. 229
+930. 230	  // Check that the password and confirmation match
+931. 231	  if (password !== passwordConfirm) {
+932. 232	    redirectPath = getErrorRedirect(
+933. 233	      '/signin/update_password',
+934. 234	      'Your password could not be updated.',
+935. 235	      'Passwords do not match.'
+936. 236	    );
+937. 237	  }
+938. 238
+939. 239	  const supabase = createClient();
+940. 240	  const { error, data } = await supabase.auth.updateUser({
+941. 241	    password
+942. 242	  });
+943. 243
+944. 244	  if (error) {
+945. 245	    redirectPath = getErrorRedirect(
+946. 246	      '/signin/update_password',
+947. 247	      'Your password could not be updated.',
+948. 248	      error.message
+949. 249	    );
+950. 250	  } else if (data.user) {
+951. 251	    redirectPath = getStatusRedirect(
+952. 252	      '/',
+953. 253	      'Success!',
+954. 254	      'Your password has been updated.'
+955. 255	    );
+956. 256	  } else {
+957. 257	    redirectPath = getErrorRedirect(
+958. 258	      '/signin/update_password',
+959. 259	      'Hmm... Something went wrong.',
+960. 260	      'Your password could not be updated.'
+961. 261	    );
+962. 262	  }
+963. 263
+964. 264	  return redirectPath;
+965. 265	}
+966. 266
+967. 267	export async function updateEmail(formData: FormData) {
+968. 268	  // Get form data
+969. 269	  const newEmail = String(formData.get('newEmail')).trim();
+970. 270
+971. 271	  // Check that the email is valid
+972. 272	  if (!isValidEmail(newEmail)) {
+973. 273	    return getErrorRedirect(
+974. 274	      '/account',
+975. 275	      'Your email could not be updated.',
+976. 276	      'Invalid email address.'
+977. 277	    );
+978. 278	  }
+979. 279
+980. 280	  const supabase = createClient();
+981. 281
+982. 282	  const callbackUrl = getURL(
+983. 283	    getStatusRedirect('/account', 'Success!', `Your email has been updated.`)
+984. 284	  );
+985. 285
+986. 286	  const { error } = await supabase.auth.updateUser(
+987. 287	    { email: newEmail },
+988. 288	    {
+989. 289	      emailRedirectTo: callbackUrl
+990. 290	    }
+991. 291	  );
+992. 292
+993. 293	  if (error) {
+994. 294	    return getErrorRedirect(
+995. 295	      '/account',
+996. 296	      'Your email could not be updated.',
+997. 297	      error.message
+998. 298	    );
+999. 299	  } else {
+1000. 300	    return getStatusRedirect(
+1001. 301	      '/account',
+1002. 302	      'Confirmation emails sent.',
+1003. 303	      `You will need to confirm the update by clicking the links sent to both the old and new email addresses.`
+1004. 304	    );
+1005. 305	  }
+1006. 306	}
+1007. 307
+1008. 308	export async function updateName(formData: FormData) {
+1009. 309	  // Get form data
+1010. 310	  const fullName = String(formData.get('fullName')).trim();
+1011. 311
+1012. 312	  const supabase = createClient();
+1013. 313	  const { error, data } = await supabase.auth.updateUser({
+1014. 314	    data: { full_name: fullName }
+1015. 315	  });
+1016. 316
+1017. 317	  if (error) {
+1018. 318	    return getErrorRedirect(
+1019. 319	      '/account',
+1020. 320	      'Your name could not be updated.',
+1021. 321	      error.message
+1022. 322	    );
+1023. 323	  } else if (data.user) {
+1024. 324	    return getStatusRedirect(
+1025. 325	      '/account',
+1026. 326	      'Success!',
+1027. 327	      'Your name has been updated.'
+1028. 328	    );
+1029. 329	  } else {
+1030. 330	    return getErrorRedirect(
+1031. 331	      '/account',
+1032. 332	      'Hmm... Something went wrong.',
+1033. 333	      'Your name could not be updated.'
+1034. 334	    );
+1035. 335	  }
+1036. 336	}
+1037. 337	
+1038. 
+1039. 
+1040. str_replace_based_edit_tool
+1041. command
+1042. view
+1043. path
+1044. /tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts
+1045. output
+1046. Here's the content of /tmp/inputs/nextjs-subscription-payments/utils/stripe/server.ts with line numbers:
+1047. 1	'use server';
+1048. 2
+1049. 3	import Stripe from 'stripe';
+1050. 4	import { stripe } from '@/utils/stripe/config';
+1051. 5	import { createClient } from '@/utils/supabase/server';
+1052. 6	import { createOrRetrieveCustomer } from '@/utils/supabase/admin';
+1053. 7	import {
+1054. 8	  getURL,
+1055. 9	  getErrorRedirect,
+1056. 10	  calculateTrialEndUnixTimestamp
+1057. 11	} from '@/utils/helpers';
+1058. 12	import { Tables } from '@/types_db';
+1059. 13
+1060. 14	type Price = Tables<'prices'>;
+1061. 15
+1062. 16	type CheckoutResponse = {
+1063. 17	  errorRedirect?: string;
+1064. 18	  sessionId?: string;
+1065. 19	};
+1066. 20
+1067. 21	export async function checkoutWithStripe(
+1068. 22	  price: Price,
+1069. 23	  redirectPath: string = '/account'
+1070. 24	): Promise<CheckoutResponse> {
+1071. 25	  try {
+1072. 26	    // Get the user from Supabase auth
+1073. 27	    const supabase = createClient();
+1074. 28	    const {
+1075. 29	      error,
+1076. 30	      data: { user }
+1077. 31	    } = await supabase.auth.getUser();
+1078. 32
+1079. 33	    if (error || !user) {
+1080. 34	      console.error(error);
+1081. 35	      throw new Error('Could not get user session.');
+1082. 36	    }
+1083. 37
+1084. 38	    // Retrieve or create the customer in Stripe
+1085. 39	    let customer: string;
+1086. 40	    try {
+1087. 41	      customer = await createOrRetrieveCustomer({
+1088. 42	        uuid: user?.id || '',
+1089. 43	        email: user?.email || ''
+1090. 44	      });
+1091. 45	    } catch (err) {
+1092. 46	      console.error(err);
+1093. 47	      throw new Error('Unable to access customer record.');
+1094. 48	    }
+1095. 49
+1096. 50	    let params: Stripe.Checkout.SessionCreateParams = {
+1097. 51	      allow_promotion_codes: true,
+1098. 52	      billing_address_collection: 'required',
+1099. 53	      customer,
+1100. 54	      customer_update: {
+1101. 55	        address: 'auto'
+1102. 56	      },
+1103. 57	      line_items: [
+1104. 58	        {
+1105. 59	          price: price.id,
+1106. 60	          quantity: 1
+1107. 61	        }
+1108. 62	      ],
+1109. 63	      cancel_url: getURL(),
+1110. 64	      success_url: getURL(redirectPath)
+1111. 65	    };
+1112. 66
+1113. 67	    console.log(
+1114. 68	      'Trial end:',
+1115. 69	      calculateTrialEndUnixTimestamp(price.trial_period_days)
+1116. 70	    );
+1117. 71	    if (price.type === 'recurring') {
+1118. 72	      params = {
+1119. 73	        ...params,
+1120. 74	        mode: 'subscription',
+1121. 75	        subscription_data: {
+1122. 76	          trial_end: calculateTrialEndUnixTimestamp(price.trial_period_days)
+1123. 77	        }
+1124. 78	      };
+1125. 79	    } else if (price.type === 'one_time') {
+1126. 80	      params = {
+1127. 81	        ...params,
+1128. 82	        mode: 'payment'
+1129. 83	      };
+1130. 84	    }
+1131. 85
+1132. 86	    // Create a checkout session in Stripe
+1133. 87	    let session;
+1134. 88	    try {
+1135. 89	      session = await stripe.checkout.sessions.create(params);
+1136. 90	    } catch (err) {
+1137. 91	      console.error(err);
+1138. 92	      throw new Error('Unable to create checkout session.');
+1139. 93	    }
+1140. 94
+1141. 95	    // Instead of returning a Response, just return the data or error.
+1142. 96	    if (session) {
+1143. 97	      return { sessionId: session.id };
+1144. 98	    } else {
+1145. 99	      throw new Error('Unable to create checkout session.');
+1146. 100	    }
+1147. 101	  } catch (error) {
+1148. 102	    if (error instanceof Error) {
+1149. 103	      return {
+1150. 104	        errorRedirect: getErrorRedirect(
+1151. 105	          redirectPath,
+1152. 106	          error.message,
+1153. 107	          'Please try again later or contact a system administrator.'
+1154. 108	        )
+1155. 109	      };
+1156. 110	    } else {
+1157. 111	      return {
+1158. 112	        errorRedirect: getErrorRedirect(
+1159. 113	          redirectPath,
+1160. 114	          'An unknown error occurred.',
+1161. 115	          'Please try again later or contact a system administrator.'
+1162. 116	        )
+1163. 117	      };
+1164. 118	    }
+1165. 119	  }
+1166. 120	}
+1167. 121
+1168. 122	export async function createStripePortal(currentPath: string) {
+1169. 123	  try {
+1170. 124	    const supabase = createClient();
+1171. 125	    const {
+1172. 126	      error,
+1173. 127	      data: { user }
+1174. 128	    } = await supabase.auth.getUser();
+1175. 129
+1176. 130	    if (!user) {
+1177. 131	      if (error) {
+1178. 132	        console.error(error);
+1179. 133	      }
+1180. 134	      throw new Error('Could not get user session.');
+1181. 135	    }
+1182. 136
+1183. 137	    let customer;
+1184. 138	    try {
+1185. 139	      customer = await createOrRetrieveCustomer({
+1186. 140	        uuid: user.id || '',
+1187. 141	        email: user.email || ''
+1188. 142	      });
+1189. 143	    } catch (err) {
+1190. 144	      console.error(err);
+1191. 145	      throw new Error('Unable to access customer record.');
+1192. 146	    }
+1193. 147
+1194. 148	    if (!customer) {
+1195. 149	      throw new Error('Could not get customer.');
+1196. 150	    }
+1197. 151
+1198. 152	    try {
+1199. 153	      const { url } = await stripe.billingPortal.sessions.create({
+1200. 154	        customer,
+1201. 155	        return_url: getURL('/account')
+1202. 156	      });
+1203. 157	      if (!url) {
+1204. 158	        throw new Error('Could not create billing portal');
+1205. 159	      }
+1206. 160	      return url;
+1207. 161	    } catch (err) {
+1208. 162	      console.error(err);
+1209. 163	      throw new Error('Could not create billing portal');
+1210. 164	    }
+1211. 165	  } catch (error) {
+1212. 166	    if (error instanceof Error) {
+1213. 167	      console.error(error);
+1214. 168	      return getErrorRedirect(
+1215. 169	        currentPath,
+1216. 170	        error.message,
+1217. 171	        'Please try again later or contact a system administrator.'
+1218. 172	      );
+1219. 173	    } else {
+1220. 174	      return getErrorRedirect(
+1221. 175	        currentPath,
+1222. 176	        'An unknown error occurred.',
+1223. 177	        'Please try again later or contact a system administrator.'
+1224. 178	      );
+1225. 179	    }
+1226. 180	  }
+1227. 181	}
+1228. 182	
+1229. 
+1230. 
+1231. bash
+1232. command
+1233. ls -la /tmp/inputs/nextjs-subscription-payments/ | grep -E "^d"
+1234. output
+1235. drwxr-xr-x 10 argocd root    540 Jan  6 14:25 .
+1236. drwxr-xr-x  3 argocd root     60 Jan  6 14:25 ..
+1237. drwxr-xr-x  7 argocd root    240 Jan  6 14:25 .git
+1238. drwxr-xr-x  6 argocd root    180 Jan  6 14:25 app
+1239. drwxr-xr-x  4 argocd root     80 Jan  6 14:25 components
+1240. drwxr-xr-x  2 argocd root     60 Jan  6 14:25 fixtures
+1241. drwxr-xr-x  2 argocd root    240 Jan  6 14:25 public
+1242. drwxr-xr-x  2 argocd root     60 Jan  6 14:25 styles
+1243. drwxr-xr-x  3 argocd root    120 Jan  6 14:25 supabase
+1244. drwxr-xr-x  5 argocd root    140 Jan  6 14:25 utils
+1245. 
+1246. 
+1247. str_replace_based_edit_tool
+1248. command
+1249. view
+1250. path
+1251. /tmp/inputs/nextjs-subscription-payments/README.md
+1252. view_range
+1253. [1, 100]
+1254. output
+1255. Here's the content of /tmp/inputs/nextjs-subscription-payments/README.md with line numbers (which has a total of 262 lines) with view_range=[1, 100]:
+1256. 1	# Next.js Subscription Payments Starter
+1257. 2
+1258. 3
+1259. 4	> [!WARNING]
+1260. 5	> This repo has been sunset and replaced by a new template: https://github.com/nextjs/saas-starter
+1261. 6
+1262. 7	## Features
+1263. 8
+1264. 9	- Secure user management and authentication with [Supabase](https://supabase.io/docs/guides/auth)
+1265. 10	- Powerful data access & management tooling on top of PostgreSQL with [Supabase](https://supabase.io/docs/guides/database)
+1266. 11	- Integration with [Stripe Checkout](https://stripe.com/docs/payments/checkout) and the [Stripe customer portal](https://stripe.com/docs/billing/subscriptions/customer-portal)
+1267. 12	- Automatic syncing of pricing plans and subscription statuses via [Stripe webhooks](https://stripe.com/docs/webhooks)
+1268. 13
+1269. 14	## Demo
+1270. 15
+1271. 16	- https://subscription-payments.vercel.app/
+1272. 17
+1273. 18	[![Screenshot of demo](./public/demo.png)](https://subscription-payments.vercel.app/)
+1274. 19
+1275. 20	## Architecture
+1276. 21
+1277. 22	![Architecture diagram](./public/architecture_diagram.png)
+1278. 23
+1279. 24	## Step-by-step setup
+1280. 25
+1281. 26	When deploying this template, the sequence of steps is important. Follow the steps below in order to get up and running.
+1282. 27
+1283. 28	### Initiate Deployment
+1284. 29
+1285. 30	#### Vercel Deploy Button
+1286. 31
+1287. 32	[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextjs-subscription-payments&env=NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,STRIPE_SECRET_KEY&envDescription=Enter%20your%20Stripe%20API%20keys.&envLink=https%3A%2F%2Fdashboard.stripe.com%2Fapikeys&project-name=nextjs-subscription-payments&repository-name=nextjs-subscription-payments&integration-ids=oac_VqOgBHqhEoFTPzGkPd7L0iH6&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextjs-subscription-payments%2Ftree%2Fmain)
+1288. 33
+1289. 34	The Vercel Deployment will create a new repository with this template on your GitHub account and guide you through a new Supabase project creation. The [Supabase Vercel Deploy Integration](https://vercel.com/integrations/supabase) will set up the necessary Supabase environment variables and run the [SQL migrations](./supabase/migrations/20230530034630_init.sql) to set up the Database schema on your account. You can inspect the created tables in your project's [Table editor](https://app.supabase.com/project/_/editor).
+1290. 35
+1291. 36	Should the automatic setup fail, please [create a Supabase account](https://app.supabase.com/projects), and a new project if needed. In your project, navigate to the [SQL editor](https://app.supabase.com/project/_/sql) and select the "Stripe Subscriptions" starter template from the Quick start section.
+1292. 37
+1293. 38	### Configure Auth
+1294. 39
+1295. 40	Follow [this guide](https://supabase.com/docs/guides/auth/social-login/auth-github) to set up an OAuth app with GitHub and configure Supabase to use it as an auth provider.
+1296. 41
+1297. 42	In your Supabase project, navigate to [auth > URL configuration](https://app.supabase.com/project/_/auth/url-configuration) and set your main production URL (e.g. https://your-deployment-url.vercel.app) as the site url.
+1298. 43
+1299. 44	Next, in your Vercel deployment settings, add a new **Production** environment variable called `NEXT_PUBLIC_SITE_URL` and set it to the same URL. Make sure to deselect preview and development environments to make sure that preview branches and local development work correctly.
+1300. 45
+1301. 46	#### [Optional] - Set up redirect wildcards for deploy previews (not needed if you installed via the Deploy Button)
+1302. 47
+1303. 48	If you've deployed this template via the "Deploy to Vercel" button above, you can skip this step. The Supabase Vercel Integration will have set redirect wildcards for you. You can check this by going to your Supabase [auth settings](https://app.supabase.com/project/_/auth/url-configuration) and you should see a list of redirects under "Redirect URLs".
+1304. 49
+1305. 50	Otherwise, for auth redirects (email confirmations, magic links, OAuth providers) to work correctly in deploy previews, navigate to the [auth settings](https://app.supabase.com/project/_/auth/url-configuration) and add the following wildcard URL to "Redirect URLs": `https://*-username.vercel.app/**`. You can read more about redirect wildcard patterns in the [docs](https://supabase.com/docs/guides/auth#redirect-urls-and-wildcards).
+1306. 51
+1307. 52	If you've deployed this template via the "Deploy to Vercel" button above, you can skip this step. The Supabase Vercel Integration will have run database migrations for you. You can check this by going to [the Table Editor for your Supabase project](https://supabase.com/dashboard/project/_/editor), and confirming there are tables with seed data.
+1308. 53
+1309. 54	Otherwise, navigate to the [SQL Editor](https://supabase.com/dashboard/project/_/sql/new), paste the contents of [the Supabase `schema.sql` file](./schema.sql), and click RUN to initialize the database.
+1310. 55
+1311. 56	#### [Maybe Optional] - Set up Supabase environment variables (not needed if you installed via the Deploy Button)
+1312. 57
+1313. 58	If you've deployed this template via the "Deploy to Vercel" button above, you can skip this step. The Supabase Vercel Integration will have set your environment variables for you. You can check this by going to your Vercel project settings, and clicking on 'Environment variables', there will be a list of environment variables with the Supabase icon displayed next to them.
+1314. 59
+1315. 60	Otherwise navigate to the [API settings](https://app.supabase.com/project/_/settings/api) and paste them into the Vercel deployment interface. Copy project API keys and paste into the `NEXT_PUBLIC_SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY` fields, and copy the project URL and paste to Vercel as `NEXT_PUBLIC_SUPABASE_URL`.
+1316. 61
+1317. 62	Congrats, this completes the Supabase setup, almost there!
+1318. 63
+1319. 64	### Configure Stripe
+1320. 65
+1321. 66	Next, we'll need to configure [Stripe](https://stripe.com/) to handle test payments. If you don't already have a Stripe account, create one now.
+1322. 67
+1323. 68	For the following steps, make sure you have the ["Test Mode" toggle](https://stripe.com/docs/testing) switched on.
+1324. 69
+1325. 70	#### Create a Webhook
+1326. 71
+1327. 72	We need to create a webhook in the `Developers` section of Stripe. Pictured in the architecture diagram above, this webhook is the piece that connects Stripe to your Vercel Serverless Functions.
+1328. 73
+1329. 74	1. Click the "Add Endpoint" button on the [test Endpoints page](https://dashboard.stripe.com/test/webhooks).
+1330. 75	1. Enter your production deployment URL followed by `/api/webhooks` for the endpoint URL. (e.g. `https://your-deployment-url.vercel.app/api/webhooks`)
+1331. 76	1. Click `Select events` under the `Select events to listen to` heading.
+1332. 77	1. Click `Select all events` in the `Select events to send` section.
+1333. 78	1. Copy `Signing secret` as we'll need that in the next step (e.g `whsec_xxx`) (/!\ be careful not to copy the webook id we_xxxx).
+1334. 79	1. In addition to the `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` and the `STRIPE_SECRET_KEY` we've set earlier during deployment, we need to add the webhook secret as `STRIPE_WEBHOOK_SECRET` env var.
+1335. 80
+1336. 81	#### Redeploy with new env vars
+1337. 82
+1338. 83	For the newly set environment variables to take effect and everything to work together correctly, we need to redeploy our app in Vercel. In your Vercel Dashboard, navigate to deployments, click the overflow menu button and select "Redeploy" (do NOT enable the "Use existing Build Cache" option). Once Vercel has rebuilt and redeployed your app, you're ready to set up your products and prices.
+1339. 84
+1340. 85	#### Create product and pricing information
+1341. 86
+1342. 87	Your application's webhook listens for product updates on Stripe and automatically propagates them to your Supabase database. So with your webhook listener running, you can now create your product and pricing information in the [Stripe Dashboard](https://dashboard.stripe.com/test/products).
+1343. 88
+1344. 89	Stripe Checkout currently supports pricing that bills a predefined amount at a specific interval. More complex plans (e.g., different pricing tiers or seats) are not yet supported.
+1345. 90
+1346. 91	For example, you can create business models with different pricing tiers, e.g.:
+1347. 92
+1348. 93	- Product 1: Hobby
+1349. 94	  - Price 1: 10 USD per month
+1350. 95	  - Price 2: 100 USD per year
+1351. 96	- Product 2: Freelancer
+1352. 97	  - Price 1: 20 USD per month
+1353. 98	  - Price 2: 200 USD per year
+1354. 99
+1355. 100	Optionally, to speed up the setup, we have added a [fixtures file](fixtures/stripe-fixtures.json) to bootstrap test product and pricing data in your Stripe account. The [Stripe CLI](https://stripe.com/docs/stripe-cli#install) `fixtures` command executes a series of API requests defined in this JSON file. Simply run `stripe fixtures fixtures/stripe-fixtures.json`.
+1356. 
+1357. 
+1358. Now let me check if there are any models or services directories:
+1359. 
+1360. 
+1361. bash
+1362. command
+1363. find /tmp/inputs/nextjs-subscription-payments -type d \( -name "models" -o -name "services" -o -name "controllers" -o -name "lib" \) 2>/dev/null
+1364. system
+1365. Tool ran without output or errors
+1366. 
+1367. 
+1368. str_replace_based_edit_tool
+1369. command
+1370. view
+1371. path
+1372. /tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx
+1373. output
+1374. Here's the content of /tmp/inputs/nextjs-subscription-payments/app/signin/page.tsx with line numbers:
+1375. 1	import { redirect } from 'next/navigation';
+1376. 2	import { getDefaultSignInView } from '@/utils/auth-helpers/settings';
+1377. 3	import { cookies } from 'next/headers';
+1378. 4
+1379. 5	export default function SignIn() {
+1380. 6	  const preferredSignInView =
+1381. 7	    cookies().get('preferredSignInView')?.value || null;
+1382. 8	  const defaultView = getDefaultSignInView(preferredSignInView);
+1383. 9
+1384. 10	  return redirect(`/signin/${defaultView}`);
+1385. 11	}
+1386. 12	
+1387. 
+1388. Based on my analysis of the codebase, here's what I found:
+1389. 
+1390. **No, this Next.js subscription payments app does not follow a traditional MVC (Model-View-Controller) architectural pattern.** Instead, it follows a more modern React/Next.js architectural approach that's typical of contemporary full-stack JavaScript applications.
+1391. 
+1392. Here's what the architecture actually looks like:
+1393. 
+1394. **What it uses instead:**
+1395. 
+1396. 1. **Next.js App Router Pattern** - The app uses Next.js 13+ App Router with React Server Components, which blends server-side and client-side rendering. This is fundamentally different from MVC.
+1397. 
+1398. 2. **Layered Architecture** organized as:
+1399. - **`/app` directory** - Contains page routes using Next.js file-based routing (pages like `page.tsx`, `layout.tsx`). These are essentially your "Views" but also contain data fetching logic.
+1400. - **`/components` directory** - Reusable UI components organized by feature (AuthForms, AccountForms, Pricing, etc.). These are purely presentational "Views".
+1401. - **`/utils` directory** - Business logic and service layer containing:
+1402. - `supabase/queries.ts` - Data access functions (similar to Model layer)
+1403. - `auth-helpers/server.ts` - Server actions for authentication
+1404. - `stripe/server.ts` - Stripe payment logic
+1405. - Helper functions and utilities
+1406. 
+1407. 3. **Server Actions Pattern** - Instead of traditional controllers, the app uses Next.js Server Actions (functions marked with `'use server'`) for handling form submissions and mutations. You can see this in files like `auth-helpers/server.ts` with functions like `signInWithEmail`, `signUp`, `updateName`.
+1408. 
+1409. 4. **Type Definitions** - The `types_db.ts` file defines TypeScript types generated from the Supabase database schema, which serves a similar purpose to models in defining data structures.
+1410. 
+1411. **Key differences from MVC:**
+1412. 
+1413. - No explicit Controller layer - logic is distributed between Server Components, Server Actions, and API routes
+1414. - Views are React components, not templates
+1415. - Models are represented by TypeScript types and database query functions rather than ORM classes
+1416. - Data fetching happens directly in page components using async/await
+1417. - The architecture is more functional and component-based rather than class-based MVC
+1418. 
+1419. This is actually a more appropriate pattern for modern React applications, taking advantage of Next.js's built-in features for data fetching, routing, and server-side rendering.
+———MODEL B RESPONES ended!!!!——————
+
+
+
+4. Now write the ideal answer, model a  summary, model a feedback,  model b summary model b feedback,justification. i want same level of details and evidence and writing style and lenght like this sample THIS IS SAMPLE FOR you below, READ CAREFULLY: 
+
+
+SUPER IMPORTANT RULE YOU MUST FOLLOW. YOU MUST WRITE SAME WAY SAME QUALITY SAME FORMAT SAME STYLE AS SAMPLE BELOW!@!!!!!!!
+
+——SAMPLE:—
+—Every below is sample—
+
+Ideal Response.
+
+This ideal answer should clearly describe how Spring Petclinic wires its components through dependency injection using common patterns like constructor based injection, component scanning, and configuration-driven bean factories ...etc, and even dive deeper to explain how controllers (e.g.,src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java) declare all the collaborators in the constructors rather than in the fields, how stereotype annotations make those classes eligible for autodetection, how the repository abstractions are injected as interfaces implemented by the Spring Data JPA, and how @Configuration classes expose shared infrastructure beans that all the other components consume.
+Model must explain that Spring Petclinic leans on constructor-based dependency injection to keep controllers explicit and testable. For example, it should explain controller like spring-petclinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java is annotated with @Controller and declares a single constructor that takes an OwnerRepository, which has the role of letting Spring populate the dependency while preventing partially constructed instance. Model should point out that the controller never uses field injection or @Autowired on members, so the required collaborator is enforced at creation time. For example, in src/main/java/org/springframework/samples/petclinic/vet/VetController.java, whose constructor requires a VetRepository and assigns it to a final field, it is also relying on the container to supply the repository proxy. Even non-controller components follow this approach, for example src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java, which is a @Component that exposes a Formatter<PetType> but takes its PetTypeRepository in the constructor, which is keeping parsing logic decoupled from storage details while still making the repository mandatory for instantiation.
+Model must also explain repository layer demonstrates interface-driven injection. Interfaces such as spring-petclinic/src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java extend Spring Data JPA’s JpaRepository, which is letting the framework auto-create runtime proxies that satisfy the dependency signatures declared in controllers and formatters.
+Overall, the dependency injection explanation should ideally go deep and cover how @SpringBootApplication bootstraps component scanning, constructors declare required collaborators, repositories are injected as interfaces backed by generated proxies, and @Configuration classes publish shared infrastructure as beans.
+
+
+
+Model A Response Summary
+
+Model A did pretty well because it correctly identifiy constructor-based injection as the major dominant pattern and notes the absence of @Autowired, aligning with controllers like OwnerController and VetController that declare single-argument constructors for their repositories, which are src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java and src/main/java/org/springframework/samples/petclinic/vet/VetController.java,. It also correctly observes that PetTypeFormatter uses constructor injection as a component, which matches the formatters’ constructor-driven PetTypeRepository dependency. It points out that in src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java, the response highlights component scanning via the stereotype annotations and the role of repository interfaces that Spring Data implements at runtime, dynamically, and consistent with the JpaRepository extension inside src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java.  Overall, the summary gives good overview of the core DI patterns present in the codebase.
+Model A Response Feedback
+
+the answer is strong on constructor injection and the lack of @Autowired, both supported by the controller and formatter classes cited in summary above, which are very impressive findings in my opinion as tehy’re not that obvious. One area it could be improved is by referencing configuration-driven beans such as the cache and locale interceptors declared in CacheConfiguration and WebConfiguration , to show that DI also wires infrastructure services, not just repositories and controllers in files like src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration,main/java/org/springframework/samples/petclinic/system/WebConfiguration.java. Mentioning of @SpringBootApplication as the trigger for component scanning would further strengthen the explanation by tying bean discovery to the application entry point in src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java. These additions would align the response even more tightly with the full range of DI patterns in the repo. But overall, the model did pretty well despite these issues.
+
+Model B Response Summary
+
+Model B repeats the constructor-injection narrative and cites the same controllers (OwnerController, PetController, VetController, VisitController) and the PetTypeFormatter component under main/java/org/springframework/samples/petclinic/*, matching their constructor-based repository dependencies.It notes the absence of @Autowired/@Inject and correctly attributes bean registration to stereotype annotations and Spring Data proxies for repositories like OwnerRepository in src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java†. The summary emphasizes constructor injection benefits but remains fairly high-level. Overall the model did not give an in-depth explanation and i believe the model did not really check the code thoroughly for the explanation. 
+Model B Response Feedback
+
+While this model is technically accurate about constructor injection and stereotype-based registration, but Model B stays generic and omits key DI elements present in the code which are obvious and should not be missed at all! It does not even mention the configuration classes that publish infrastructure beans (e.g., cache customization or locale handling), which are central examples of DI beyond the configurations like src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration,src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java. The response also overlooks the @SpringBootApplication entry point that enables component scanning for all these beans such as in src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java.Compared to Model A, it provides less depth on how DI wiring spans both application endpoints and shared infrastructure.
+Overall Preference Justification
+
+Model A is way better because it balances correctness about constructor injection with explicit recognition of repository interfaces and the role of component scanning, closely matching the structure seen in controllers, formatters, and repositories...etc such as src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java,src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java,src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java, Although both models miss some configuration details, Model A surfaces more of the actual DI practices visible in the code and provides a clearer link between stereotypes and injection than Model B, which remains more generic and omits infrastructure wiring examples such as ,src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java,src/main/java/org/springframework/samples/petclinic/system/WebConfiguration.java.....etc. Therefore, Model A offers the stronger, more code-grounded explanation in my opinion.
